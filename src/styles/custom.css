@@ -1,0 +1,87 @@
+
+/* ========================================
+   My Knowledge Base — Global Design
+   ======================================== */
+
+:root {
+  --sl-content-width: 48rem;
+  --sl-sidebar-width: 18rem;
+  --sl-text-base: 1rem;
+  --sl-line-height: 1.75;
+}
+
+/* Main reading area */
+
+.sl-markdown-content {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Headings */
+
+.sl-markdown-content h1 {
+  font-size: 2rem;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+.sl-markdown-content h2 {
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+}
+
+.sl-markdown-content h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+/* Paragraph spacing */
+
+.sl-markdown-content p {
+  margin-block: 1rem;
+}
+
+/* Links */
+
+.sl-markdown-content a {
+  text-decoration: underline;
+  text-decoration-color: var(--sl-color-gray-5);
+  text-underline-offset: 3px;
+}
+
+.sl-markdown-content a:hover {
+  text-decoration-color: var(--sl-color-text-accent);
+}
+
+/* Tables */
+
+.sl-markdown-content table {
+  display: table;
+  width: 100%;
+}
+
+.sl-markdown-content th,
+.sl-markdown-content td {
+  padding: 0.75rem;
+}
+
+/* Images and SVGs */
+
+.sl-markdown-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Sidebar */
+
+.sidebar-content {
+  font-size: 0.9rem;
+}
+
+/* Smooth scrolling */
+
+html {
+  scroll-behavior: smooth;
+}
