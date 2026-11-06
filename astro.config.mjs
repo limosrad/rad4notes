@@ -37,8 +37,13 @@ export default defineConfig({
                   items: [
                     'chest/infections/immunocompromised',
                   ]
+                },
+                {
+                  label: 'Lung Cancer',
+                  items: [
+                    'chest/lung-cancer/solitary-nodules',
+                  ]
                 }
-
               ],
             },
             { label: 'Cardiovascular',

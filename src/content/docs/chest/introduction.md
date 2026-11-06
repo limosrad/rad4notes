@@ -1,17 +1,19 @@
 ---
-title: Introduction
+title: Introduction to Chest Imaging
 description: Chest imaging, anatomy, and pathology
 ---
 
-# Chest
+# List of Topics
 
-A comprehensive reference for chest imaging and related topics.
-
-## Imaging Modalities
+## Imaging modalities
 
 - [Chest X-ray](/chest/imaging-modalities/chest-x-ray/)
 - [Contrast CT](/chest/imaging-modalities/contrast-ct/)
 
 ## Infections
 
-- [Infections in Immunocompromised Hosts](./infections/immunocompromised.md)
+- [Infections in Immunocompromised Hosts](/chest/infections/immunocompromised)
+
+## Lung cancer
+
+- [Solitary Pulmonary Nodules](/chest/lung-cancer/solitary-nodules)
