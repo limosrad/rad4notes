@@ -16,59 +16,40 @@ export default defineConfig({
           items: [
             { label: 'Home', link: '/' },
 
-            // CARDIOVASCULAR
-            {
-              label: 'Cardiovascular',
+            { label: 'Chest', 
               items: [
-                { slug: 'cardiovascular' },
-              ],
-            },
-
-            // CHEST
-            {
-              label: 'Chest',
-              items: [
-                { slug: 'chest' },
-
-                // Imaging Modalities
+                'chest/introduction',
                 {
                   label: 'Imaging Modalities',
                   items: [
-                        {
-                          autogenerate: {
-                            directory: 'chest/imaging-modalities',
-                          },
-                        },
-                      ],    
-                  
+                    'chest/imaging-modalities/introduction',
+                    'chest/imaging-modalities/chest-x-ray',
+                    'chest/imaging-modalities/contrast-ct',
+                  ]
                 },
-
-                // Infections
                 {
                   label: 'Infections',
                   items: [
-                    {
-                          autogenerate: {
-                            directory: 'chest/infections/immunocompromised-hosts',
-                          },
-                        },
-                      ],
-                    
-                  
-                },
+                    'chest/infections/immunocompromised',
+                  ]
+                }
+
               ],
             },
-
-            // GASTROINTESTINAL
-            {
-              label: 'Gastrointestinal',
+            { label: 'Cardiovascular',
               items: [
-                { slug: 'gastrointestinal' },
+                'cardiovascular/introduction',
+              ],  
+            },
+            { label: 'Gastrointestinal',
+              items: [
+                'gastrointestinal/introduction',
               ],
             },
           ],
         },
       ],
+            
     }),
-  ],
+  ],  
 });
