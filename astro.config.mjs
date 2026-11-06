@@ -27,9 +27,9 @@ export default defineConfig({
                 {
                   label: 'Imaging Modalities',
                   items: [
-                    'chest/imaging-modalities/introduction',
+                    'chest/imaging-modalities/chest-usg',
                     'chest/imaging-modalities/chest-x-ray',
-                    'chest/imaging-modalities/contrast-ct',
+                    'chest/imaging-modalities/chest-ct',
                   ]
                 },
                 {
@@ -38,6 +38,7 @@ export default defineConfig({
                     'chest/infections/immunocompromised',
                   ]
                 },
+
                 {
                   label: 'Lung Cancer',
                   items: [
@@ -46,7 +47,13 @@ export default defineConfig({
                     'chest/lung-cancer/lung-cancer-staging',
                     'chest/lung-cancer/other-neoplasms'
                   ]
-                }
+                },
+                {
+                  label: 'Mediastinum',
+                  items: [
+                    'chest/mediastinum/mediastinal-masses',
+                  ]
+                },
               ],
             },
             { label: 'Cardiovascular',

@@ -1,46 +1,46 @@
 
 ---
-title: Rad4Notes
-description: A personal radiology knowledge base for structured learning and imaging interpretation.
+title: Home
+description: Radiology Resident's Rapid Review and Revision Notes.
 ---
 
 <div class="home-intro">
 
-<p class="home-eyebrow">RADIOLOGY KNOWLEDGE BASE</p>
+<p class="home-eyebrow">RAD4NOTES</p>
 
 <p class="home-lead">
-A personal, structured reference for radiology learning, imaging interpretation and clinical knowledge.
+Radiology Resident's Rapid Review and Revision Notes.
 </p>
 
 </div>
 
-## Explore the Notebook
+## Explore Systems
 
 <div class="home-card-grid">
 
 <a class="home-card" href="/chest/introduction/">
-  <span class="home-card-number">01 / THORACIC</span>
+  <span class="home-card-number">01</span>
   <span class="home-card-title">Chest</span>
   <span class="home-card-description">
-    Thoracic imaging, imaging modalities, pulmonary infections and chest pathology.
+    Thoracic airway, parenchymal and vascular imaging and image-guided interventions.
   </span>
   <span class="home-card-link">Explore Chest <span aria-hidden="true">→</span></span>
 </a>
 
 <a class="home-card" href="/cardiovascular/introduction/">
-  <span class="home-card-number">02 / CARDIAC</span>
+  <span class="home-card-number">02</span>
   <span class="home-card-title">Cardiovascular</span>
   <span class="home-card-description">
-    Cardiac imaging, cardiovascular anatomy, vascular diseases and hemodynamics.
+    Cardiac imaging, vascular imaging and interventions.
   </span>
   <span class="home-card-link">Explore Cardiovascular <span aria-hidden="true">→</span></span>
 </a>
 
 <a class="home-card" href="/gastrointestinal/introduction/">
-  <span class="home-card-number">03 / ABDOMINAL</span>
+  <span class="home-card-number">03</span>
   <span class="home-card-title">Gastrointestinal</span>
   <span class="home-card-description">
-    Abdominal imaging, gastrointestinal anatomy and hepatobiliary pathology.
+    Gastrointestinal and peritoneal imaging and interventions.
   </span>
   <span class="home-card-link">Explore Gastrointestinal <span aria-hidden="true">→</span></span>
 </a>
