@@ -4,6 +4,11 @@ import { defineConfig } from 'astro/config';
 
 import starlight from '@astrojs/starlight';
 
+import { unified } from '@astrojs/markdown-remark';
+import { remarkLearningBlocks } from './src/plugins/learning-blocks.js';
+import remarkDirective from 'remark-directive';
+
+
 export default defineConfig({
   integrations: [
     starlight({
@@ -49,7 +54,20 @@ export default defineConfig({
           ],
         },
       ],
-            
+      
+      components: {
+        ThemeSelect: './src/components/ThemeSelect.astro',
+      },    
     }),
-  ],  
+  ],
+  
+  markdown: {
+    processor: unified({
+      remarkPlugins: [
+        remarkDirective,
+        remarkLearningBlocks,
+      ],
+    }),
+  },
+
 });

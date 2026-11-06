@@ -9,8 +9,8 @@ A comprehensive reference for chest imaging and related topics.
 
 ## Imaging Modalities
 
-- [Chest X-ray](./imaging-modalities/chest-x-ray.md)
-- [Imaging Modalities](./imaging-modalities/)
+- [Chest X-ray](/chest/imaging-modalities/chest-x-ray/)
+- [Contrast CT](/chest/imaging-modalities/contrast-ct/)
 
 ## Infections
 

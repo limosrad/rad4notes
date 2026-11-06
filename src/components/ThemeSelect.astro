@@ -1,0 +1,397 @@
+
+---
+import DefaultThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro';
+---
+
+<div class="rad-header-controls">
+  <select id="rad-learning-mode" aria-label="Learning mode">
+    <option value="reference">Complete Reference</option>
+    <option value="trivia">Trivia</option>
+    <option value="differentials">Differentials</option>
+    <option value="mcq">MCQ</option>
+    <option value="custom">Custom Revision</option>
+  </select>
+
+  <fieldset id="rad-learning-categories" hidden>
+    <legend>Include categories</legend>
+
+    <label>
+      <input type="checkbox" value="trivia" checked />
+      Trivia
+    </label>
+
+    <label>
+      <input type="checkbox" value="differentials" checked />
+      Differentials
+    </label>
+
+    <label>
+      <input type="checkbox" value="mcq" />
+      MCQ
+    </label>
+  </fieldset>
+
+  <DefaultThemeSelect />
+</div>
+
+<script>
+  const STORAGE_KEY = 'rad4notes-learning-mode';
+  const CATEGORIES_KEY = 'rad4notes-learning-categories';
+
+  const VALID_MODES = [
+    'reference',
+    'trivia',
+    'differentials',
+    'mcq',
+    'custom',
+  ];
+
+  const VALID_CATEGORIES = [
+    'trivia',
+    'differentials',
+    'mcq',
+  ];
+
+  function getSavedCategories() {
+    try {
+      const saved = JSON.parse(
+        localStorage.getItem(CATEGORIES_KEY) || '["trivia","differentials"]'
+      );
+
+      return Array.isArray(saved)
+        ? saved.filter(category => VALID_CATEGORIES.includes(category))
+        : ['trivia', 'differentials'];
+    } catch {
+      return ['trivia', 'differentials'];
+    }
+  }
+
+
+let mcqCounter = 0;
+
+function enhanceMcqs() {
+  const blocks = document.querySelectorAll(
+    '.rad-learning-block--mcq:not([data-mcq-enhanced])'
+  );
+
+  blocks.forEach(block => {
+    const correctAnswer = Number(
+      block.getAttribute('data-correct-answer')
+    );
+
+    const question = block.querySelector(':scope > p');
+    const optionsList = block.querySelector(':scope > ol');
+
+    const explanation = Array.from(block.children).find(
+      element =>
+        element.tagName === 'P' &&
+        element.textContent.trim().startsWith('Explanation:')
+    );
+
+    if (
+      !question ||
+      !optionsList ||
+      !Number.isInteger(correctAnswer) ||
+      correctAnswer < 1 ||
+      correctAnswer > optionsList.children.length
+    ) {
+      return;
+    }
+
+    block.dataset.mcqEnhanced = 'true';
+
+    const form = document.createElement('div');
+    form.className = 'rad-mcq-form';
+
+    const fieldset = document.createElement('fieldset');
+    fieldset.className = 'rad-mcq-options';
+
+    const legend = document.createElement('legend');
+    legend.textContent = 'Select one answer';
+    fieldset.append(legend);
+
+    const optionLabels = [];
+    const groupName = `rad-mcq-${++mcqCounter}`;
+
+    Array.from(optionsList.children).forEach((item, index) => {
+      const label = document.createElement('label');
+      label.className = 'rad-mcq-option';
+
+      const radio = document.createElement('input');
+      radio.type = 'radio';
+      radio.name = groupName;
+      radio.value = String(index + 1);
+
+      const text = document.createElement('span');
+      text.textContent = item.textContent.trim();
+
+      label.append(radio, text);
+      fieldset.append(label);
+
+      optionLabels.push(label);
+    });
+
+    const submit = document.createElement('button');
+    submit.type = 'button';
+    submit.className = 'rad-mcq-submit';
+    submit.textContent = 'Submit Answer';
+
+    const feedback = document.createElement('div');
+    feedback.className = 'rad-mcq-feedback';
+    feedback.setAttribute('aria-live', 'polite');
+
+    form.append(fieldset, submit, feedback);
+
+    optionsList.replaceWith(form);
+
+    if (explanation) {
+      explanation.hidden = true;
+      explanation.classList.add('rad-mcq-explanation');
+    }
+
+    submit.addEventListener('click', () => {
+      const selected = fieldset.querySelector(
+        'input[type="radio"]:checked'
+      );
+
+      if (!selected) {
+        feedback.textContent = 'Please select an answer first.';
+        feedback.dataset.result = 'unanswered';
+        return;
+      }
+
+      const selectedAnswer = Number(selected.value);
+      const isCorrect = selectedAnswer === correctAnswer;
+
+      feedback.replaceChildren();
+
+      const result = document.createElement('strong');
+      result.textContent = isCorrect
+        ? 'Correct!'
+        : 'Incorrect. The correct answer is:';
+
+      feedback.append(result);
+
+      if (!isCorrect) {
+        const correctText = document.createElement('p');
+        correctText.textContent =
+          optionLabels[correctAnswer - 1].textContent.trim();
+        feedback.append(correctText);
+      }
+
+      feedback.dataset.result = isCorrect ? 'correct' : 'incorrect';
+
+      optionLabels.forEach((label, index) => {
+        label.classList.toggle(
+          'is-correct',
+          index + 1 === correctAnswer
+        );
+
+        label.classList.toggle(
+          'is-incorrect',
+          index + 1 === selectedAnswer && !isCorrect
+        );
+      });
+
+      fieldset.disabled = true;
+      submit.disabled = true;
+      submit.textContent = 'Answer Submitted';
+
+      if (explanation) {
+        explanation.hidden = false;
+      }
+    });
+  });
+}
+
+  
+
+  function updateLearningContent(mode, categories) {
+    const content = document.querySelector('.sl-markdown-content');
+
+    if (!content) return;
+
+    content.querySelector('.rad-learning-empty')?.remove();
+
+    if (mode === 'reference') return;
+
+    const selected = mode === 'custom' ? categories : [mode];
+
+    const matchingBlocks = Array.from(
+      content.querySelectorAll('.rad-learning-block')
+    ).filter(block =>
+      selected.some(category =>
+        block.classList.contains(`rad-learning-block--${category}`)
+      )
+    );
+
+    if (matchingBlocks.length > 0) return;
+
+    const empty = document.createElement('div');
+    empty.className = 'rad-learning-empty';
+
+    const heading = document.createElement('strong');
+    const message = document.createElement('p');
+
+    if (mode === 'custom') {
+      heading.textContent = 'No selected learning material available';
+      message.textContent =
+        'There are currently no entries in the selected categories for this topic.';
+    } else {
+      const messages = {
+        trivia: 'Testable Trivia',
+        differentials: 'Differentials',
+        mcq: 'MCQs',
+      };
+
+      heading.textContent = `No ${messages[mode]} available`;
+      message.textContent =
+        `There are currently no ${messages[mode]} entries for this topic.`;
+    }
+
+    empty.append(heading, message);
+    content.append(empty);
+  }
+
+  function applyLearningMode(mode, categories) {
+    document.documentElement.dataset.learningMode = mode;
+    document.documentElement.dataset.learningTypes =
+      categories.join(' ');
+
+    updateLearningContent(mode, categories);
+  }
+
+  function initializeLearningMode() {
+    const selector = document.querySelector('#rad-learning-mode');
+    const categoryPanel = document.querySelector(
+      '#rad-learning-categories'
+    );
+
+    if (!selector || !categoryPanel) return;
+
+    const checkboxes = Array.from(
+      categoryPanel.querySelectorAll('input[type="checkbox"]')
+    );
+
+    const savedMode = localStorage.getItem(STORAGE_KEY);
+
+    const mode = VALID_MODES.includes(savedMode)
+      ? savedMode
+      : 'reference';
+
+    let categories = getSavedCategories();
+
+    selector.value = mode;
+
+    checkboxes.forEach(checkbox => {
+      checkbox.checked = categories.includes(checkbox.value);
+    });
+
+    categoryPanel.hidden = mode !== 'custom';
+
+    applyLearningMode(mode, categories);
+    enhanceMcqs();
+
+    if (selector.dataset.initialized === 'true') return;
+
+    selector.dataset.initialized = 'true';
+
+    selector.addEventListener('change', () => {
+      const selectedMode = selector.value;
+
+      localStorage.setItem(STORAGE_KEY, selectedMode);
+
+      categoryPanel.hidden = selectedMode !== 'custom';
+
+      applyLearningMode(selectedMode, categories);
+    });
+
+    checkboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', () => {
+        categories = checkboxes
+          .filter(item => item.checked)
+          .map(item => item.value);
+
+        localStorage.setItem(
+          CATEGORIES_KEY,
+          JSON.stringify(categories)
+        );
+
+        applyLearningMode('custom', categories);
+      });
+    });
+  }
+
+  initializeLearningMode();
+
+  document.addEventListener(
+    'astro:page-load',
+    initializeLearningMode
+  );
+</script>
+
+<style>
+  .rad-header-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    flex-wrap: wrap;
+  }
+
+  #rad-learning-mode {
+    max-width: 12rem;
+    padding: 0.45rem 0.6rem;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.4rem;
+    background: var(--sl-color-bg);
+    color: var(--sl-color-text);
+    font: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+
+  #rad-learning-categories {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  #rad-learning-categories[hidden] {
+    display: none;
+  }
+
+  #rad-learning-categories legend {
+    display: none;
+  }
+
+  #rad-learning-categories label {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  #rad-learning-categories input {
+    accent-color: var(--sl-color-accent);
+  }
+
+  @media (max-width: 50rem) {
+    #rad-learning-mode {
+      max-width: 9rem;
+      font-size: 0.75rem;
+    }
+
+    #rad-learning-categories {
+      gap: 0.4rem;
+      font-size: 0.7rem;
+    }
+  }
+
+  
+</style>
+
