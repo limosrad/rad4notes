@@ -17,3 +17,4 @@ description: Chest imaging, anatomy, and pathology
 ## Lung cancer
 
 - [Solitary Pulmonary Nodules](/chest/lung-cancer/solitary-nodules)
+- [Lung Cancer - Pathology](/chest/lung-cancer/lung-cancer-pathology)

@@ -42,6 +42,7 @@ export default defineConfig({
                   label: 'Lung Cancer',
                   items: [
                     'chest/lung-cancer/solitary-nodules',
+                    'chest/lung-cancer/lung-cancer-pathology',
                   ]
                 }
               ],
