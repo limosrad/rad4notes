@@ -14,7 +14,7 @@ There are three guidelines for the management of solitary pulmonary nodules.
 | Fleischner society | Incidentally detected SPNs |
 | BTS guidelines | In all patients > 18 years |
 
-## Nature of a solitary pulmonary nodule
+### Nature of a solitary pulmonary nodule
 
 :::trivia
 The following are more common in benign nodules:

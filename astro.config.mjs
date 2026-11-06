@@ -43,6 +43,8 @@ export default defineConfig({
                   items: [
                     'chest/lung-cancer/solitary-nodules',
                     'chest/lung-cancer/lung-cancer-pathology',
+                    'chest/lung-cancer/lung-cancer-staging',
+                    'chest/lung-cancer/other-neoplasms'
                   ]
                 }
               ],

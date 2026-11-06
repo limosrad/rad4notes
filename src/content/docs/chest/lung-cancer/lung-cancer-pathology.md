@@ -4,7 +4,9 @@ title: Lung Cancer - Pathology
 description: Lung cancer pathologies in radiology.
 ---
 
-## Introduction
+## Pathology
+
+### Demographics
 
 Lung carcinoma has 4 important pathologies. They are classified into small cell lung cancer (SCLC) and non-small cell lung cancer (NSCLC).
 
@@ -55,19 +57,20 @@ Lung carcinoma has 4 important pathologies. They are classified into small cell 
 
 ## MCQ
 
-:::mcq{answer="2"}
+:::mcq{answer="4"}
 
-**Which projection generally produces greater cardiac magnification?**
+**Biopsy done for a supraclavicular node in a 55-year-old smoker turns out to be small cell lung cancer. What is the probable finding on chest imaging?**
 
-1. PA projection
-2. AP projection
-3. Lateral projection
-4. None of the above
+1. 6 cm peripheral mass with small mediasinal nodes
+2. 4 cm cavitating mass occluding the RUL bronchus and causing distal collapse
+3. 2.5 cm peripheral mass with enlarged mediastinal nodes
+4. 2 cm mass with enlarged bilateral mediastinal and hilar nodes.
+5. Multiple 1-3 cm masses in bilateral lungs.
 
-**Explanation:** AP projection generally produces greater cardiac magnification because the heart is farther from the image receptor.
+**Explanation:** Small cell lung cancer (also called as oat cell carcinoma) is notorious for extensive nodal and metastatic spread at presentation. Options 1, 2 and 3 describe adenocarcinoma, squamous cell carcinoma and large cell carcinoma respectively. Option 5 describes metastasis from distant primary.
 
 :::
 
-## Further Reading
+# Further Reading
 
 Add relevant textbooks, review articles and reference materials here.
