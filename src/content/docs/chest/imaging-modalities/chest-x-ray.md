@@ -1,10 +1,10 @@
 
 ---
-title: Mechanical Ventilation — Basic Principles
-description: Introduction to mechanical ventilation
+title: Chest X-ray
+description: Imaging modality
 ---
 
-# Mechanical Ventilation
+# Chest X-ray
 
 Mechanical ventilation is a form of respiratory support used to
 assist or replace spontaneous breathing.

@@ -1,3 +1,4 @@
+
 // @ts-check
 import { defineConfig } from 'astro/config';
 
@@ -13,35 +14,57 @@ export default defineConfig({
         {
           label: 'My Notebook',
           items: [
-            {
-              label: 'Home',
-              link: '/',
-            },
+            { label: 'Home', link: '/' },
+
+            // CARDIOVASCULAR
             {
               label: 'Cardiovascular',
-              items: [{
-                autogenerate: {
-                  directory: 'cardiovascular',
-                },
-              }],
+              items: [
+                { slug: 'cardiovascular' },
+              ],
             },
+
+            // CHEST
             {
               label: 'Chest',
               items: [
-                  {
-                    autogenerate: {
-                      directory: 'chest',
-                    },
-                  },
-                ], 
+                { slug: 'chest' },
+
+                // Imaging Modalities
+                {
+                  label: 'Imaging Modalities',
+                  items: [
+                        {
+                          autogenerate: {
+                            directory: 'chest/imaging-modalities',
+                          },
+                        },
+                      ],    
+                  
+                },
+
+                // Infections
+                {
+                  label: 'Infections',
+                  items: [
+                    {
+                          autogenerate: {
+                            directory: 'chest/infections/immunocompromised-hosts',
+                          },
+                        },
+                      ],
+                    
+                  
+                },
+              ],
             },
+
+            // GASTROINTESTINAL
             {
               label: 'Gastrointestinal',
-              items: [{
-                autogenerate: {
-                  directory: 'gastrointestinal',
-                },
-              }],
+              items: [
+                { slug: 'gastrointestinal' },
+              ],
             },
           ],
         },

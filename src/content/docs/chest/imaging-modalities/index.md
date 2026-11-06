@@ -1,9 +1,9 @@
 ---
-title: Cardiovascular
+title: Imaging Modalities in Chest
 description: Cardiovascular medicine and related topics
 ---
 
-# Cardiovascular
+# Imaging Modalities
 
 Welcome to the cardiovascular section of the knowledge base.
 

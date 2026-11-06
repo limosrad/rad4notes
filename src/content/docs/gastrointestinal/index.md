@@ -1,5 +1,5 @@
 ---
-title: Cardiovascular
+title: Introduction
 description: Cardiovascular medicine and related topics
 ---
 

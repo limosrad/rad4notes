@@ -1,5 +1,5 @@
 ---
-title: Chest
+title: Introduction
 description: Chest imaging, anatomy, and pathology
 ---
 
@@ -9,9 +9,9 @@ A comprehensive reference for chest imaging and related topics.
 
 ## Imaging Modalities
 
-- [Chest X-ray](./imaging-modalities/chest-x-ray/anatomy.md)
+- [Chest X-ray](./imaging-modalities/chest-x-ray.md)
 - [Imaging Modalities](./imaging-modalities/)
 
 ## Infections
 
-- [Infections in Immunocompromised Hosts](./infections/immunocompromised-hosts/)
+- [Infections in Immunocompromised Hosts](./infections/immunocompromised.md)
