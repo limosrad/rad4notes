@@ -111,6 +111,14 @@ export default defineConfig({
                     'cardiovascular/acquired-heart/ischaemic-heart-disease',
                     'cardiovascular/acquired-heart/cardiac-masses',
                   ]
+                },
+                {
+                  label: 'Aorta and Peripheral Vascular Disease',
+                  items: [
+                    'cardiovascular/aorta-peripheral-vascular/acute-aorta',
+                    'cardiovascular/aorta-peripheral-vascular/aortic-aneurysm',
+                    'cardiovascular/aorta-peripheral-vascular/vasculitis',
+                  ]
                 },                                
               ],  
             },

@@ -17,6 +17,8 @@ description: Cardiovascular medicine and related topics
 
 - [Ischaemic Heart Disease](/cardiovascular/acquired-heart/ischaemic-heart-disease)
 - [Cardiac Masses](/cardiovascular/acquired-heart/cardiac-masses)
-- Shock
-- Hemodynamics
-- Cardiac imaging
+
+## Aorta and Peripheral Vascular Disease
+- [Acute Aortic Syndromes](/cardiovascular/aorta-peripheral-vascular/acute-aorta)
+- [Aortic aneurysms](/cardiovascular/aorta-peripheral-vascular/aortic-aneurysm)
+- [Vasculitis](/cardiovascular/aorta-peripheral-vascular/vasculitis)
