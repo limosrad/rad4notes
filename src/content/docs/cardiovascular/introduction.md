@@ -13,9 +13,10 @@ description: Cardiovascular medicine and related topics
 
 - [Chest Radiograph in Congenital Heart Disease](/cardiovascular/congenital-heart/chest-x-ray-chd)
 
-## Coronary Artery Disease and Cardiomyopathies
+## Acquired Heart Disease
 
-- [Ischaemic Heart Disease](/cardiovascular/cardiomyopathies/ischaemic-heart-disease)
+- [Ischaemic Heart Disease](/cardiovascular/acquired-heart/ischaemic-heart-disease)
+- [Cardiac Masses](/cardiovascular/acquired-heart/cardiac-masses)
 - Shock
 - Hemodynamics
 - Cardiac imaging

@@ -106,9 +106,10 @@ export default defineConfig({
                   ]
                 },
                 {
-                  label: 'Coronary Artery Disease and Cardiomyopathies',
+                  label: 'Acquired Heart Disease',
                   items: [
-                    'cardiovascular/cardiomyopathies/ischaemic-heart-disease',
+                    'cardiovascular/acquired-heart/ischaemic-heart-disease',
+                    'cardiovascular/acquired-heart/cardiac-masses',
                   ]
                 },                                
               ],  

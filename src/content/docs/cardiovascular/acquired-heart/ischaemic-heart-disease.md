@@ -50,7 +50,7 @@ description: Ischaemic heart disease imaging
 
 ## Findings on CCTA
 
-### CAD-RADS v2022
+### CAD-RADS™ 2.0 - 2022
 - Standardised reporting for stable angina:
 
 | Category | Stenosis | Interpretation | Further investigation | Management |
@@ -122,4 +122,7 @@ description: Ischaemic heart disease imaging
 ![Myocardial viability imaging](/images/flowcharts/nuclear-viability-imaging.svg)
 
 ## Further reading
-
+1. [Ischemic Heart Disease: Noninvasive Imaging Techniques and Findings from Radiographics (2021)](https://doi.org/10.1148/rg.2021200125)
+2. [CAD-RADS™ 2.0 – 2022 from Radiology: Cardiovascular Imaging (2022)](https://doi.org/10.1148/ryct.220183)
+3. [Coronary CT Angiography for Acute Chest Pain in the Emergency Department from Radiology(2026)](https://doi.org/10.1148/radiol.250533)
+4. [Cardiac Nuclear Medicine: Techniques, Applications, and Imaging Findings from Radiographics(2022)](https://doi.org/10.1148/rg.220027)
