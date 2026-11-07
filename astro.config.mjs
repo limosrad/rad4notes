@@ -104,6 +104,12 @@ export default defineConfig({
                   items: [
                     'cardiovascular/congenital-heart/chest-x-ray-chd',
                   ]
+                },
+                {
+                  label: 'Coronary Artery Disease and Cardiomyopathies',
+                  items: [
+                    'cardiovascular/cardiomyopathies/ischaemic-heart-disease',
+                  ]
                 },                                
               ],  
             },
