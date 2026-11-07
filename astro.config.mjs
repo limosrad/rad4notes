@@ -62,8 +62,7 @@ export default defineConfig({
                   label: 'Lung Cancer',
                   items: [
                     'chest/lung-cancer/solitary-nodules',
-                    'chest/lung-cancer/lung-cancer-pathology',
-                    'chest/lung-cancer/lung-cancer-staging',
+                    'chest/lung-cancer/lung-cancer',
                     'chest/lung-cancer/other-neoplasms'
                   ]
                 },
@@ -73,6 +72,13 @@ export default defineConfig({
                     'chest/mediastinum/mediastinal-masses',
                   ]
                 },
+                {
+                  label: 'Miscellaneous',
+                  items: [
+                    'chest/miscellaneous/chest-wall-pleura',
+                    'chest/miscellaneous/icu-radiograph',
+                  ]
+                }
               ],
             },
             { label: 'Cardiovascular',

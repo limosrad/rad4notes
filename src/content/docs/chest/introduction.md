@@ -16,11 +16,15 @@ description: Pulmonary and chest wall disorders
 ### Lung cancer
 
 - [Solitary Pulmonary Nodules](/chest/lung-cancer/solitary-nodules)
-- [Lung Cancer - Pathology](/chest/lung-cancer/lung-cancer-pathology)
-- [Lung Cancer - Staging](/chest/lung-cancer/lung-cancer-staging)
+- [Lung Cancer - Pathology](/chest/lung-cancer/lung-cancer)
 - [Other Neoplasms of Chest](/chest/lung-cancer/other-neoplasms)
 
 ### Mediastinal masses
 
 - [Mediastinal Masses](/chest/mediastinum/mediastinal-masses)
+
+### Miscellaneous topics
+
+- [Chest Wall and Pleural Pathology](/chest/miscellaneous/chest-wall-pleura)
+- [ICU Chest Radiograph](/chest/miscellaneous/icu-radiograph)
 
