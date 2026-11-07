@@ -78,6 +78,12 @@ export default defineConfig({
                     'chest/miscellaneous/chest-wall-pleura',
                     'chest/miscellaneous/icu-radiograph',
                   ]
+                },
+                {
+                  label: 'Pulmonary Vascular Disease',
+                  items: [
+                    'chest/pulmonary-vascular/pulmonary-embolism',
+                  ]
                 }
               ],
             },
@@ -85,6 +91,20 @@ export default defineConfig({
               collapsed: true,
               items: [
                 'cardiovascular/introduction',
+                {
+                  label: 'Imaging Modalities',
+                  items: [
+                    'cardiovascular/imaging-modalities/cardiac-mri',
+                    'cardiovascular/imaging-modalities/cardiac-ct',
+                    'cardiovascular/imaging-modalities/nuclear-cardiology',
+                  ]
+                },
+                {
+                  label: 'Congenital Heart Disease',
+                  items: [
+                    'cardiovascular/congenital-heart/chest-x-ray-chd',
+                  ]
+                },                                
               ],  
             },
             { label: 'Gastrointestinal',

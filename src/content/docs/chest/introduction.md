@@ -28,3 +28,8 @@ description: Pulmonary and chest wall disorders
 - [Chest Wall and Pleural Pathology](/chest/miscellaneous/chest-wall-pleura)
 - [ICU Chest Radiograph](/chest/miscellaneous/icu-radiograph)
 
+### Pulmonary vascular disease
+
+- [Pulmonary Embolism](/chest/pulmonary-vascular/pulmonary-embolism)
+- [Pulmonary Hypertension]
+

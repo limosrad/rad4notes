@@ -45,8 +45,9 @@ Many different protocols are used for different purposes.
 - Thin reconstruction is done with 0.75-1.5 mm slices (depending on scanner capability).
 - Technical adequacy checked with ROI in MPA
     - The mean HU should be above 250 HU.
-    - If inadequate, DECT offers improvement in vessel contrast at the cost of SNR.
-    - DECT reconstruction if available can be used for assessing lung perfusion.
+- DECT:
+    - CT lung perfusion based on low- and high-kV images can provide information about perfusion deficits
+    - Low kV images: ↑ contrast resolution aiding detection of filling defects
 - Optimal viewing window is a wide angiopgraphy window (e.g., W = 600, C = 100).
 
 ### Pitfalls

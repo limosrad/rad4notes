@@ -17,6 +17,7 @@ description: List of abbreviations used in this text.
 | CTBA | CT bronchial angiography |
 | CTPA | CT pulmonary angiography |
 | DAH | Diffuse alveolar haemorrhage |
+| DECT | Dual energy CT |
 | DIP | Desquamative interstitial pneumonia |
 | DIPNECH | Diffuse idiopathic pulmonary neuroendocrine-cell hyperplasia |
 | GGO | ground glass opacity |
@@ -43,4 +44,5 @@ description: List of abbreviations used in this text.
 | TB | Tuberculosis |
 | UIP | Usual interstitial pneumonia |
 | ULDCT | Ultra low dose CT |
+| VQ | Ventilation perfusion |
 | VTE | Venous thromboembolism |
