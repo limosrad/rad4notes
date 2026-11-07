@@ -45,6 +45,15 @@ Radiology Resident's Rapid Review and Revision Notes.
   <span class="home-card-link">Explore Gastrointestinal <span aria-hidden="true">→</span></span>
 </a>
 
+<a class="home-card" href="/genitourinary/introduction-genitourinary">
+  <span class="home-card-number">04</span>
+  <span class="home-card-title">Genitourinary</span>
+  <span class="home-card-description">
+    Retroperitoneal and male reproductive imaging and interventions.
+  </span>
+  <span class="home-card-link">Explore Genitourinary <span aria-hidden="true">→</span></span>
+</a>
+
 </div>
 
 ## About This Notebook

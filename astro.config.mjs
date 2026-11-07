@@ -15,6 +15,16 @@ export default defineConfig({
       title: 'Rad4Notes',
       customCss: ['./src/styles/custom.css'],
 
+      head: [
+        {
+          tag: 'script',
+          attrs: {
+            src: '/external-links.js',
+            defer: true,
+          },
+        },
+      ],
+
       sidebar: [
         {
           label: 'My Notebook',
@@ -66,6 +76,13 @@ export default defineConfig({
                 'gastrointestinal/introduction',
               ],
             },
+            { label: 'Genitourinary',
+              items: [
+                'genitourinary/introduction-genitourinary',
+                'genitourinary/adrenal/neuroblastoma',
+              ],
+            },
+
           ],
         },
       ],
