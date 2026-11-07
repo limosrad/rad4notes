@@ -1,9 +1,9 @@
 ---
-title: Introduction to Genitourinary Imaging
+title: List of Topics
 description: Adrenal, renal, urinary system and male reproductive systems.
 ---
 
-## List of Topics
+
 
 ### Adrenal gland
 

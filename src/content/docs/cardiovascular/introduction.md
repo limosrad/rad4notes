@@ -1,13 +1,10 @@
 ---
-title: Introduction
+title: List of Topics
 description: Cardiovascular medicine and related topics
 ---
 
-# Cardiovascular
 
-Welcome to the cardiovascular section of the knowledge base.
-
-## Topics
+## Congenital Heart Disease
 
 - Shock
 - Hemodynamics

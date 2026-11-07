@@ -27,11 +27,20 @@ export default defineConfig({
 
       sidebar: [
         {
-          label: 'My Notebook',
-          items: [
-            { label: 'Home', link: '/' },
+          label: 'Contents',
 
-            { label: 'Chest', 
+          items: [
+
+            { label: 'Front Matter',
+              collapsed: true,
+              items: [
+                'front-matter/abbreviations',
+                'index',
+              ],
+            },
+
+            { label: 'Chest',
+              collapsed: true, 
               items: [
                 'chest/introduction',
                 {
@@ -67,19 +76,28 @@ export default defineConfig({
               ],
             },
             { label: 'Cardiovascular',
+              collapsed: true,
               items: [
                 'cardiovascular/introduction',
               ],  
             },
             { label: 'Gastrointestinal',
+              collapsed: true,
               items: [
                 'gastrointestinal/introduction',
               ],
             },
             { label: 'Genitourinary',
+              collapsed: true,
               items: [
                 'genitourinary/introduction-genitourinary',
-                'genitourinary/adrenal/neuroblastoma',
+                {
+                  label: 'Adrenal',
+                  items: [
+                    'genitourinary/adrenal/neuroblastoma',
+                  ]
+                },
+                
               ],
             },
 

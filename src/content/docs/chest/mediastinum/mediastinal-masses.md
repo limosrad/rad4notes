@@ -86,11 +86,6 @@ High attenuation (NCCT) &plusmn; avidly enhancing (CECT) nodes:
 | Ganglioneuroblastoma | Neurofibroma |
 | Ganglioneuroma | Malignant peripheral nerve sheath tumours |
 
-- Ganglionic origin tumours are derived from neural crest cells.
-    - Neuroblastomas are the most malignant and usually arise in ages &lt; 5.
-    - Ganglioneuromas are benign and usually arise in ages &gt; 10.
-    - Ganglioneuroblastomas are intermediate between the two.
-
 ### Paediatric mediastinal masses
 
 :::trivia

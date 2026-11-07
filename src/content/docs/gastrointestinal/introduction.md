@@ -1,13 +1,10 @@
 ---
-title: Introduction
-description: Cardiovascular medicine and related topics
+title: List of Topics
+description: Gastrointestinal and peritoneal imaging and interventions
 ---
 
-# Cardiovascular
 
-Welcome to the cardiovascular section of the knowledge base.
-
-## Topics
+## Oesophagus
 
 - Shock
 - Hemodynamics
