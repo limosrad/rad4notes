@@ -17,7 +17,10 @@ description: Gastrointestinal and peritoneal imaging and interventions
 - [Paediatric Upper GI Disorders](/gastrointestinal/stomach-duodenum/paediatric-duodenum)
 
 ## Small Intestine
+
 - [Small Bowel Followthrough](/gastrointestinal/small-bowel/small-bowel-followthrough)
+- [Inflammatory Bowel Disease](/gastrointestinal/small-bowel/inflammatory-bowel-disease)
+
 ## Colorectal and Appendix
 
 ## Mesentery, Peritoneum and Omentum

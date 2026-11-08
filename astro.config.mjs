@@ -154,6 +154,7 @@ export default defineConfig({
                   label: 'Small Bowel',
                   items: [
                     'gastrointestinal/small-bowel/small-bowel-followthrough',
+                    'gastrointestinal/small-bowel/inflammatory-bowel-disease',
                   ]
                 },
                 {
