@@ -12,6 +12,7 @@ description: Cardiovascular medicine and related topics
 ## Congenital Heart Disease
 
 - [Chest Radiograph in Congenital Heart Disease](/cardiovascular/congenital-heart/chest-x-ray-chd)
+- [Congenital Disease of the Aorta](/cardiovascular/congenital-heart-disease/aorta-congenital)
 
 ## Acquired Heart Disease
 

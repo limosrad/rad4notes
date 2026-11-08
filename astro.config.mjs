@@ -103,6 +103,7 @@ export default defineConfig({
                   label: 'Congenital Heart Disease',
                   items: [
                     'cardiovascular/congenital-heart/chest-x-ray-chd',
+                    'cardiovascular/congenital-heart/aorta-congenital',
                   ]
                 },
                 {
