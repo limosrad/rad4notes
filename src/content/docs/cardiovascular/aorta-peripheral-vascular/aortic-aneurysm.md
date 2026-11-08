@@ -53,6 +53,18 @@ description: Diagnosis and interventions in aortic aneurysms
     - Extension of aneurysm into CIA and EIA
         - May need limb extensions
 
+### Differentials
+
+:::differentials
+Aortic aneurysms may also be caused by infections and inflammation.
+
+| Syphilitic | Mycotic | Atherosclerotic | Inflammatory |
+| --- | --- | --- | --- |
+| Saccular | Saccular | Fusiform | Fusiform |
+| Ascending and arch | Ascending | Any | Any |
+| thin, dystrophic wall calcification | interrupted calcification, para-aortic gas collection and adjacent reactive enlarged LN	| cresenteric mural thrombus; ectasia of the remainder of the aorta with heavy atherosclerosis | mural thickening and extensive surrounding fibrosis |
+:::
+
 ## Management
 
 - Abdominal aortic aneurysm:

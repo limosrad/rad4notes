@@ -126,6 +126,39 @@ export default defineConfig({
               collapsed: true,
               items: [
                 'gastrointestinal/introduction',
+                {
+                  label: 'Imaging Modalities',
+                  items: [
+                    //'gastrointestinal/imaging-techniques/abdominal-x-ray',
+                    //'gastrointestinal/imaging-techniques/abdominal-ct',
+                  ]   
+                },
+                {
+                  label: 'Oesophagus',
+                  items: [
+                    'gastrointestinal/oesophagus/barium-oesophagogram',
+                    'gastrointestinal/oesophagus/oesophageal-carcinoma',
+                  ]
+                },
+                {
+                  label: 'Stomach',
+                  items: [
+                    'gastrointestinal/stomach/stomach-benign',
+                    //'gastrointestinal/stomach/stomach-cancer',
+                  ]
+                },
+                {
+                  label: 'Small Bowel',
+                  items: [
+                    //'gastrointestinal/small-bowel/bowel-wall-thickening',
+                  ]
+                },
+                {
+                  label: 'Colorectal and Appendix',
+                  items: [
+                    //'gastrointestinal/colorectal/colorectal-cancer',
+                  ]
+                },
               ],
             },
             { label: 'Genitourinary',

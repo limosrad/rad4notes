@@ -26,6 +26,7 @@ description: List of abbreviations used in this text.
 | DSA | Digital subtraction angiography |
 | FFR | Fractional flow reserve |
 | GDMT | Guideline directed medical therapy |
+| GERD | Gastro-oesophageal reflux disease |
 | GGO | ground glass opacity |
 | HL | Hodgkin lymphoma |
 | HP | Hypersensitivity pneumonitis |
@@ -56,6 +57,7 @@ description: List of abbreviations used in this text.
 | STEMI | ST elevated myocardial infarction |
 | TB | Tuberculosis |
 | TROCT | Triple rule out CT |
+| UGIE | Upper gastrointestinal endoscopy |
 | UIP | Usual interstitial pneumonia |
 | ULDCT | Ultra low dose CT |
 | VQ | Ventilation perfusion |
