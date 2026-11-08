@@ -12,12 +12,12 @@ description: Gastrointestinal and peritoneal imaging and interventions
 
 ## Stomach
 
-- [Banign Gastric Pathology](/gastrointestinal/stomach/stomach-benign)
-
-## Duodenum
+- [Benign Gastric Pathology](/gastrointestinal/stomach-duodenum/stomach-benign)
+- [Gastric Neoplasms](/gastrointestinal/stomach-duodenum/stomach-neoplasms)
+- [Paediatric Upper GI Disorders](/gastrointestinal/stomach-duodenum/paediatric-duodenum)
 
 ## Small Intestine
-
+- [Small Bowel Followthrough](/gastrointestinal/small-bowel/small-bowel-followthrough)
 ## Colorectal and Appendix
 
 ## Mesentery, Peritoneum and Omentum

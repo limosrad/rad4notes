@@ -28,8 +28,10 @@ description: List of abbreviations used in this text.
 | GDMT | Guideline directed medical therapy |
 | GERD | Gastro-oesophageal reflux disease |
 | GGO | ground glass opacity |
+| GIST | Gastrointestinal stromal tumour |
 | HL | Hodgkin lymphoma |
 | HP | Hypersensitivity pneumonitis |
+| HPE | Histopathologic examination |
 | HRCT | High resolution CT |
 | LAD | Left anterior descending coronary artery |
 | LCX | Left circumflex coronary artery |

@@ -34,8 +34,9 @@ export default defineConfig({
             { label: 'Front Matter',
               collapsed: true,
               items: [
-                'front-matter/abbreviations',
                 'index',
+                'front-matter/abbreviations',
+                'front-matter/multi-system',
               ],
             },
 
@@ -142,16 +143,17 @@ export default defineConfig({
                   ]
                 },
                 {
-                  label: 'Stomach',
+                  label: 'Stomach and Duodenum',
                   items: [
-                    'gastrointestinal/stomach/stomach-benign',
-                    //'gastrointestinal/stomach/stomach-cancer',
+                    'gastrointestinal/stomach-duodenum/stomach-benign',
+                    'gastrointestinal/stomach-duodenum/stomach-neoplasms',
+                    'gastrointestinal/stomach-duodenum/paediatric-duodenum',
                   ]
                 },
                 {
                   label: 'Small Bowel',
                   items: [
-                    //'gastrointestinal/small-bowel/bowel-wall-thickening',
+                    'gastrointestinal/small-bowel/small-bowel-followthrough',
                   ]
                 },
                 {

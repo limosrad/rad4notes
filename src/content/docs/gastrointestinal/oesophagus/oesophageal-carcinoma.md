@@ -35,7 +35,7 @@ description: Carcinoma of the oesophagus - pathology, imaging, staging and diffe
 
 ## Oesophageal cancer staging
 
-### Imaging modalities for oesophageal cancer
+### Imaging modalities for staging oesophageal cancer
 :::trivia
 - Choice of imaging for T staging: Endoscopic ultrasound
 - Choice of imaging for N and M staging: PET/CT
