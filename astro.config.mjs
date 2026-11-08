@@ -160,9 +160,24 @@ export default defineConfig({
                 {
                   label: 'Colorectal and Appendix',
                   items: [
-                    //'gastrointestinal/colorectal/colorectal-cancer',
+                    'gastrointestinal/colorectal/colorectal-benign',
+                    'gastrointestinal/colorectal/colorectal-malignant',
                   ]
                 },
+              ],
+            },
+            { label: 'Hepatopancreatobiliary',
+              collapsed: true,
+              items: [
+                'hepatopancreatobiliary/hpb-introduction',
+                {
+                  label: 'Liver',
+                  items: [
+                    'hepatopancreatobiliary/liver/focal-liver-general',
+                    'hepatopancreatobiliary/liver/focal-liver-hcc',
+                  ]
+                },
+                
               ],
             },
             { label: 'Genitourinary',

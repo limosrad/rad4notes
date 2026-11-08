@@ -23,4 +23,7 @@ description: Gastrointestinal and peritoneal imaging and interventions
 
 ## Colorectal and Appendix
 
+- [Benign Colorectal and Appendiceal Pathology](/gastrointestinal/colorectal/colorectal-benign)
+- [Malignant Colorectal and Appendiceal Pathology](/gastrointestinal/colorectal/colorectal-malignant)
+
 ## Mesentery, Peritoneum and Omentum
