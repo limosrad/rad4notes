@@ -9,7 +9,7 @@ description: Radiology Resident's Rapid Review and Revision Notes.
 <p class="home-eyebrow">RAD4NOTES</p>
 
 <p class="home-lead">
-Radiology Resident's Rapid Review and Revision Notes.
+  The Radiology Resident's Rapid Review and Revision Notes.
 </p>
 
 </div>
@@ -45,8 +45,26 @@ Radiology Resident's Rapid Review and Revision Notes.
   <span class="home-card-link">Explore Gastrointestinal <span aria-hidden="true">→</span></span>
 </a>
 
-<a class="home-card" href="/genitourinary/introduction-genitourinary">
+<a class="home-card" href="/hepatopancreatobiliary/hbp-introduction">
   <span class="home-card-number">04</span>
+  <span class="home-card-title">Hepatopancreatobiliary</span>
+  <span class="home-card-description">
+    Liver, biliary, pancreas and spleen imaging and interventions.
+  </span>
+  <span class="home-card-link">Explore Hepatopancreatobiliary <span aria-hidden="true">→</span></span>
+</a>
+
+<a class="home-card" href="/genitourinary/introduction-genitourinary">
+  <span class="home-card-number">05</span>
+  <span class="home-card-title">Genitourinary</span>
+  <span class="home-card-description">
+    Retroperitoneal and male reproductive imaging and interventions.
+  </span>
+  <span class="home-card-link">Explore Genitourinary <span aria-hidden="true">→</span></span>
+</a>
+
+<a class="home-card" href="/genitourinary/introduction-genitourinary">
+  <span class="home-card-number">05</span>
   <span class="home-card-title">Genitourinary</span>
   <span class="home-card-description">
     Retroperitoneal and male reproductive imaging and interventions.
@@ -58,15 +76,7 @@ Radiology Resident's Rapid Review and Revision Notes.
 
 ## About This Notebook
 
-Rad4Notes is designed as a growing personal reference for radiology.
-
-Its content is organized to support:
-
-- **Systematic learning:** Topics arranged by anatomical region and subject.
-- **Imaging interpretation:** Structured notes on imaging appearances and findings.
-- **Clinical correlation:** Connecting radiological findings with relevant clinical information.
-- **Continuous revision:** A searchable and expandable collection of knowledge.
+Rad4Notes is designed as a growing personal MCQ and theory exam reference for radiology.
+- Use the options in navigation to select high yield revision topics and MCQs.
 
 ---
-
-*Explore, learn and build your radiology knowledge one topic at a time.*

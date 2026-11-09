@@ -212,6 +212,8 @@ export default defineConfig({
                 {
                   label: 'Adrenal',
                   items: [
+                    'genitourinary/adrenal/adrenal-general',
+                    'genitourinary/adrenal/adrenal-neoplasms',
                     'genitourinary/adrenal/neuroblastoma',
                   ]
                 },

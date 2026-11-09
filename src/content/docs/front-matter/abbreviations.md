@@ -45,9 +45,11 @@ description: List of abbreviations used in this text.
 | LDCT | Low dose CT |
 | LGE | Late gadolinium enhancement |
 | MAC | *Mycobacterium avium* complex |
+| MEN | Multiple endocrine neoplasia |
 | MPA | Main pulmonary artery |
 | MPI | Myocardial perfusion imaging |
 | NCCT | Non-contrast CT |
+| NF | Neurofibromatosis |
 | NHL | Non-Hodgkin lymphoma |
 | NSCLC | Non-small cell lung cancer |
 | NSGCT | Non-seminomatous germ cell tumour |
@@ -71,5 +73,6 @@ description: List of abbreviations used in this text.
 | UGIE | Upper gastrointestinal endoscopy |
 | UIP | Usual interstitial pneumonia |
 | ULDCT | Ultra low dose CT |
+| VHL | Von Hippel Lindau syndrome |
 | VQ | Ventilation perfusion |
 | VTE | Venous thromboembolism |

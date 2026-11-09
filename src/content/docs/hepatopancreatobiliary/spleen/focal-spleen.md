@@ -2,17 +2,22 @@
 title: Focal Splenic Lesions
 description: Imaging of focal splenic lesions
 ---
-Spleen trauma scoring:
 
-| Grade | Haematoma | Laceration depth | Vascular* |
-| --- | --- | --- | --- |
-| I | SC < 10% | < 1 cm | - |
-| II | SC 10-50%, IP < 5 cm | 1-3 cm | - |
-| III | SC > 50%/ruptured, IP ≥ 10 cm | > 3 cm | - |
-| IV | - | >25% devascularisation | Any within parenchyma |
-| V | - | shattered | Into peritoneum |
+## Lymphoma
 
-\* = active bleed, pseudoaneurysm, fistula
+### Lugano staging for lymphoma
+- I.	Single nodal group
+- II.	≥ 1 nodal group on same side of diaphragm
+    - II bulky: single >10 cm [FL: >6 cm] or > 1/3 transthoracic diameter mass
+- III.	On both sides of diaphragm
+- IV.	Extensive extranodal disease
+
+- ‘E’: used for contiguous extranodal disease in stage I and II, when it can be covered by the radiation field for that group. 
+- If cannot be covered or stage III → stage IV
+- Any extension into liver → stage IV
+- Spleen, thymus, or Waldeyer's ring are considered as nodal sites
+- ‘B’ symptoms modify Rx of HL only, hence not used for NHLs
+
 
 ## Further reading
-1. [Pancreatic Cystic Lesions and Malignancy: Assessment, Guidelines, and the Field Defect in Radiographics (2022)](https://doi.org/10.1148/rg.210056)
+1. 
