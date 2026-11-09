@@ -1,10 +1,38 @@
+/*
+ * Rad4Notes — Custom Stylesheet
+ * ----------------------------------------
+ * Contents
+ *  1.  Global layout and design tokens
+ *  2.  Tables
+ *  3.  Testable points (Starlight tips)
+ *  4.  Learning blocks
+ *  5.  Learning modes
+ *  6.  Custom revision mode
+ *  7.  Blockquotes
+ *  8.  Images
+ *  9.  Sidebar navigation styling
+ * 10.  Code blocks
+ * 11.  Horizontal separators
+ * 12.  Responsive adjustments
+ * 13.  Homepage
+ * 14.  Interactive MCQs
+ * 15.  Collapsible sidebars and layout
+ * 16.  SVG image width override
+ *
+ * Maintenance notes
+ * - Keep related styles together under their section headings.
+ * - The final sections contain intentional layout overrides.
+ * - Sidebar layout selectors target Starlight's generated markup.
+ * - Test desktop and mobile layouts, and both colour themes,
+ *   after changing layout-related rules.
+ */
 
 /* ========================================
-   Rad4Notes — Global Design System
+   1. Global layout and design tokens
    ======================================== */
 
 /* ----------------------------------------
-   1. Global layout
+   Core CSS variables
    ---------------------------------------- */
 
 :root {
@@ -17,7 +45,7 @@
 }
 
 /* ----------------------------------------
-   2. Light theme
+   Light theme
    ---------------------------------------- */
 
 :root[data-theme='light'] {
@@ -34,7 +62,7 @@
 }
 
 /* ----------------------------------------
-   3. Dark theme
+   Dark theme
    ---------------------------------------- */
 
 :root[data-theme='dark'] {
@@ -51,7 +79,7 @@
 }
 
 /* ----------------------------------------
-   4. Main reading area
+   Main reading area
    ---------------------------------------- */
 
 .sl-markdown-content {
@@ -65,7 +93,7 @@
 }
 
 /* ----------------------------------------
-   5. Typography and headings
+   Typography and headings
    ---------------------------------------- */
 
 .sl-markdown-content h1 {
@@ -100,7 +128,7 @@
 }
 
 /* ----------------------------------------
-   6. Links
+   Links
    ---------------------------------------- */
 
 .sl-markdown-content a {
@@ -116,7 +144,7 @@
 }
 
 /* ----------------------------------------
-   7. Lists
+   Lists
    ---------------------------------------- */
 
 .sl-markdown-content li {
@@ -128,12 +156,11 @@
 }
 
 /* ----------------------------------------
-   8. Tables and Tips
+   Tables
    ---------------------------------------- */
 
-
 /* ========================================
-   Rad4Notes — Tables
+   2. Tables
    ======================================== */
 
 .sl-markdown-content table {
@@ -173,10 +200,8 @@
   background: var(--sl-color-accent-low);
 }
 
-
-
 /* ========================================
-   Rad4Notes — Testable Points
+   3. Testable points (Starlight tips)
    ======================================== */
 
 .starlight-aside--tip {
@@ -206,9 +231,8 @@
   margin-block: 0.4rem;
 }
 
-
 /* ========================================
-   Rad4Notes — Learning Blocks
+   4. Learning blocks
    ======================================== */
 
 .rad-learning-block {
@@ -271,10 +295,8 @@
   font-weight: 700;
 }
 
-
-
 /* ========================================
-   Rad4Notes — Global Learning Modes
+   5. Learning modes
    ======================================== */
 
 html[data-learning-mode="trivia"]
@@ -319,7 +341,6 @@ html[data-learning-mode="mcq"] .right-sidebar {
   font-size: 1rem;
 }
 
-
 /* Automatically label learning blocks */
 
 .rad-learning-block--trivia::before {
@@ -343,9 +364,8 @@ html[data-learning-mode="mcq"] .right-sidebar {
   color: var(--sl-color-text-accent);
 }
 
-
 /* ========================================
-   Rad4Notes — Custom Revision
+   6. Custom revision mode
    ======================================== */
 
 /* Hide all regular article content */
@@ -378,9 +398,8 @@ html[data-learning-mode="custom"] .right-sidebar {
   display: none !important;
 }
 
-
 /* ----------------------------------------
-   9. Blockquotes
+   Blockquotes
    ---------------------------------------- */
 
 .sl-markdown-content blockquote {
@@ -392,7 +411,7 @@ html[data-learning-mode="custom"] .right-sidebar {
 }
 
 /* ----------------------------------------
-   10. Images
+   Images
    ---------------------------------------- */
 
 .sl-markdown-content img {
@@ -402,7 +421,7 @@ html[data-learning-mode="custom"] .right-sidebar {
 }
 
 /* ----------------------------------------
-   11. Sidebar
+   Sidebar navigation styling
    ---------------------------------------- */
 
 .sidebar-content {
@@ -427,7 +446,7 @@ html[data-learning-mode="custom"] .right-sidebar {
 }
 
 /* ----------------------------------------
-   12. Code blocks
+   Code blocks
    ---------------------------------------- */
 
 .sl-markdown-content pre {
@@ -441,7 +460,7 @@ html[data-learning-mode="custom"] .right-sidebar {
 }
 
 /* ----------------------------------------
-   13. Horizontal separators
+   Horizontal separators
    ---------------------------------------- */
 
 .sl-markdown-content hr {
@@ -450,7 +469,7 @@ html[data-learning-mode="custom"] .right-sidebar {
 }
 
 /* ----------------------------------------
-   14. Responsive adjustments
+   Responsive adjustments
    ---------------------------------------- */
 
 @media (max-width: 50rem) {
@@ -472,9 +491,8 @@ html[data-learning-mode="custom"] .right-sidebar {
   }
 }
 
-
 /* ========================================
-   Rad4Notes — Homepage Design
+   13. Homepage
    ======================================== */
 
 /* Introduction */
@@ -617,9 +635,8 @@ html[data-learning-mode="custom"] .right-sidebar {
   }
 }
 
-
 /* ========================================
-   Rad4Notes — Interactive MCQs
+   14. Interactive MCQs
    ======================================== */
 
 .rad-mcq-options {
@@ -712,4 +729,174 @@ html[data-learning-mode="custom"] .right-sidebar {
 
 .rad-mcq-explanation[hidden] {
   display: none !important;
+}
+
+/* ========================================
+   15. Collapsible sidebars and layout
+   ======================================== */
+
+/* 15.1 Header toggle buttons */
+
+.rad-sidebar-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.2rem;
+  height: 2.2rem;
+  padding: 0;
+
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.4rem;
+
+  background: var(--sl-color-bg);
+  color: var(--sl-color-text);
+
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.rad-sidebar-toggle:hover {
+  background: var(--sl-color-accent-low);
+  border-color: var(--sl-color-accent);
+}
+
+.rad-sidebar-toggle[aria-pressed="false"] {
+  color: var(--sl-color-gray-3);
+  background: var(--sl-color-bg-sidebar);
+}
+
+/* Keep left toggle beside the site title
+   across all desktop-width layouts. */
+
+@media (min-width: 50rem) {
+
+  #rad-toggle-left {
+    position: fixed;
+    top: 0.9rem;
+    left: 12rem;
+    z-index: 1000;
+  }
+}
+
+/* 15.2 Desktop layout behaviour */
+
+@media (min-width: 72rem) {
+
+  /* Left sidebar: hide it and release its layout space */
+
+  html[data-rad-left-sidebar-hidden="true"] .sidebar-pane {
+    display: none !important;
+  }
+
+  html[data-rad-left-sidebar-hidden="true"] .main-frame {
+    padding-inline-start: 0 !important;
+  }
+
+  /* Right sidebar: hide it when requested */
+
+  html[data-rad-right-sidebar-hidden="true"]
+  .right-sidebar-container {
+    display: none !important;
+  }
+
+  /* Reading pane: expand when either sidebar is hidden */
+
+  html:is(
+    [data-rad-left-sidebar-hidden="true"],
+    [data-rad-right-sidebar-hidden="true"]
+  ) .main-frame .main-pane {
+
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+
+    flex: 1 1 0% !important;
+
+    --sl-content-margin-inline: auto;
+  }
+
+  /* Remove Starlight's normal content-width restriction */
+
+  html:is(
+    [data-rad-left-sidebar-hidden="true"],
+    [data-rad-right-sidebar-hidden="true"]
+  ) .main-pane .sl-container {
+
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  /* Prevent the expanded reading content from overflowing */
+
+  html:is(
+    [data-rad-left-sidebar-hidden="true"],
+    [data-rad-right-sidebar-hidden="true"]
+  ) .sl-markdown-content {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  /* Keep the right sidebar at its original width when only the left is hidden. */
+  html[data-rad-left-sidebar-hidden="true"]:not([data-rad-right-sidebar-hidden="true"])
+  .right-sidebar-container {
+  
+      width: var(--sl-sidebar-width) !important;
+      min-width: var(--sl-sidebar-width) !important;
+      max-width: var(--sl-sidebar-width) !important;
+
+    flex: 0 0 auto !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+/* ----------------------------------------
+   15.3 Responsive sidebar toggle buttons
+   ---------------------------------------- */
+
+/* Intermediate screens:
+   Show left toggle, hide right toggle.
+   Starlight does not display the desktop TOC here. */
+
+@media (min-width: 50rem) and (max-width: 71.999rem) {
+
+  #rad-toggle-left {
+    display: inline-flex;
+  }
+
+  #rad-toggle-right {
+    display: none;
+  }
+}
+
+/* Mobile screens:
+   Use Starlight's native navigation. */
+
+@media (max-width: 49.999rem) {
+
+  .rad-sidebar-toggle {
+    display: none;
+  }
+}
+
+/* ========================================
+   16. SVG image width override
+   ======================================== */
+
+/* Limit SVG diagrams so they do not grow with the expanded reading pane. */
+@media (min-width: 72rem) {
+
+  .sl-markdown-content img[src$=".svg" i] {
+    max-width: min(
+      100%,
+      calc(100vw - 2 * var(--sl-sidebar-width))
+    );
+    height: auto;
+  }
+
 }

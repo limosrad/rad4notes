@@ -4,6 +4,29 @@ import DefaultThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro'
 ---
 
 <div class="rad-header-controls">
+
+  <button
+    type="button"
+    class="rad-sidebar-toggle"
+    id="rad-toggle-left"
+    aria-label="Hide contents sidebar"
+    aria-pressed="true"
+    title="Toggle contents sidebar"
+  >
+    ☰
+  </button>
+
+  <button
+    type="button"
+    class="rad-sidebar-toggle"
+    id="rad-toggle-right"
+    aria-label="Hide page navigation"
+    aria-pressed="true"
+    title="Toggle page navigation"
+  >
+    ☷
+  </button>
+
   <select id="rad-learning-mode" aria-label="Learning mode">
     <option value="reference">Complete Reference</option>
     <option value="trivia">Trivia</option>
@@ -322,12 +345,104 @@ function enhanceMcqs() {
     });
   }
 
-  initializeLearningMode();
+// ========================================
+// Rad4Notes — Collapsible Sidebars
+// ========================================
 
-  document.addEventListener(
-    'astro:page-load',
-    initializeLearningMode
-  );
+const SIDEBAR_STORAGE_KEY = 'rad4notes-sidebar-preferences';
+
+function initializeSidebarToggles() {
+  const leftButton = document.querySelector('#rad-toggle-left');
+  const rightButton = document.querySelector('#rad-toggle-right');
+
+  if (!leftButton || !rightButton) return;
+
+  let preferences = {
+    left: true,
+    right: true
+  };
+
+  try {
+    const saved = JSON.parse(
+      localStorage.getItem(SIDEBAR_STORAGE_KEY)
+    );
+
+    if (saved && typeof saved === 'object') {
+      preferences.left = saved.left !== false;
+      preferences.right = saved.right !== false;
+    }
+  } catch {
+    // Use default: both sidebars visible.
+  }
+
+  function applySidebarPreferences() {
+    const root = document.documentElement;
+
+    root.dataset.radLeftSidebarHidden =
+      String(!preferences.left);
+
+    root.dataset.radRightSidebarHidden =
+      String(!preferences.right);
+
+    leftButton.setAttribute(
+      'aria-pressed',
+      String(preferences.left)
+    );
+
+    rightButton.setAttribute(
+      'aria-pressed',
+      String(preferences.right)
+    );
+
+    leftButton.setAttribute(
+      'aria-label',
+      preferences.left
+        ? 'Hide contents sidebar'
+        : 'Show contents sidebar'
+    );
+
+    rightButton.setAttribute(
+      'aria-label',
+      preferences.right
+        ? 'Hide page navigation'
+        : 'Show page navigation'
+    );
+
+    localStorage.setItem(
+      SIDEBAR_STORAGE_KEY,
+      JSON.stringify(preferences)
+    );
+  }
+
+  if (leftButton.dataset.initialized !== 'true') {
+    leftButton.dataset.initialized = 'true';
+
+    leftButton.addEventListener('click', () => {
+      preferences.left = !preferences.left;
+      applySidebarPreferences();
+    });
+  }
+
+  if (rightButton.dataset.initialized !== 'true') {
+    rightButton.dataset.initialized = 'true';
+
+    rightButton.addEventListener('click', () => {
+      preferences.right = !preferences.right;
+      applySidebarPreferences();
+    });
+  }
+
+  applySidebarPreferences();
+  }
+
+  initializeLearningMode();
+  initializeSidebarToggles();
+
+  document.addEventListener('astro:page-load', () => {
+    initializeLearningMode();
+    initializeSidebarToggles();
+  });
+    
 </script>
 
 <style>
