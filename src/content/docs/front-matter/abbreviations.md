@@ -63,6 +63,8 @@ description: List of abbreviations used in this text.
 | RCC | Renal cell carcinoma |
 | ROI | Region of interest |
 | SCLC | Small cell lung cancer |
+| SMA | Superior mesenteric artery |
+| SMV | Superior mesenteric vein |
 | STEMI | ST elevated myocardial infarction |
 | TB | Tuberculosis |
 | TROCT | Triple rule out CT |

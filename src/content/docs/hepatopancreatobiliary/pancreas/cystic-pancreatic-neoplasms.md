@@ -32,4 +32,4 @@ Kyoto guidelines for branch duct IPMNs:
 :::
 
 ## Further reading
-1. 
+1. [Pancreatic Cystic Lesions and Malignancy: Assessment, Guidelines, and the Field Defect in Radiographics (2022)](https://doi.org/10.1148/rg.210056)

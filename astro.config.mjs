@@ -193,8 +193,16 @@ export default defineConfig({
                   items: [
                     //'hepatopancreatobiliary/pancreas/pancreatitis',
                     'hepatopancreatobiliary/pancreas/cystic-pancreatic-neoplasms',
+                    'hepatopancreatobiliary/pancreas/solid-pancreatic-neoplasms',
                   ]
-                }         
+                },
+                {
+                  label: 'Spleen',
+                  items: [
+                    'hepatopancreatobiliary/spleen/focal-spleen',
+                    'hepatopancreatobiliary/spleen/general-spleen',
+                  ]
+                }
               ],
             },
             { label: 'Genitourinary',

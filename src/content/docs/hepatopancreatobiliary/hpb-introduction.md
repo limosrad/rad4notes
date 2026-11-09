@@ -20,4 +20,10 @@ description: Hepatobiliary, pancreatic and splenic imaging and interventions
 
 ## Pancreas
 
-- [Cystic Pancreatic Neoplasms](hepatopancreatobiliary/pancreas/cystic-pancreatic-neoplasms/)
+- [Cystic Pancreatic Neoplasms](/hepatopancreatobiliary/pancreas/cystic-pancreatic-neoplasms/)
+- [Solid Pancreatic Neoplasms](/hepatopancreatobiliary/pancreas/solid-pancreatic-neoplasms/)
+
+## Spleen
+
+- [Focal Splenic Lesions](/hepatopancreatobiliary/spleen/focal-spleen/)
+- [Other Pathologies of the Spleen](/hepatopancreatobiliary/spleen/general-spleen/)
