@@ -37,6 +37,7 @@ export default defineConfig({
                 'index',
                 'front-matter/abbreviations',
                 'front-matter/multi-system',
+                'front-matter/universal-references',
               ],
             },
 
@@ -173,11 +174,27 @@ export default defineConfig({
                 {
                   label: 'Liver',
                   items: [
+                    'hepatopancreatobiliary/liver/liver-doppler',
+                    'hepatopancreatobiliary/liver/diffuse-liver',
                     'hepatopancreatobiliary/liver/focal-liver-general',
                     'hepatopancreatobiliary/liver/focal-liver-hcc',
+                    'hepatopancreatobiliary/liver/liver-transplant',
                   ]
                 },
-                
+                {
+                  label: 'Biliary Tree',
+                  items: [
+                    'hepatopancreatobiliary/biliary/cholangiopathies',
+                    'hepatopancreatobiliary/biliary/gall-bladder',
+                  ]
+                },       
+                {
+                  label: 'Pancreas',
+                  items: [
+                    //'hepatopancreatobiliary/pancreas/pancreatitis',
+                    'hepatopancreatobiliary/pancreas/cystic-pancreatic-neoplasms',
+                  ]
+                }         
               ],
             },
             { label: 'Genitourinary',

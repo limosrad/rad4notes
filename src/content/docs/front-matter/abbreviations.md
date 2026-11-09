@@ -9,6 +9,7 @@ description: List of abbreviations used in this text.
 | --- | --- |
 | ACS | Acute coronary syndrome |
 | AIP | Acute interstitial pneumonia |
+| APHE | Arterial phase hyperenhancement |
 | ARDS | Acute respiratory distress syndrome |
 | BO | Bronchiolitis obliterans |
 | CAD | Coronary artery disease |
@@ -24,15 +25,21 @@ description: List of abbreviations used in this text.
 | DIP | Desquamative interstitial pneumonia |
 | DIPNECH | Diffuse idiopathic pulmonary neuroendocrine-cell hyperplasia |
 | DSA | Digital subtraction angiography |
+| EMH | Extramedullary haematopoesis |
 | FFR | Fractional flow reserve |
+| FNH | Focal nodular hyperplasia |
 | GDMT | Guideline directed medical therapy |
 | GERD | Gastro-oesophageal reflux disease |
 | GGO | ground glass opacity |
 | GIST | Gastrointestinal stromal tumour |
+| HCC | Hepatocellular carcinoma |
+| HEHE | Hepatic epithelial haemangioendothelioma |
 | HL | Hodgkin lymphoma |
 | HP | Hypersensitivity pneumonitis |
 | HPE | Histopathologic examination |
 | HRCT | High resolution CT |
+| HVOTO | Hepatic venous outflow tract obstruction |
+| IHBRD | Intrahepatic biliary radicle dilatation |
 | LAD | Left anterior descending coronary artery |
 | LCX | Left circumflex coronary artery |
 | LDCT | Low dose CT |
