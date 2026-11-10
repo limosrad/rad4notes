@@ -14,62 +14,44 @@ description: Radiology Resident's Rapid Review and Revision Notes.
 
 </div>
 
+
 ## Explore Systems
 
-<div class="home-card-grid">
+<div class="home-icon-grid">
 
-<a class="home-card" href="/chest/introduction/">
-  <span class="home-card-number">01</span>
-  <span class="home-card-title">Chest</span>
-  <span class="home-card-description">
-    Thoracic airway, parenchymal and vascular imaging and image-guided interventions.
-  </span>
-  <span class="home-card-link">Explore Chest <span aria-hidden="true">→</span></span>
+<a class="home-icon-card" href="/chest/introduction/">
+  <span class="home-icon" style="--icon: url('/icons/chest.svg')" aria-hidden="true"></span>
+  <span>Chest</span>
 </a>
 
-<a class="home-card" href="/cardiovascular/introduction/">
-  <span class="home-card-number">02</span>
-  <span class="home-card-title">Cardiovascular</span>
-  <span class="home-card-description">
-    Cardiac imaging, vascular imaging and interventions.
-  </span>
-  <span class="home-card-link">Explore Cardiovascular <span aria-hidden="true">→</span></span>
+<a class="home-icon-card" href="/cardiovascular/introduction/">
+  <span class="home-icon" style="--icon: url('/icons/cardiovascular.svg')" aria-hidden="true"></span>
+  <span>Cardiovascular</span>
 </a>
 
-<a class="home-card" href="/gastrointestinal/introduction/">
-  <span class="home-card-number">03</span>
-  <span class="home-card-title">Gastrointestinal</span>
-  <span class="home-card-description">
-    Gastrointestinal and peritoneal imaging and interventions.
-  </span>
-  <span class="home-card-link">Explore Gastrointestinal <span aria-hidden="true">→</span></span>
+<a class="home-icon-card" href="/gastrointestinal/introduction/">
+  <span class="home-icon" style="--icon: url('/icons/gastrointestinal.svg')" aria-hidden="true"></span>
+  <span>Gastrointestinal</span>
 </a>
 
-<a class="home-card" href="/hepatopancreatobiliary/hbp-introduction">
-  <span class="home-card-number">04</span>
-  <span class="home-card-title">Hepatopancreatobiliary</span>
-  <span class="home-card-description">
-    Liver, biliary, pancreas and spleen imaging and interventions.
-  </span>
-  <span class="home-card-link">Explore Hepatopancreatobiliary <span aria-hidden="true">→</span></span>
+<a class="home-icon-card" href="/hepatopancreatobiliary/hpb-introduction/">
+  <span class="home-icon" style="--icon: url('/icons/hepatobiliary.svg')" aria-hidden="true"></span>
+  <span>Hepatobiliary</span>
 </a>
 
-<a class="home-card" href="/genitourinary/introduction-genitourinary">
-  <span class="home-card-number">05</span>
-  <span class="home-card-title">Genitourinary</span>
-  <span class="home-card-description">
-    Retroperitoneal and male reproductive imaging and interventions.
-  </span>
-  <span class="home-card-link">Explore Genitourinary <span aria-hidden="true">→</span></span>
+<a class="home-icon-card" href="/genitourinary/introduction-genitourinary/">
+  <span class="home-icon" style="--icon: url('/icons/genitourinary.svg')" aria-hidden="true"></span>
+  <span>Genitourinary</span>
 </a>
 
-<a class="home-card" href="/genitourinary/introduction-genitourinary">
-  <span class="home-card-number">05</span>
-  <span class="home-card-title">Genitourinary</span>
-  <span class="home-card-description">
-    Retroperitoneal and male reproductive imaging and interventions.
-  </span>
-  <span class="home-card-link">Explore Genitourinary <span aria-hidden="true">→</span></span>
+<a class="home-icon-card" href="/obg-breast/obg-breast-list/">
+  <span class="home-icon" style="--icon: url('/icons/obg-breast.svg')" aria-hidden="true"></span>
+  <span>OBG &amp; Breast</span>
+</a>
+
+<a class="home-icon-card" href="/neuroradiology/neuro-introduction/">
+  <span class="home-icon" style="--icon: url('/icons/neuroradiology.svg')" aria-hidden="true"></span>
+  <span>Neuroradiology</span>
 </a>
 
 </div>

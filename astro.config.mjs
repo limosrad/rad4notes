@@ -281,11 +281,55 @@ export default defineConfig({
                     'obg-breast/breast/imaging-modalities',
                     'obg-breast/breast/breast-cancer',
                   ]
-                },
-                  
-                
+                },                
               ],
             },
+            {
+              label: 'Neuroradiology',
+              collapsed: true,
+              items: [
+                'neuroradiology/neuro-introduction',
+                {
+                  label: 'CNS Neoplasms',
+                  items: [
+                    'neuroradiology/cns-neoplasms/cns-neoplasm-ddx',
+                    'neuroradiology/cns-neoplasms/adult-supratentorial',
+                    'neuroradiology/cns-neoplasms/paediatric-supratentorial',
+                    'neuroradiology/cns-neoplasms/paediatric-infratentorial',
+                    'neuroradiology/cns-neoplasms/cerebellopontine-angle',
+                    'neuroradiology/cns-neoplasms/sellar-pineal',
+                    'neuroradiology/cns-neoplasms/syndromic-cns-neoplasms',
+                  ],
+                },
+                {
+                  label: 'Infection, Inflammation and Degeneration',
+                  items: [
+                    'neuroradiology/infection-inflammation-degeneration/cns-infections',
+                    'neuroradiology/infection-inflammation-degeneration/dementia',
+                    'neuroradiology/infection-inflammation-degeneration/multiple-sclerosis',
+                    'neuroradiology/infection-inflammation-degeneration/toxic-metabolic-encephalopathies',
+                  ],
+                },
+                {
+                  label: 'Neurovascular',
+                  items: [
+                    'neuroradiology/neurovascular/cns-haemorrhage',
+                    'neuroradiology/neurovascular/neuro-trauma',
+                    'neuroradiology/neurovascular/stroke',
+                  ],
+                },
+                {
+                  label: 'Spine',
+                  items: [
+                    'neuroradiology/spine/craniovertebral-junction',
+                    'neuroradiology/spine/spine-bone-tumours',
+                    'neuroradiology/spine/spine-cns-neoplasms',
+                    'neuroradiology/spine/spine-trauma',
+                  ],
+                },
+              ],
+            },
+            
           ],
         },
       ],

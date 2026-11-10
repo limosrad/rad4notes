@@ -1,0 +1,11 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64">
+  <path
+    d="M32 8
+       C22 8 17 17 17 27
+       C17 38 23 48 32 56
+       C41 48 47 38 47 27
+       C47 17 42 8 32 8Z"
+    fill="black"/>
+</svg>
