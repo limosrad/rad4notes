@@ -8,9 +8,11 @@ description: List of abbreviations used in this text.
 | Abbreviation | Expansion |
 | --- | --- |
 | ACS | Acute coronary syndrome |
+| ADPKD | Autosomal dominant polycystic kidney disease |
 | AIP | Acute interstitial pneumonia |
 | APHE | Arterial phase hyperenhancement |
 | ARDS | Acute respiratory distress syndrome |
+| ARPKD | Autosomal recessive polycystic kidney disease |
 | BO | Bronchiolitis obliterans |
 | CAD | Coronary artery disease |
 | CCTA | Coronary CT angiography |

@@ -210,14 +210,29 @@ export default defineConfig({
               items: [
                 'genitourinary/introduction-genitourinary',
                 {
-                  label: 'Adrenal',
+                  label: 'Adrenal gland',
                   items: [
                     'genitourinary/adrenal/adrenal-general',
                     'genitourinary/adrenal/adrenal-neoplasms',
                     'genitourinary/adrenal/neuroblastoma',
                   ]
                 },
-                
+                {
+                  label: 'Kidneys',
+                  items: [
+                    'genitourinary/renal/renal-benign',
+                    'genitourinary/renal/renal-neoplasms',
+                    'genitourinary/renal/renal-transplant',
+                  ]
+                },
+                {
+                  label: 'Retroperitoneum, Ureters, Urinary Bladder and Urethra',
+                  items: [
+                    'genitourinary/ureter-bladder/retroperitoneum',
+                    'genitourinary/ureter-bladder/bladder-malignant',
+                    'genitourinary/ureter-bladder/urethra',
+                  ]
+                }                
               ],
             },
 

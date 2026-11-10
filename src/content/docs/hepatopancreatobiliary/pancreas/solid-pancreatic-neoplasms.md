@@ -22,11 +22,11 @@ WHO 2017 classification of pancreatic neuroendocrine neoplasms (panNENs):
 
 | Type | Mitoses per 10 HPF | Ki-67 proliferation rate % |
 | --- | --- | --- |
-| panNET G1 | <2 | <=2 |
+| panNET G1 | <2 | &le;2 |
 | panNET G2 | <20 | 3-20 |
 | panNET G3 | >20 | >20 |
 | panNEC | >20 | >20 |
-| miNEN | Each tumour ≥ 30%, both components high grade |
+| miNEN | Each tumour ≥ 30%<br>both components high grade |
 
 ### Clinical presentations
 - Occur in middle aged adults with M = F
@@ -140,8 +140,8 @@ WHO 2017 classification of pancreatic neuroendocrine neoplasms (panNENs):
 | Pancreatic NET | Presentation | Location | Characteristics |
 | --- | --- | --- | --- |
 | Insulinoma (50%) | Hypoglycaemia<br>10% rule: MEN1, multiple, malignant | Not specific | Solitary and small< 2 cm<br>90% benign |
-| Gastrinoma (2nd mc) | Zollinger Ellison syndrome<br>1/3rd with MEN1 | Passaro’s triangle | Multiple, mean 3.5 cm<br>60% malignant |
-| Non-functioning (3rd mc) | Mass effect | Pancreatic head | > 5 cm<br>Nearly always malignant |
+| Gastrinoma (2nd most common) | Zollinger Ellison syndrome<br>1/3rd with MEN1 | Passaro’s triangle | Multiple, mean 3.5 cm<br>60% malignant |
+| Non-functioning (3rd most common) | Mass effect | Pancreatic head | > 5 cm<br>Nearly always malignant |
 | Glucagonoma | Diarrhoea, diabetes, necrolytic erythema migrans and glossitis | Pancreatic body and tail | 4-7 cm<br>60% malignant |
 | VIPoma | WDHA syndrome | Pancreatic body and tail (10% ectopic) | 5-10 cm<br>50% malignant |
 | Somatostatinoma | Hyperglycaemia, gallstones and steatorrhoea | Pancreatic head or duodenum | > 4 cm<br>&gt; 50% malignant |
