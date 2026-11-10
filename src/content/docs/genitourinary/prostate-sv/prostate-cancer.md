@@ -11,7 +11,8 @@ description: Imaging in prostate cancer
 
 **Indications for MRI**
 
-- In patients with PSA 3-20 ng/mL (preferred over population-adjusted risk calculators, and additional serum markers)
+- In patients with PSA 3-20 ng/mL
+    - preferred over population-adjusted risk calculators, and additional serum markers
 - Before prostate biopsy in patients with suspected organ-confined disease
 - Not indicated before biopsy in:
     - clear evidence of locally advanced disease on DRE

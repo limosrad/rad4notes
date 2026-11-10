@@ -226,11 +226,12 @@ export default defineConfig({
                   ]
                 },
                 {
-                  label: 'Retroperitoneum, Ureters, Urinary Bladder and Urethra',
+                  label: 'Retroperitoneum, Ureters, Urinary Bladder, Urethra and Penis',
                   items: [
                     'genitourinary/ureter-bladder/retroperitoneum',
                     'genitourinary/ureter-bladder/bladder-malignant',
                     'genitourinary/ureter-bladder/urethra',
+                    'genitourinary/ureter-bladder/penis',
                   ]
                 },
                 {
@@ -248,7 +249,43 @@ export default defineConfig({
                 }                
               ],
             },
-
+            {
+              label: 'Obstetric, Gynaecologic and Breast',
+              items: [
+                'obg-breast/obg-breast-list',
+                {
+                  label: 'Obstetric Imaging',
+                  items: [
+                    'obg-breast/obstetrics/first-trimester',
+                  ]
+                },
+                {
+                  label: 'Ovaries',
+                  items: [
+                    'obg-breast/ovaries/ovaries-benign',
+                    'obg-breast/ovaries/ovaries-malignant',
+                  ]
+                },
+                {
+                  label: 'Uterus, Cervix and Vagina',
+                  items: [
+                    'obg-breast/uterus-cervix/uterus-benign',
+                    'obg-breast/uterus-cervix/uterus-malignant',
+                    'obg-breast/uterus-cervix/cervix-benign',
+                    'obg-breast/uterus-cervix/cervix-malignant',
+                  ]
+                },
+                {
+                  label: 'Breast',
+                  items: [
+                    'obg-breast/breast/imaging-modalities',
+                    'obg-breast/breast/breast-cancer',
+                  ]
+                },
+                  
+                
+              ],
+            },
           ],
         },
       ],

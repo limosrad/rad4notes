@@ -15,11 +15,12 @@ description: Adrenal, renal, urinary system and male reproductive systems.
 - [Renal Neoplasms](/genitourinary/renal/renal-neoplasms/)
 - [Renal Transplant](/genitourinary/renal/renal-transplant/)
 
-## Retroperitoneum, Ureters, Urinary Bladder and Urethra
+## Retroperitoneum, Ureters, Urinary Bladder, Urethra and Penis
 
 - [Retroperitoneum](/genitourinary/ureter-bladder/retroperitoneum/)
 - [Urinary Bladder Malignancy](/genitourinary/ureter-bladder/bladder-malignant/)
 - [Urethra](/genitourinary/ureter-bladder/urethra/)
+- [Penis](/genitourinary/ureter-bladder/penis/)
 
 ## Testis
 
