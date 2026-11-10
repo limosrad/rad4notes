@@ -9,6 +9,7 @@ description: List of abbreviations used in this text.
 | --- | --- |
 | ACS | Acute coronary syndrome |
 | ADPKD | Autosomal dominant polycystic kidney disease |
+| AFP | Alpha fetoprotein |
 | AIP | Acute interstitial pneumonia |
 | APHE | Arterial phase hyperenhancement |
 | ARDS | Acute respiratory distress syndrome |

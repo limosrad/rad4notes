@@ -232,6 +232,19 @@ export default defineConfig({
                     'genitourinary/ureter-bladder/bladder-malignant',
                     'genitourinary/ureter-bladder/urethra',
                   ]
+                },
+                {
+                  label: 'Prostate and Seminal Vesicles',
+                  items: [
+                    'genitourinary/prostate-sv/prostate-cancer',
+                  ]
+                },
+                {
+                  label: 'Testis',
+                  items: [
+                    'genitourinary/testis/testis-benign',
+                    'genitourinary/testis/testis-malignancy',
+                  ]
                 }                
               ],
             },

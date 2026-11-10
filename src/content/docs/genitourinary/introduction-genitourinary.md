@@ -20,3 +20,8 @@ description: Adrenal, renal, urinary system and male reproductive systems.
 - [Retroperitoneum](/genitourinary/ureter-bladder/retroperitoneum/)
 - [Urinary Bladder Malignancy](/genitourinary/ureter-bladder/bladder-malignant/)
 - [Urethra](/genitourinary/ureter-bladder/urethra/)
+
+## Testis
+
+- [Testis - Benign Pathology](/genitourinary/testis/testis-benign/)
+- [Testis - Malignant Pathology](/genitourinary/testis/testis-malignancy/)
