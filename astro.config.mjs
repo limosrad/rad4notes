@@ -173,6 +173,13 @@ export default defineConfig({
                     'gastrointestinal/colorectal/colorectal-malignant',
                   ]
                 },
+                {
+                  label: 'Paediatric GI',
+                  items: [
+                    'gastrointestinal/paediatric-gi/paediatric-upper-gi',
+                    'gastrointestinal/paediatric-gi/paediatric-lower-gi',
+                  ]
+                },
               ],
             },
             { label: 'Hepatopancreatobiliary',

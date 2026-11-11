@@ -27,3 +27,8 @@ description: Gastrointestinal and peritoneal imaging and interventions
 - [Malignant Colorectal and Appendiceal Pathology](/gastrointestinal/colorectal/colorectal-malignant)
 
 ## Mesentery, Peritoneum and Omentum
+
+## Paediatric GI
+
+- [Paediatric Upper Gastrointestinal Disorders](/gastrointestinal/paediatric-gi/paediatric-upper-gi/)
+- [Paediatric Lower Gastrointestinal Disorders](/gastrointestinal/paediatric-gi/paediatric-lower-gi/)
