@@ -3,27 +3,17 @@ title: Pelvis and Hip
 description: List of topics in musculoskeletal radiology
 ---
 
-## Trauma
+## Imaging after hip arthroplasty
 
-- [Intraocular Masses](/head-neck/orbits/intraocular/)
-- [Optic Nerve](/head-neck/orbits/optic-nerve/)
-- [Optic Masses - Intraconal](/head-neck/orbits/orbital-masses-intraconal/)
-- [Orbital Masses - Extraconal and Conal](/head-neck/orbits/orbital-masses-extraconal/)
+:::differentials
+Three most common complications
 
-## Paediatric Trauma
+| Loosening | Particle reaction | Infection |
+| --- | --- | --- |
+| Suggestive:<br>- 2 mm diffuse lucency,<br>- serial increase in lucency<br>Definitive:<br>- component migration,<br>- subsistence > 10 mm<br>- wear (superolateral) |  = histiocytic response<br>1 and 5 years after surgery<br>- Focal periprosthetic lucency<br>- Smooth endosteal scalloping<br>- No secondary bone response | - Ill-defined focal non-concentric lucency<br>- No sclerotic margin, periosteal reaction +<br>Tc bone scan: ↑NPV, ↓specificity<br>Can do: Ga WBC scans, aspiration |
 
-- [External and Middle Ear](/head-neck/ear-nose-throat/middle-ear/)
-- [Inner Ear](/head-neck/ear-nose-throat/inner-ear/)
-- [Nose and Paranasal Sinuses](/head-neck/ear-nose-throat/nose-pns/)
-- [Suprahyoid Neck Spaces](/head-neck/ear-nose-throat/suprahyoid-spaces/)
-- [Infrahyoid Neck Spaces](/head-neck/ear-nose-throat/infrahyoid-spaces/)
-- [Salivary Gland Neoplasms](/head-neck/ear-nose-throat/salivary-gland-neoplasms/)
+Normal findings: creep (superomedial) stress shielding (lucency near greater trochanter), calcar resorption (near lesser trochanter)
+:::
 
-## Soft Tissue Imaging
-
-- [Facial Trauma](/head-neck/dental/facial-trauma/)
-- [Odontogenic Masses](/head-neck/dental/odontogenic-masses/)
-- [Bone Lesions of Maxilla and Mandible](/head-neck/dental/bone-lesions-jaw/)
-- [Carcinomas of the Oral Cavity](/head-neck/dental/oral-cavity-cancer/)
-
-## Bone Tumours
+## Further reading
+1. 

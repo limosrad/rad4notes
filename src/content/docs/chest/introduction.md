@@ -33,3 +33,8 @@ description: Pulmonary and chest wall disorders
 - [Pulmonary Embolism](/chest/pulmonary-vascular/pulmonary-embolism)
 - [Pulmonary Hypertension]
 
+### Paediatric Chest
+
+- [Neonatal Chest](/chest/paediatric-chest/neonatal-chest/)
+- [Paediatric Chest](/chest/paediatric-chest/paediatric-chest/)
+

@@ -17,6 +17,15 @@ Pyogenic vs TB of the spine
 | Paraspinal abscess | &plusmn; | + |
 | STIR | + (vertebral body oedema)| - (cold abscesses) |
 | T1 C+ | Diffuse vertebral body enhancement<br> Irregular thick-walled abscesses | Localized enhancement<br>Rim enhancement of thin-walled abscess cavities |
+:::
+
+## Vertebral body scalloping
+
+:::differentials
+| Posterior (HAMENTS) | Anterior (DALT) |
+| --- | --- |
+| Hurler’s syndrome, Hydrocephalus<br>Achondroplasia, Acromegaly<br>Marfan’s syndrome<br>Ehlers-Danlos syndrome<br> Neuroﬁbromatosis<br> Tumour (meningioma, ependymoma)<br> Syringohydromyelia | Down’s<br>Abdominal aortic aneursym<br> Lymphadenopathy<br>- TB |
+:::
 
 ## Further reading
 1. 

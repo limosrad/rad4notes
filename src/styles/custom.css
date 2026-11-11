@@ -619,51 +619,79 @@ html[data-learning-mode="custom"] .right-sidebar {
    ======================================== */
 
 /* 15.1 Header toggle buttons */
+/* Shared button appearance */
 
+.rad-collapse-all,
 .rad-sidebar-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 2.75rem;
+  height: 2.75rem;
   padding: 0;
 
   border: 1px solid var(--sl-color-gray-5);
-  border-radius: 0.4rem;
+  border-radius: 0.65rem;
 
   background: var(--sl-color-bg);
   color: var(--sl-color-text);
 
-  font-size: 1.1rem;
   cursor: pointer;
+  flex-shrink: 0;
 
   transition:
     background-color 0.2s ease,
     border-color 0.2s ease,
-    color 0.2s ease;
+    color 0.2s ease,
+    transform 0.15s ease;
 }
 
+/* Collapse all — upward triangle */
+
+.rad-collapse-all {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+/* Sidebar toggle — hamburger */
+
+.rad-sidebar-toggle {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+/* Hover */
+
+.rad-collapse-all:hover,
 .rad-sidebar-toggle:hover {
   background: var(--sl-color-accent-low);
   border-color: var(--sl-color-accent);
+  color: var(--sl-color-text-accent);
 }
 
-.rad-sidebar-toggle[aria-pressed="false"] {
-  color: var(--sl-color-gray-3);
-  background: var(--sl-color-bg-sidebar);
+/* Press */
+
+.rad-collapse-all:active,
+.rad-sidebar-toggle:active {
+  transform: scale(0.94);
 }
 
-/* Keep left toggle beside the site title
-   across all desktop-width layouts. */
+/* Keyboard accessibility */
 
-@media (min-width: 50rem) {
+.rad-collapse-all:focus-visible,
+.rad-sidebar-toggle:focus-visible {
+  outline: 2px solid var(--sl-color-accent);
+  outline-offset: 3px;
+}
 
-  #rad-toggle-left {
-    position: fixed;
-    top: 0.9rem;
-    left: 12rem;
-    z-index: 1000;
+
+
+/* Hide custom sidebar controls on mobile */
+
+@media (max-width: 49.999rem) {
+  .rad-sidebar-toggle {
+    display: none;
   }
 }
 
@@ -891,3 +919,108 @@ html[data-learning-mode="custom"] .right-sidebar {
   }
 }
 
+
+/* Rad4Notes — Header Collapse All Button */
+
+.rad-menu-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+/* ========================================
+   Rad4Notes — Unified Left Header Controls
+   ======================================== */
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+  overflow: visible;
+}
+
+/* Space between Rad4Notes and Collapse All */
+.title-wrapper > a {
+  margin-right: 1.25rem !important;
+}
+
+/* More space between site title and Collapse All */
+#rad-collapse-all {
+  margin-left: 15rem !important;
+}
+
+/* Less space between Collapse All and hamburger */
+#rad-toggle-left {
+  margin-left: 0.25rem !important;
+}
+
+/* Identical dimensions and appearance */
+
+#rad-collapse-all,
+#rad-toggle-left {
+  position: static !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  box-sizing: border-box !important;
+  flex: 0 0 2.75rem !important;
+
+  width: 2.75rem !important;
+  min-width: 2.75rem !important;
+  max-width: 2.75rem !important;
+
+  height: 2.75rem !important;
+  min-height: 2.75rem !important;
+  max-height: 2.75rem !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 1px solid var(--sl-color-gray-5) !important;
+  border-radius: 0.65rem !important;
+
+  background: var(--sl-color-bg) !important;
+  color: var(--sl-color-text) !important;
+
+  line-height: 1 !important;
+  vertical-align: middle;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Individual symbol sizing */
+
+#rad-collapse-all {
+  font-size: 1.05rem !important;
+}
+
+#rad-toggle-left {
+  font-size: 1.35rem !important;
+}
+
+/* Hover */
+
+#rad-collapse-all:hover,
+#rad-toggle-left:hover {
+  background: var(--sl-color-accent-low) !important;
+  border-color: var(--sl-color-accent) !important;
+  color: var(--sl-color-text-accent) !important;
+}
+
+/* Press */
+
+#rad-collapse-all:active,
+#rad-toggle-left:active {
+  transform: scale(0.95);
+}
+
+/* Keyboard focus */
+
+#rad-collapse-all:focus-visible,
+#rad-toggle-left:focus-visible {
+  outline: 2px solid var(--sl-color-accent);
+  outline-offset: 3px;
+}

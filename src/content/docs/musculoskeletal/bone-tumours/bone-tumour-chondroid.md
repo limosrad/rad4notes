@@ -3,27 +3,13 @@ title: Bone Tumours - Chondroid Origin
 description: List of topics in musculoskeletal radiology
 ---
 
-## Trauma
+## Osteochondromas
 
-- [Intraocular Masses](/head-neck/orbits/intraocular/)
-- [Optic Nerve](/head-neck/orbits/optic-nerve/)
-- [Optic Masses - Intraconal](/head-neck/orbits/orbital-masses-intraconal/)
-- [Orbital Masses - Extraconal and Conal](/head-neck/orbits/orbital-masses-extraconal/)
+## Enchondromas
 
-## Paediatric Trauma
 
-- [External and Middle Ear](/head-neck/ear-nose-throat/middle-ear/)
-- [Inner Ear](/head-neck/ear-nose-throat/inner-ear/)
-- [Nose and Paranasal Sinuses](/head-neck/ear-nose-throat/nose-pns/)
-- [Suprahyoid Neck Spaces](/head-neck/ear-nose-throat/suprahyoid-spaces/)
-- [Infrahyoid Neck Spaces](/head-neck/ear-nose-throat/infrahyoid-spaces/)
-- [Salivary Gland Neoplasms](/head-neck/ear-nose-throat/salivary-gland-neoplasms/)
+## Chondrosarcoma
 
-## Soft Tissue Imaging
-
-- [Facial Trauma](/head-neck/dental/facial-trauma/)
-- [Odontogenic Masses](/head-neck/dental/odontogenic-masses/)
-- [Bone Lesions of Maxilla and Mandible](/head-neck/dental/bone-lesions-jaw/)
-- [Carcinomas of the Oral Cavity](/head-neck/dental/oral-cavity-cancer/)
+Low-grade chondrosarcomas can occur in young adults and can look nonaggressive or mimic enchondroma—features favouring chondrosarcoma include size >5 cm, deep endosteal scalloping or cortical breach, atypical location (e.g. pelvis, axial skeleton, epiphysis) and history of pain. The clear cell variant of chondrosarcoma arises in epiphyses and can mimic chondroblastoma (though usually in an older age group). Chondrosarcomas can also arise from an existing enchondroma or osteochondroma.
 
 ## Bone Tumours

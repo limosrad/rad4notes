@@ -7,6 +7,16 @@ import DefaultThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro'
 
   <button
     type="button"
+    class="rad-collapse-all"
+    id="rad-collapse-all"
+    aria-label="Collapse all contents sections"
+    title="Collapse all contents sections"
+  >
+    ▲
+  </button>
+
+  <button
+    type="button"
     class="rad-sidebar-toggle"
     id="rad-toggle-left"
     aria-label="Hide contents sidebar"
@@ -28,7 +38,7 @@ import DefaultThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro'
   </button>
 
   <select id="rad-learning-mode" aria-label="Learning mode">
-    <option value="reference">Complete Reference</option>
+    <option value="reference">Open</option>
     <option value="trivia">Trivia</option>
     <option value="differentials">Differentials</option>
     <option value="mcq">MCQ</option>
@@ -90,12 +100,12 @@ import DefaultThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro'
   }
 
 
-let mcqCounter = 0;
+  let mcqCounter = 0;
 
-function enhanceMcqs() {
-  const blocks = document.querySelectorAll(
-    '.rad-learning-block--mcq:not([data-mcq-enhanced])'
-  );
+  function enhanceMcqs() {
+    const blocks = document.querySelectorAll(
+      '.rad-learning-block--mcq:not([data-mcq-enhanced])'
+    );
 
   blocks.forEach(block => {
     const correctAnswer = Number(
@@ -431,17 +441,50 @@ function initializeSidebarToggles() {
       applySidebarPreferences();
     });
   }
+  
 
   applySidebarPreferences();
   }
 
+
+  
+function initializeCollapseAll() {
+  const titleWrapper = document.querySelector('.title-wrapper');
+  const collapseButton = document.querySelector('#rad-collapse-all');
+  const sidebarButton = document.querySelector('#rad-toggle-left');
+
+  if (!titleWrapper || !collapseButton || !sidebarButton) return;
+
+  // Keep both buttons together in the left header.
+  titleWrapper.append(collapseButton, sidebarButton);
+
+  if (collapseButton.dataset.initialized !== 'true') {
+    collapseButton.dataset.initialized = 'true';
+
+    collapseButton.addEventListener('click', () => {
+      document.querySelectorAll('.sidebar-content details').forEach(group => {
+        if (group.parentElement.closest('details')) {
+          group.open = false;
+        }
+      });
+    });
+  }
+}
+
+
+
+
+
   initializeLearningMode();
   initializeSidebarToggles();
+  initializeCollapseAll();
 
   document.addEventListener('astro:page-load', () => {
     initializeLearningMode();
     initializeSidebarToggles();
+    initializeCollapseAll();
   });
+
     
 </script>
 
@@ -507,6 +550,30 @@ function initializeSidebarToggles() {
     }
   }
 
+  .title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    overflow: visible;
+  }
+
+  .rad-collapse-all {
+    flex-shrink: 0;
+    padding: 0.4rem 0.7rem;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.4rem;
+    background: var(--sl-color-bg);
+    color: var(--sl-color-text);
+    font: inherit;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .rad-collapse-all:hover {
+    background: var(--sl-color-accent-low);
+    color: var(--sl-color-text-accent);
+  }
   
 </style>
 

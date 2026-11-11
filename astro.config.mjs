@@ -86,6 +86,13 @@ export default defineConfig({
                   items: [
                     'chest/pulmonary-vascular/pulmonary-embolism',
                   ]
+                },
+                {
+                  label: 'Paediatric Chest',
+                  items: [
+                    'chest/paediatric-chest/neonatal-chest',
+                    'chest/paediatric-chest/paediatric-chest',
+                  ]
                 }
               ],
             },
@@ -106,6 +113,7 @@ export default defineConfig({
                   items: [
                     'cardiovascular/congenital-heart/chest-x-ray-chd',
                     'cardiovascular/congenital-heart/aorta-congenital',
+                    'cardiovascular/congenital-heart/cardiac-surgery',
                   ]
                 },
                 {
@@ -393,7 +401,7 @@ export default defineConfig({
                     'musculoskeletal/bone-tumours/bone-tumour-chondroid',
                     'musculoskeletal/bone-tumours/bone-tumour-osteoid',
                     'musculoskeletal/bone-tumours/bone-tumour-malignant',
-                    'musculoskeletal/bone-tumours/wrist',
+                    
                   ],
                 },
                 {

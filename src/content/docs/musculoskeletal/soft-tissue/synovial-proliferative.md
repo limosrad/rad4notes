@@ -3,27 +3,14 @@ title: Synovial Proliferative Disorders
 description: List of topics in musculoskeletal radiology
 ---
 
-## Trauma
+## Approach to synovial proliferative disorders
 
-- [Intraocular Masses](/head-neck/orbits/intraocular/)
-- [Optic Nerve](/head-neck/orbits/optic-nerve/)
-- [Optic Masses - Intraconal](/head-neck/orbits/orbital-masses-intraconal/)
-- [Orbital Masses - Extraconal and Conal](/head-neck/orbits/orbital-masses-extraconal/)
+:::differentials
+Based on MRI signal and calcification
 
-## Paediatric Trauma
+![Synovial proliferative approach](/images/flowcharts/synovial-proliferative.svg)
 
-- [External and Middle Ear](/head-neck/ear-nose-throat/middle-ear/)
-- [Inner Ear](/head-neck/ear-nose-throat/inner-ear/)
-- [Nose and Paranasal Sinuses](/head-neck/ear-nose-throat/nose-pns/)
-- [Suprahyoid Neck Spaces](/head-neck/ear-nose-throat/suprahyoid-spaces/)
-- [Infrahyoid Neck Spaces](/head-neck/ear-nose-throat/infrahyoid-spaces/)
-- [Salivary Gland Neoplasms](/head-neck/ear-nose-throat/salivary-gland-neoplasms/)
+:::
 
-## Soft Tissue Imaging
-
-- [Facial Trauma](/head-neck/dental/facial-trauma/)
-- [Odontogenic Masses](/head-neck/dental/odontogenic-masses/)
-- [Bone Lesions of Maxilla and Mandible](/head-neck/dental/bone-lesions-jaw/)
-- [Carcinomas of the Oral Cavity](/head-neck/dental/oral-cavity-cancer/)
-
-## Bone Tumours
+## Further reading
+1. [MRI Signal Intensity–based Approach to Synovial Masses in Radiographics (2023)](https://doi.org/10.1148/rg.220081)
