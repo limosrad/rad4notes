@@ -1,5 +1,5 @@
 ---
-title: Tumouors of the Bony Spine
+title: Bony Spine - Neoplasms
 description: Multiple myeloma and more
 ---
 

@@ -30,6 +30,7 @@ description: List of topics in neuroradiology
 ## Spine
 
 - [Craniovertebral Junction](/neuroradiology/spine/craniovertebral-junction/)
-- [Tumours of the Bony Spine](/neuroradiology/spine/spine-bone-tumours/)
+- [Bony Spine - Benign](/neuroradiology/spine/spine-bone-benign/)
+- [Bony Spine - Neoplasms](/neuroradiology/spine/spine-bone-tumours/)
 - [Spinal Cord Neoplasms](/neuroradiology/spine/spine-cns-neoplasms/)
 - [Spinal Trauma](/neuroradiology/spine/spine-trauma/)

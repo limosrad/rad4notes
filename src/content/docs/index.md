@@ -54,6 +54,16 @@ description: Radiology Resident's Rapid Review and Revision Notes.
   <span>Neuroradiology</span>
 </a>
 
+<a class="home-icon-card" href="/head-neck/head-neck-intro/">
+  <span class="home-icon" style="--icon: url('/icons/head-neck.svg')" aria-hidden="true"></span>
+  <span>Head and Neck</span>
+</a>
+
+<a class="home-icon-card" href="/musculoskeletal/msk-introduction/">
+  <span class="home-icon" style="--icon: url('/icons/musculoskeletal.svg')" aria-hidden="true"></span>
+  <span>Musculoskeletal</span>
+</a>
+
 </div>
 
 ## About This Notebook

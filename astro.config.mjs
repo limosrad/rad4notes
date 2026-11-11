@@ -251,8 +251,10 @@ export default defineConfig({
             },
             {
               label: 'Obstetric, Gynaecologic and Breast',
+              collapsed: true,
               items: [
                 'obg-breast/obg-breast-list',
+                
                 {
                   label: 'Obstetric Imaging',
                   items: [
@@ -322,6 +324,7 @@ export default defineConfig({
                   label: 'Spine',
                   items: [
                     'neuroradiology/spine/craniovertebral-junction',
+                    'neuroradiology/spine/spine-bone-benign',
                     'neuroradiology/spine/spine-bone-tumours',
                     'neuroradiology/spine/spine-cns-neoplasms',
                     'neuroradiology/spine/spine-trauma',
@@ -329,7 +332,95 @@ export default defineConfig({
                 },
               ],
             },
-            
+            {
+              label: 'Head and Neck Radiology',
+              collapsed: true,
+              items: [
+                'head-neck/head-neck-intro',
+                {
+                  label: 'Orbits',
+                  items: [
+                    'head-neck/orbits/intraocular',
+                    'head-neck/orbits/optic-nerve',
+                    'head-neck/orbits/orbital-masses-intraconal',
+                    'head-neck/orbits/orbital-masses-extraconal',
+                  ],
+                },                
+                {
+                  label: 'Ear, Nose and Throat',
+                  items: [
+                    'head-neck/ear-nose-throat/middle-ear',
+                    'head-neck/ear-nose-throat/inner-ear',
+                    'head-neck/ear-nose-throat/nose-pns',
+                    'head-neck/ear-nose-throat/suprahyoid-spaces',
+                    'head-neck/ear-nose-throat/infrahyoid-spaces',
+                    'head-neck/ear-nose-throat/salivary-gland-neoplasms',
+                  ],
+                },
+
+                {
+                  label: 'Dental',
+                  items: [
+                    'head-neck/dental/facial-trauma',
+                    'head-neck/dental/odontogenic-masses',
+                    'head-neck/dental/bone-lesions-jaw',
+                    'head-neck/dental/oral-cavity-cancer',
+                  ],
+                },                
+              ],
+            },
+
+            {
+              label: 'Musculoskeletal Radiology',
+              collapsed: true,
+              items: [
+                'musculoskeletal/msk-introduction',
+                {
+                  label: 'Bone – Benign and Non-neoplastic',
+                  items: [
+                    'musculoskeletal/bone-benign/arthritis',
+                    'musculoskeletal/bone-benign/infection',
+                    'musculoskeletal/bone-benign/marrow',
+                    'musculoskeletal/bone-benign/metabolic',
+                    'musculoskeletal/bone-benign/skeletal-dysplasia',
+                  ],
+                },
+                {
+                  label: 'Bone Tumours',
+                  items: [
+                    'musculoskeletal/bone-tumours/bone-tumour-differentials',
+                    'musculoskeletal/bone-tumours/bone-tumour-benign',
+                    'musculoskeletal/bone-tumours/bone-tumour-chondroid',
+                    'musculoskeletal/bone-tumours/bone-tumour-osteoid',
+                    'musculoskeletal/bone-tumours/bone-tumour-malignant',
+                    'musculoskeletal/bone-tumours/wrist',
+                  ],
+                },
+                {
+                  label: 'Soft Tissue',
+                  items: [
+                    'musculoskeletal/soft-tissue/soft-tissue-benign',
+                    'musculoskeletal/soft-tissue/soft-tissue-neoplasms',
+                    'musculoskeletal/soft-tissue/soft-tissue-vascular',
+                    'musculoskeletal/soft-tissue/synovial-proliferative',
+                  ],
+                },
+                {
+                  label: 'Trauma',
+                  items: [
+                    'musculoskeletal/trauma/trauma-approach',
+                    'musculoskeletal/trauma/shoulder',
+                    'musculoskeletal/trauma/elbow',
+                    'musculoskeletal/trauma/wrist',
+                    'musculoskeletal/trauma/pelvis-hip',
+                    'musculoskeletal/trauma/knee',
+                    'musculoskeletal/trauma/ankle-foot',
+                    'musculoskeletal/trauma/paediatric-trauma',
+                  ],
+                },
+              ],
+            },
+
           ],
         },
       ],
