@@ -1,6 +1,6 @@
 
 ---
-title: Solitary Pulmonary Nodules
+title: Solitary Pulmonary Nodules and Lung Cancer Screening
 description: Management Guidelines for Solitary Pulmonary Nodules.
 ---
 
@@ -83,25 +83,85 @@ Part solid nodules:
 ### Patient populations for use:
 - patients > 35 years of age
 - non-calcified nodules
-- no history of malignancy
+- no immunocompromise or history of malignancy
 
 They are classified into low- and high-risk.
 
+## Lung-RADS v2022
+
+### Inclusion criteria
+
+- Varies by organisation
+- Usually &ge; 55 years to 74-80 years (variable)
+- &ge; 30 pack year smoking history, quit smoking &lt; 15 years ago
+
+### Prerequisites
+
+- Prior scans, if availabale
+- Coverage of entire lung parenchyma
+- Findings suggestive of infective / inflammatory processes
+    - assign category 0 and repeat in 1-3 months
+
+### Classifying lung nodules
+
+(Include lower limit in range, i.e., 6-8 mm = &ge; 6 mm and &lt; 8 mm)
+
+- Baseline scan
+
+| Category | Solid | Part-solid | Ground glass | Airway nodules |
+| --- | --- | --- | --- | --- |
+| 3 | 6-8 mm| &ge; 6 mm with < 6 mm solid | &ge; 20 mm | |
+| 4A | 8-15 mm | &ge; 6 mm with 6-8 mm solid component || Segmental |
+| 4B | &ge; 15 mm | Solid &ge; 8 mm | | |
+
+- Follow up scan
+
+| Category | Solid | Part-solid | Ground glass | Airway nodules |
+| --- | --- | --- | --- | --- |
+| 3 | New 4-6 mm | New &lt; 6 mm | Any new | | 
+| 4A | &uarr; &lt; 8 mm or new 6-8 mm | New or &uarr; &lt; 4 mm solid component | | |
+| 4B | &uarr; &ge; 8 mm or new &ge; 8 mm <br> &uarr; &lt; 1.5 mm/year but overall &uarr; &gt; 1.5 mm | New or &uarr; &ge; 4 mm solid component <br> &uarr; &lt; 1.5 mm/year but overall &uarr; &gt; 1.5 mm | | Stable or growing segmental |
+
+- A nodule with fat or benign calcification &rarr; Category 1
+- A nodule not fitting into these categories &rarr; Category 2
+    - Includes findings suggestive of an inflammatory or infectious process 
+        - tree-in-bud nodules 
+        - new ground-glass nodules <3 cm
+        - subsegmental &plusmn; multiple tubular endobronchial abnormalities with no underlying obstructive nodule
+- Category 3/4A/4B nodule with spiculation, nodes, or GGO nodule doubling in 1 year &rarr; Category 4X
+
+### Classifying atypical cysts
+
+![Lung RADS for atypical cysts](/images/flowcharts/lung-rads-atypical-cyst.svg)
+
+### Management recommendations
+
+| Category | Recommendation |
+| --- | --- |
+| 1 | continue annual screening with LDCT |
+| 2 | continue annual screening with LDCT |
+| 3 | 6-month follow-up with LDCT |
+| 4A | 3-month follow-up with LDCT<br>PET-CT may be used if there is a ≥8 mm solid component |
+| 4B and 4X | chest CT<br>PET-CT &plusmn; biopsy (PET-CT if solid component ≥8 mm) |
+
 ## MCQ
 
-:::mcq{answer="2"}
+:::mcq{answer="3"}
 
-**Which projection generally produces greater cardiac magnification?**
+Follow up low dose CT of a 62-year-old male patient reveals a multilocular cyst in the right upper lobe. Comparison with prior CT from 1 year ago shows it to be a unilocular thick-walled cyst that has now changed. What would be the Lung-RADS category and management recommendation for this patient?
 
-1. PA projection
-2. AP projection
-3. Lateral projection
-4. None of the above
+1. 2 - continue annual screening with LDCT
+2. 3 - 6-month follow-up with LDCT
+3. 4A - 3-month follow-up with LDCT or PET-CT
+4. 4B - chest CT; PET-CT &plusmn; biopsy
+5. 4X - chest CT; PET-CT &plusmn; biopsy
 
-**Explanation:** AP projection generally produces greater cardiac magnification because the heart is farther from the image receptor.
+**Explanation:** Trivia for atypical lung cysts, which is a new addition to Lung-RADS v2022.
 
 :::
 
 ## Further Reading
 
-Add relevant textbooks, review articles and reference materials here.
+1. [Lung-RADS: Pushing the Limits in Radiographics (2017)](https://doi.org/10.1148/rg.2017170051)
+2. [RadioGraphics Update: Lung-RADS 2022 in Radiographics (2023)](https://doi.org/10.1148/rg.230037)
+
