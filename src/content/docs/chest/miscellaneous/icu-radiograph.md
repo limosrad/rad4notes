@@ -1,5 +1,5 @@
 ---
-title: ICU Chest Radiograph
+title: ICU Chest Conditions
 description: Lines and tubes, common differential diagnosis
 ---
 

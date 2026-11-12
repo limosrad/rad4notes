@@ -11,3 +11,9 @@ description: Diagnosis and management of hepatocellular carcinoma
 | T1 | Variable | Bright | Dark |
 | T2 | Dark | Iso to dark | Bright |
 | C+ | -- | &plusmn; | ++ |
+
+## Management of HCC
+
+- BCLC staging system and treatment
+
+![BCLC staging for HCC](/images/flowcharts/bclc-hcc.svg)

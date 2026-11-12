@@ -3,7 +3,8 @@ title: Adrenal Imaging - General Features
 description: Differential diagnoses of adrenal lesions
 ---
 
-## Adrenal adenomas
+## Adrenal protocol CT
+
 
 ### Quantitative paramters in adrenal adenoma imaging
 

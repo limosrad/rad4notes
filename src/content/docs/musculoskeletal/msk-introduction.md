@@ -16,8 +16,8 @@ description: List of topics in Musculoskeletal Radiology
 
 ## Bone – Benign and Non-neoplastic
 
-- [Arthritis](/musculoskeletal/bone-benign/arthritis/)
 - [Bone Infections](/musculoskeletal/bone-benign/infection/)
+- [Arthritis](/musculoskeletal/bone-benign/arthritis/)
 - [Marrow Disorders](/musculoskeletal/bone-benign/marrow/)
 - [Metabolic Bone Disease](/musculoskeletal/bone-benign/metabolic/)
 - [Skeletal Dysplasia](/musculoskeletal/bone-benign/skeletal-dysplasia/)
@@ -25,15 +25,15 @@ description: List of topics in Musculoskeletal Radiology
 ## Bone Tumours
 
 - [Bone Tumours – Differentials and Approach](/musculoskeletal/bone-tumours/bone-tumour-differentials/)
-- [Other Benign Bone Tumours](/musculoskeletal/bone-tumours/bone-tumour-benign/)
+
 - [Bone Tumours – Chondroid Origin](/musculoskeletal/bone-tumours/bone-tumour-chondroid/)
 - [Bone Tumours – Osteoid Origin](/musculoskeletal/bone-tumours/bone-tumour-osteoid/)
+- [Other Benign Bone Tumours](/musculoskeletal/bone-tumours/bone-tumour-benign/)
 - [Other Malignant Bone Tumours](/musculoskeletal/bone-tumours/bone-tumour-malignant/)
-- [Wrist](/musculoskeletal/bone-tumours/wrist/)
 
 ## Soft Tissue
 
 - [Soft Tissue Lesions – Benign](/musculoskeletal/soft-tissue/soft-tissue-benign/)
-- [Wrist](/musculoskeletal/soft-tissue/soft-tissue-neoplasms/)
+- [Soft Tissue Neoplasms](/musculoskeletal/soft-tissue/soft-tissue-neoplasms/)
 - [Soft Tissue Lesions – Vascular](/musculoskeletal/soft-tissue/soft-tissue-vascular/)
 - [Synovial Proliferative Disorders](/musculoskeletal/soft-tissue/synovial-proliferative/)

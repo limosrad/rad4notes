@@ -1,6 +1,6 @@
 
 ---
-title: Other Thoracic Neoplasms
+title: Other Neoplasms of Chest and Pleura
 description: Carcinoids, mesothelioma, solitary fibrous tumour of the pleura.
 ---
 

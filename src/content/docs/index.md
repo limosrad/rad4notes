@@ -64,6 +64,16 @@ description: Radiology Resident's Rapid Review and Revision Notes.
   <span>Musculoskeletal</span>
 </a>
 
+<a class="home-icon-card" href="/physics/physics-introduction/">
+  <span class="home-icon" style="--icon: url('/icons/musculoskeletal.svg')" aria-hidden="true"></span>
+  <span>Physics</span>
+</a>
+
+<a class="home-icon-card" href="/general-radiology/general-rad-introduction/">
+  <span class="home-icon" style="--icon: url('/icons/musculoskeletal.svg')" aria-hidden="true"></span>
+  <span>General Radiology</span>
+</a>
+
 </div>
 
 ## About This Notebook

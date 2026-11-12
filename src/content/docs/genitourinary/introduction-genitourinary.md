@@ -15,7 +15,7 @@ description: Adrenal, renal, urinary system and male reproductive systems.
 - [Renal Neoplasms](/genitourinary/renal/renal-neoplasms/)
 - [Renal Transplant](/genitourinary/renal/renal-transplant/)
 
-## Retroperitoneum, Ureters, Urinary Bladder, Urethra and Penis
+## Retroperitoneum, ureters, urinary bladder, urethra and penis
 
 - [Retroperitoneum](/genitourinary/ureter-bladder/retroperitoneum/)
 - [Urinary Bladder Malignancy](/genitourinary/ureter-bladder/bladder-malignant/)
@@ -26,3 +26,8 @@ description: Adrenal, renal, urinary system and male reproductive systems.
 
 - [Testis - Benign Pathology](/genitourinary/testis/testis-benign/)
 - [Testis - Malignant Pathology](/genitourinary/testis/testis-malignancy/)
+
+## Paediatric genitourinary
+
+- [Congenital Genitourinary Disorders]
+- [Paediatric Renal Masses]
