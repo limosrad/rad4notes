@@ -5,10 +5,10 @@ description: List of topics in obstetric, gynaecologic and breast imaging
 
 ## Obstetric Imaging
 
-- [First Trimester](/obg-breast/obstetrics/first-trimester)
+- [First Trimester](/obg-breast/obstetrics/first-trimester/)
 - Second Trimester
 - Third Trimester
-- Post-partum complications
+- [Postpregnancy](/obg-breast/obstetrics/postpartum/)
 
 ## Ovaries
 

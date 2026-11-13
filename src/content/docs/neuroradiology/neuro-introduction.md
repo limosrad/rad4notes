@@ -34,3 +34,7 @@ description: List of topics in neuroradiology
 - [Bony Spine - Neoplasms](/neuroradiology/spine/spine-bone-tumours/)
 - [Spinal Cord Neoplasms](/neuroradiology/spine/spine-cns-neoplasms/)
 - [Spinal Trauma](/neuroradiology/spine/spine-trauma/)
+
+## Paediatric CNS
+
+- [Perinatal Brain Injury](/neuroradiology/paediatric-cns/perinatal-brain-injury/)

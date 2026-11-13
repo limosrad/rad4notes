@@ -35,6 +35,7 @@ description: List of abbreviations used in this text.
 | GERD | Gastro-oesophageal reflux disease |
 | GGO | ground glass opacity |
 | GIST | Gastrointestinal stromal tumour |
+| GTD | Gestational trophoblastic disease |
 | HCC | Hepatocellular carcinoma |
 | HEHE | Hepatic epithelial haemangioendothelioma |
 | HL | Hodgkin lymphoma |
@@ -66,6 +67,7 @@ description: List of abbreviations used in this text.
 | PTLD | Post transplant lymphoproliferative disorder |
 | RCA | Right coronary artery |
 | RCC | Renal cell carcinoma |
+| RPOC | Retained products of conception |
 | ROI | Region of interest |
 | SCLC | Small cell lung cancer |
 | SMA | Superior mesenteric artery |

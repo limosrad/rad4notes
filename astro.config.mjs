@@ -273,6 +273,7 @@ export default defineConfig({
                   label: 'Obstetric Imaging',
                   items: [
                     'obg-breast/obstetrics/first-trimester',
+                    'obg-breast/obstetrics/postpartum',
                   ]
                 },
                 {
@@ -344,6 +345,12 @@ export default defineConfig({
                     'neuroradiology/spine/spine-trauma',
                   ],
                 },
+                {
+                  label: 'Paediatric Neuroradiology',
+                  items: [
+                    'neuroradiology/paediatric-cns/perinatal-brain-injury',
+                  ]
+                }
               ],
             },
             {
