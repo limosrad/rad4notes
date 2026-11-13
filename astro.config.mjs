@@ -36,7 +36,6 @@ export default defineConfig({
               items: [
                 'index',
                 'front-matter/abbreviations',
-                'front-matter/multi-system',
                 'front-matter/universal-references',
               ],
             },
@@ -369,6 +368,7 @@ export default defineConfig({
                     'head-neck/ear-nose-throat/nose-pns',
                     'head-neck/ear-nose-throat/suprahyoid-spaces',
                     'head-neck/ear-nose-throat/infrahyoid-spaces',
+                    'head-neck/ear-nose-throat/thyroid-parathyroid',
                     'head-neck/ear-nose-throat/salivary-gland-neoplasms',
                   ],
                 },
@@ -435,6 +435,84 @@ export default defineConfig({
                 },
               ],
             },
+            {
+              label: 'Physics',
+              collapsed: true,
+              items: [
+                'physics/physics-introduction',
+                {
+                  label: 'X-ray Physics',
+                  items: [
+                    //'physics/x-ray-physics/radiation-physics-introduction',
+                    //'physics/x-ray-physics/x-ray-production',
+                    //'physics/x-ray-physics/x-ray-interaction',
+                  ]
+                },
+                {
+                  label: 'CT Physics',
+                  items: [
+                    //'physics/ct-physics/ct-scanning',
+                    //'physics/ct-physics/ct-contrast',
+                    //'physics/ct-physics/ct-dose',
+                  ]
+                },
+                {
+                  label: 'MRI Physics',
+                  items: [
+                    //'physics/mri-physics/mri-principles',
+                    //'physics/mri-physics/mri-sequences',
+                    //'physics/mri-physics/mri-contrast',
+                  ]
+                },
+                {
+                  label: 'Ultrasound Physics',
+                  items: [
+                    //'physics/ultrasound-physics/ultrasound-principles',
+                    //'physics/ultrasound-physics/ultrasound-sequences',
+                    //'physics/ultrasound-physics/ultrasound-contrast',
+                  ]
+                },
+              ]                                                  
+            },
+            {
+              label: 'General Radiology',
+              collapsed: true,
+              items: [
+                'general-radiology/general-rad-introduction',
+                {
+                  label: 'Contrast in Radiology',
+                  items: [
+                    //'physics/contrast-in-radiology/radiation-physics-introduction',
+                    //'physics/contrast-in-radiology/x-ray-production',
+                    //'physics/contrast-in-radiology/x-ray-interaction',
+                  ]
+                },
+                {
+                  label: 'Statistics in Radiology',
+                  items: [
+                    //'physics/statistics-in-radiology/ct-scanning',
+                    //'physics/statistics-in-radiology/ct-contrast',
+                    //'physics/statistics-in-radiology/ct-dose',
+                  ]
+                },
+                {
+                  label: 'Multisystem Radiology',
+                  items: [
+                    //'physics/multisystem-radiology/mri-principles',
+                    //'physics/multisystem-radiology/mri-sequences',
+                    //'physics/multisystem-radiology/mri-contrast',
+                  ]
+                },
+                {
+                  label: 'General Interventional Radiology',
+                  items: [
+                    //'physics/general-interventional-radiology/ultrasound-principles',
+                    //'physics/general-interventional-radiology/ultrasound-sequences',
+                    //'physics/general-interventional-radiology/ultrasound-contrast',
+                  ]
+                },
+              ]                                                  
+            },            
 
           ],
         },

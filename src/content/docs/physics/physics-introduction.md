@@ -3,11 +3,16 @@ title: List of Topics
 description: List of topics for general radiology
 ---
 
-## Contrast in Radiology
+## X-ray Physics
 
 
-## Statistics in Radiology
+## CT Physics
 
 
-## General Interventional Radiology
+## MRI Physics
+
+## Ultrasoud Physics
+
+
+
 

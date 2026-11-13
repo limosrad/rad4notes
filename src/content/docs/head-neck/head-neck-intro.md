@@ -17,6 +17,7 @@ description: List of topics in head and neck radiology
 - [Nose and Paranasal Sinuses](/head-neck/ear-nose-throat/nose-pns/)
 - [Suprahyoid Neck Spaces](/head-neck/ear-nose-throat/suprahyoid-spaces/)
 - [Infrahyoid Neck Spaces](/head-neck/ear-nose-throat/infrahyoid-spaces/)
+- [Thyroid and Parathyroid](/head-neck/ear-nose-throat/thyroid-parathyroid/)
 - [Salivary Gland Neoplasms](/head-neck/ear-nose-throat/salivary-gland-neoplasms/)
 
 ## Dental

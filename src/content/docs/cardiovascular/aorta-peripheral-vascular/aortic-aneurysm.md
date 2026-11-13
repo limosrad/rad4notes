@@ -6,8 +6,9 @@ description: Diagnosis and interventions in aortic aneurysms
 ## Introduction
 - In general, dilatation > 2 SD and aneurysm > 50% diameter
 - Aortic root → dilated > 4 cm, aneurysm ≥ 4.5 cm
-- ATA → aneurysm > 5 cm
-- DTA → aneurysm > 4 cm
+- Ascending thoracic aorta aneurysm > 5 cm
+- Descending thoracic aorta aneurysm > 4 cm
+- Abdominal aorta aneurysm (AAA) > 3 cm
 
 ### Aetiologies
 - Hypertension (~80 %)
@@ -22,13 +23,18 @@ description: Diagnosis and interventions in aortic aneurysms
 - Rupture → high mortality
 
 ## Imaging modalities
-- Transthoracic echocardiography – first line imaging modality for diagnosis of thoracic aortic disease.
-- Transabdominal ultrasound – screening for AAA recommended in ≥ 65 year old males who have ever smoked or have family history of AAA
-- Cardiac CT and MR are modality of choice for diagnosis and follow-up of aortic aneurysms.
+- Transthoracic echocardiography
+    - first line imaging modality for diagnosis of thoracic aortic disease.
+- Transabdominal ultrasound
+    - screening for AAA recommended in ≥ 65 year old males who have ever smoked or have family history of AAA
+- Cardiac CT and MR
+    - modality of choice for diagnosis and follow-up
     - Post intervention CT is done after 30 days and 1 year to look for endoleak.
 
 ## CT imaging findings
-- Aortic diameters are measured inner-to-inner unless there is wall thickening, where it is measured outer-to-outer.
+- Aortic diameters 
+    - measured inner-to-inner 
+        - wall thickening &rarr; measured outer-to-outer
     - Aortic root diameter → sinus to sinus
 
 ### Assessment for endovascular treatment
@@ -39,13 +45,14 @@ description: Diagnosis and interventions in aortic aneurysms
     - Access site evaluation for large calibre access
 - EVAR:
     - Proximal neck unfavourable if
-        - Proximal aortic seal < 1.5 cm
+        - Proximal aortic seal < 1.5 cm (device dependent)
         - Aneurysmal tortuousity > 60 degrees
         - Dilated neck (> 28 mm in abdominal aorta) or reverse tapering morphology
         - Proximal neck thrombus or calcification > 180 degrees
     - Presence of lumbar or mesenteric branch vessels
         - Increased risk of type 2 endoleak with lumbar arteries and IMA
-    - Common iliac artery caliber > 7 mm is needed for device delivery
+    - Common iliac artery caliber > 7 mm 
+        - needed for device delivery
     - Bilateral internal iliac status
         - May be occluded when limbs need to be extended in short common iliac arteries.
         - Pelvic ischaemia may result from occlusion.
@@ -80,11 +87,13 @@ Aortic aneurysms may also be caused by infections and inflammation.
 
 ### Choice of treatment
 
-- Surgical method is preferred over endovascular in:
+- Surgical > endovascular in:
     - Aortic root, ascending aorta or aortic arch aneurysm
     - Descending thoracic aneurysm if there is thoracoabdominal extension or proximal landing zone in Ishimaru zone 1 or 2.
     - Poor vascular access
-- Controversy exists for AAA, where ESC recommends EVAR as first line (class IIa) while AHA/ACC recommends shared decision making.
+- Controversy for AAA
+    - ESC recommends EVAR as first line (class IIa) 
+    - AHA/ACC recommends shared decision making
 - Endovascular stent-graft placement is preferable in ruptured DTAA and AAA whenever possible, while open surgical repair is preferred in TAAA.
 
 ### Endoleaks after TEVAR or EVAR

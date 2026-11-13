@@ -4,7 +4,7 @@ description: Diagnosis and interventions in acute aortic syndromes
 ---
 
 ## Introduction
-- Spectrum of conditions affecting aorta with high mortality rate, hence a surgical / endovascular intervention emergency.
+
 - Svensson classification of acute aortic syndromes:
     1. aortic dissection (AD)
     2. intramural haematoma (IMH)
@@ -57,12 +57,6 @@ description: Diagnosis and interventions in acute aortic syndromes
     - Chronic beyond 3 months
 
 ## Imaging modalities
-	
-### Chest radiograph:
-- Often one of the first investigations in an emergency
-	
-### Transthoracic echocardiography
-- Valuable in ascending aortic dissection and in extremely unstable patients	
 
 ### CT dissection protocol
 - choice of investigation, rapid, gives complete information required for surgical / endovascular management
@@ -72,9 +66,6 @@ description: Diagnosis and interventions in acute aortic syndromes
 - Coverage:
     - 3 cm proximal to aortic arch cranially
     - Just distal to iliofemoral bifurcation distally
-    
-### MRI
-- Role in follow-up after surgery, not in acute setting
 
 ## Imaging findings
 

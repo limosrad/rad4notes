@@ -3,14 +3,7 @@ title: Inflammatory Bowel Disease
 description: Inflammatory bowel disease - imaging findings and differential diagnosis
 ---
 
-## Introduction
-
-### Aetiopathogenesis of IBD
-- The etiology of IBD is still largely unknown.
-- Peak incidence of IBD: 15-40 years, with a possible second peak at 50-80 years.
-- Two broad subtypes: Crohn disease (CD) and ulcerative colitis (UC).
-
-### Pathology of IBD
+## Pathology of IBD
 
 | UC | CD |
 | --- | --- |
@@ -41,7 +34,7 @@ description: Inflammatory bowel disease - imaging findings and differential diag
 | Barium meal followthrough | USG |
 | Barium enema | CT/MR enterography |
 
-|  | ADVANTAGES | DISADVANTAGES |
+| Modality | Advantages | Disadvantages |
 | --- | --- | --- |
 | Barium meal followthough<br>Barium enema | Dynamic evaluation of the whole gastrointestinal tract<br>Allows manual mobilization of the bowel | Ionizing radiationLimited in the evaluation of the intestinal wall<br>It does not allow panoramic view of the abdominal cavity. |
 | USG | Low cost<br>Can be repeated as many times as necessary<br>Absence of ionizing radiation or contrast medium | Operator dependent<br>Limited because of intestinal gas distribution<br>Does not allow panoramic view of the abdominal cavity. |
@@ -117,6 +110,7 @@ Findings that indicate disease activity:
 | Cholelithiasis | Oxalate nephrolithiasis |
 |   | Osteoporotic fractures of hands and feet |
 :::
+
 ## Differential diagnosis
 
 ### Crohn's disease vs ulcerative colitis
@@ -141,8 +135,10 @@ Findings that indicate disease activity:
 | Fibrofatty proliferation | Meso-rectal only | ++ |
 | Pathological process | Limited to mucosa | Transmural inflammation |
 :::
+
 ### Crohn's disease vs TB
 :::differentials
+
 |  | TB | Crohn’s |
 | --- | --- | --- |
 | Site | Caecum > ileum | Ileum > caecum |
@@ -159,7 +155,9 @@ Findings that indicate disease activity:
 | Solid organ granulomas | ++ | -- |
 | Visceral : subcutaneous fat | ≤ 0.63 | > 0.63 |
 | Colonoscopic ulcers | Transverse | Longitudinal |
+
 :::
+
 ## Management of active IBD
 
 ### General principles

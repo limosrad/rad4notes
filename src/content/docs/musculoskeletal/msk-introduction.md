@@ -25,7 +25,6 @@ description: List of topics in Musculoskeletal Radiology
 ## Bone Tumours
 
 - [Bone Tumours – Differentials and Approach](/musculoskeletal/bone-tumours/bone-tumour-differentials/)
-
 - [Bone Tumours – Chondroid Origin](/musculoskeletal/bone-tumours/bone-tumour-chondroid/)
 - [Bone Tumours – Osteoid Origin](/musculoskeletal/bone-tumours/bone-tumour-osteoid/)
 - [Other Benign Bone Tumours](/musculoskeletal/bone-tumours/bone-tumour-benign/)

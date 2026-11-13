@@ -36,34 +36,12 @@ description: Cardiac neoplasms
 
 ## Imaging findings
 
-### Transthoracic echocardiography
-- Initial imaging modality of choice
-- Often can distinguish vegetation and thrombus from mass
-- Further imaging indicated in inconclusive cases
+### Modalities
 
-### Cardiac CT
-- Workhorse imaging for cardiac masses
-- Choice of investigation in patients who cannot tolerate MRI, or have implantable defibrillators
-- Protocol:
-    - Non-contrast phase
-    - Arterial phase
-    - Delayed phase (180 seconds)
-
-### Cardiac MRI
-- Diagnostic imaging of choice, for exquisite soft tissue characterisation
-- Can provide both morphologic and functional information
-- Protocol:
-    - Steady state free precession (bright-blood imaging with gradient echo) 4C-SA view
-    - T1 and T2 black blood imaging with double inversion recovery sequences 4C-SA view
-    - Diffusion weighted imaging AX
-    - Perfusion imaging 4C-SA view
-    - Pre- and post-contrast 3D GRE AX
-    - Late gadolinium enhanced 4C-SA view
-
-### PET/CT or PET/MRI
-- High-fat, high-protein and low carbohydrate diet with fasting 4-12 hours
-    - ↓ glucose uptake in myocardium, enabling FDG uptake visualisation
-    - Images can be fused with CT and MRI for better visualisation
+| Echocardiography | CT | MRI | FDG-PET |
+| --- | --- | --- | --- |
+| Initial modality | Workhorse imaging | Investigation of choice | Malignant tumours |
+| Thrombus, vegetation | Non-contrast, arterial, 3-min delayed | SSFP, T1, (T1 FS), T2, T1 C+, DWI | Cardiac diet preparation |
 
 ## Imaging Findings
 
@@ -81,8 +59,8 @@ description: Cardiac neoplasms
 | Metastases to the heart | Can be multiple; epicardial more common | T1&darr; (exception: melanoma, which is T1&uarr;), T2&uarr;; T1 FS: no change; First-pass perfusion: variable; LGE: hyperenhancement | High FDG avidity |
 
 ## Differential diagnosis
-- Thrombi and vegetations: absence of contrast enhancement on CT and LGE MRI images, lack of iodine on DECT has strong predictive value
-    - A long inversion time (approximately 550 msec at 1.5 T and 850 msec at 3 T) can help in the diagnosis of an avascular thrombus
+- Thrombi and vegetations: Non-enhancing on CT and LGE MRI images, no iodine on DECT
+    - A long inversion time (approximately 550 msec at 1.5 T and 850 msec at 3 T) for avascular thrombus
 
 :::differentials
 | | Myxoma | Thrombus |

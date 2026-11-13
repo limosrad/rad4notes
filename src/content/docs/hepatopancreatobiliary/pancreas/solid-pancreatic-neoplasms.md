@@ -3,12 +3,8 @@ title: Solid Pancreatic Neoplasms
 description: Imaging and management of solid pancreatic neoplasms
 ---
 
-## Pancreatic neuroendocrine tumours
+## Pancreatic neuroendocrine neoplasms
 
-### Introduction and epidemiology
-
-- Solid neoplasms, constitute ~2% of pancreatic tumours
-    - Second most common solid pancreatic tumours after PDAC
 - Sporadic or associated with syndromes in 10%: 
     - MEN1, VHL, NF1, TSC and glucagon cell adenomatosis
 
@@ -16,7 +12,6 @@ description: Imaging and management of solid pancreatic neoplasms
 
 WHO 2017 classification of pancreatic neuroendocrine neoplasms (panNENs):
 - Well differentiated pancreatic neuroendocrine tumour (panNET)
-    - Less proliferative, less atypia, less necrosis, intense synaptophysin and chromogranin A positivity
 - Poorly differentiated pancreatic neuroendocrine carcinoma (panNEC)
 - Mixed neuroendocrine non-neuroendocrine neoplasms (miNEN)
 
@@ -28,52 +23,10 @@ WHO 2017 classification of pancreatic neuroendocrine neoplasms (panNENs):
 | panNEC | >20 | >20 |
 | miNEN | Each tumour ≥ 30%<br>both components high grade |
 
-### Clinical presentations
-- Occur in middle aged adults with M = F
-1. Nonfunctioning: usually asymptomatic, 
-    - if symptomatic are large with mass effect at presentation
-2. Functioning: depends on the type of hormonal excess (see [differentials](#differentials))
-
-### Imaging
-
-- For detection, characterisation, localisation, staging, invasion, metastasis.
-- panNETs are staged via a separate TNM staging system (9th edition, 2024) compared to panNECs which follow the same system as PDAC. 
-<!-- For panNETs:
-    - T1 – limited to pancreas < 2cm
-    - T2 – limited to pancreas 2-4 cm
-    - T3 – limited to pancreas > 4cm / invading duodenum or CBD
-    - T4 – invading stomach, spleen, colon, adrenal or walls of coeliac axis / SMA / SMV / SpA / SpV / GDA / GDV / MPV
-    - N1 – regional lymph nodes
-    - cM1 – Distant metastases
-        - cM1a – Metastasis confined to liver
-        - cM1b – Metastases in at least one extrahepatic site (e.g., lung, ovary, nonregional lymph node, peritoneum, bone)
-        - cM1c – Both hepatic and extrahepatic metastases
-    - Stage I – T1 N0 M0
-    - Stage II – T2/T3 N0 M0
-    - Stage III – T4 N0 M0 or N1 M0
-    - Stage IV – M1
--->
-### USG
-- Well defined hypoechoic mass, anywhere in the pancreas, with increased vascularity
-- Liver metastasis – hyperechoic > targetoid > hypoechoic
-- Intraoperative USG – for
-    - Localising non palpable tumours
-    - Relationship with adjacent vessels and pancreatic duct
-    - Deciding between enucleation vs distal pancreatectomy
-- Endoscopic USG – investigation of choice for small tumours
-    - Tissue sampling
-    - Relationship with MPD
-    - Surveillance in MEN1 and VHL
-- Contrast enhanced endoscopic USG:
-    - can accurately distinguish panNETs (uniformly enhancing) from PDACs and PNECs (heterogenous enhancement)
-
 ### CT
 
 - Protocol:
     - Pancreatic protocol CT with IV and neutral oral contrast
-        - Technical: 120 kVP, 200 mAs, 0.5 s rotation, 1.5 mm collimation with section thickness 3 mm, at a pitch of 0.75 with 1.5 mm increments
-        - Oral: 500 mL 30 min before examination, 250 mL immediately before examination
-        - Scan from D11 to iliac crest
     - Phases
         - Non-contrast (not needed in dual energy acquisition)
         - Early arterial (25 s post injection)
@@ -107,12 +60,6 @@ WHO 2017 classification of pancreatic neuroendocrine neoplasms (panNENs):
     - Contrast:
         - Intense arterial phase enhancement
         - Isointense in portal venous and delayed phases
-
-- Advantages of MRI:
-    - Excellent for detection and characterisation of lesions
-    - Excellent for nodal and liver metastasis (DWI)
-    - Excellent for pancreatic ductal relationship (MRCP)
-    - Excellent for predicting grade: > 2cm, ill-defined margins, heterogeneous enhancement, hypoenhancement, low ADC vales predict a high grade
 
 - Nuclear medicine
 
@@ -164,16 +111,6 @@ WHO 2017 classification of pancreatic neuroendocrine neoplasms (panNENs):
 | Locally advanced disease | Contact > 180 or aorta involvement | Non-reconstructible segment |
 | Unresectable | Distant metastasis including non-regional nodes |  |
 :::
-
-<!--
-CA = coeliac artery, 
-|  | Arterial | Venous |
-| --- | --- | --- |
-| Resectable | No arterial contact with tumour (CA, SMA, CHA) | No tumour contact with SMV / MPV or ≤ 180 contact without vein contour irregularity |
-| Borderline resectable | Head and uncinate:<br>Contact with CHA without proximal extension to CA proximally or CHA bifurcation distally (i.e. vessel can be reconstructed)<br>Contact with SMA ≤ 180 degrees<br>Variant anatomy with tumour contact (accessory RHA, replaced RHA, replaced CHA, origin of replaced or accessory artery)Body and tail:<br>Contact with CA ≤ 180 degrees | Contact with SMV or PV > 180 degreesContact with SMV / PV ≤ 180 with contour irregularity of vein or thrombosis of vein (with suitable proximal and distal vessel allowing for safe and complete resection and reconstruction)Contact with IVC |
-| Locally advanced disease | Head and uncinate:<br>Contact with SMA, CA > 180 degrees<br>Body and tail:<br>Contact with SMA, CA > 180 degrees<br>Contact with CA and aortic involvement | Reconstruction of vein not possible due to tumour involvement or occlusion by bland /tumour thrombus |
-| Unresectable | Distant metastasis including nonregional nodes |  |
--->
 
 
 ## Further reading

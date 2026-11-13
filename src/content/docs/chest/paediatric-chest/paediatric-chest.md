@@ -21,14 +21,15 @@ description: Craniovertebral junction imaging
 
 :::differentials
 Differential diagnosis of bronchiectasis patterns:
-| Cystic fibrosis | Initial: small airway disease (expiratory scan)Later: upper lobe predominant bronchiectasis |
+|Pathology | Pattern |
 | --- | --- |
-| Ciliary dyskinesia | Middle and lower lobe predominant bronchiectasisKartagener: if situs inversusYoung: infertility |
-| ABPA | Fleeting opacities + upper lobe bronchiectasis with HAM and IMIS |
-| Williams Campbell | entral bronchiectasis, collapse on expiration |
-| Mounier Kuhn | Tracheobronchomegaly with central bronchiectasis |
-| Immunodeficiency | Middle/lower lobe bronchiectasis + peribronchial thickeningHyper-IgE: Large bilateral pneumatoceles |
+| Cystic fibrosis | Initial: small airway disease (expiratory scan)<br>Later: upper lobe predominant bronchiectasis |
+| Ciliary dyskinesia | Middle and lower lobe predominant bronchiectasis<br>Kartagener: if situs inversusYoung: infertility |
+| ABPA | Fleeting opacities + upper lobe bronchiectasis<br>SIgns: hyperattenuating mucus, inverted mucoid impaction signal |
+| Williams Campbell | Central bronchiectasis, collapse on expiration |
+| Mounier Kuhn | Adult, tracheobronchomegaly with central bronchiectasis |
+| Immunodeficiency | Middle/lower lobe bronchiectasis + peribronchial thickening<br>Hyper-IgE: Large bilateral pneumatoceles |
 :::
 
 ## Further reading
-1. 
+1. [Bronchiectasis: Mechanisms and Imaging Clues of Associated Common and Uncommon Diseases in Radiographics (2015)](https://doi.org/10.1148/rg.2015140214/)

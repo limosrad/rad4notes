@@ -15,66 +15,39 @@ description: Neoplastic conditions of the stomach
 
 - Most common mesenchymal origin neoplasm of the gastrointestinal tract (90%)
 
-### Aetiologies of GIST
-- Sporadic > syndromes
-    - Carney’s triad: GIST, pulmonary chondromas, extra-adrenal paragangliomas
-    - Neurofibromatosis 1
-
-### Pathology of GIST
-
-- Derived from a precursor of the intestinal pacemaker cells of Cajal, rather than from smooth muscle cells.
-- Common sites: stomach (70%) > small intestine, anorectum, colon, and esophagus
-- Stomach: body > fundus > antrum
-- HPE: interlacing whorls of spindle-shaped cells with eosinophilic cytoplasm and elongated nuclei. 
-    - Immunoreactivity to c-KIT (CD117) or DOG1 is confirmatory
-    - 5% c-KIT negative, but positive for PDGFR-a
-
-### Clinical features of GIST
-
-- Small tumours: incidental detection
-- Ulcerated tumours: bleed, haematemesis, malena, anaemia
-- Large tumours: abdominal pain, early satiety
-    - Exophytic growth hence detected late
-    - Bowel obstruction rare
-
-### Imaging findings of GIST
-
-- CT: dual phase with distended stomach
-    - Arterial phase evaluation for delineation of early nehancing mucosa and hyperenhancing liver metastasis
-
-- Exophytic or intramural pattern of growth; endoluminal growth is less common. 
-    - Endoluminal: classical of intramural masses
-        - smoothly circumscribed with margins that form obtuse or right angles with the gastric wall 
-    - 50% of > 2 cm lesions: focal ulceration of the overlying mucosa because of pressure necrosis (bull’s-eye sign).
-- Enlarging GIST may invade adjacent structures (pancreas, colon, or diaphragm) with haemorrhage, necrosis, or cystic degeneration (focal areas of low attenuation)
-    - Extensive hemorrhage or necrosis → cavity that communicates with the gastric lumen 
-    - Rare: clumps of calcifications are seen. 
-    - Nearly 50%: present with metastatic disease, most commonly to the liver and peritoneum. 
-    - Lymph node metastasis is infrequent.
+:::trivia
+- IHC markers for GIST: CD117 (c-kit), PDGFR-A
+    - Others: DOG1, CD34
+- Paediatric GIST
+    - Wild type CD117 and PDGFR-A
+    - SDH-B deficient (Carney-Stratakis dyad)
+:::
 
 ### Imaging differentials for GIST
 
+:::differentials
+- Differentials of submucosal lesions in GI
+
+| Type | Enhancement | Size (cm) | Metastasis | Others |
+| --- |--- |--- |--- |--- |
+| GIST | Hypervascular<br>- homogenous when small<br>- heterogenous if large with necrosis | 1-15 | Liver, peritoneum, omentum | No lymph nodes |
+| Carcinoid | Hypervascular<br>- homogeneous | <2 | Liver, lymph nodes | May be multiple, especially in hypergastrinemia |
+| Glomus tumor | Hypervascular<br>- homogeneous | <5 | Rarely metastasizes | Predilection for gastric antrum |
+| Schwannoma | Hypovascular<br>- homogeneous | <1-10 | Metastases are extremely rare | Homogeneous enhancement, even at larger size |
+| Leiomyoma | Hypovascular<br>- homogeneous | 1–5 | None | Favors gastric cardia, length-width ratio of >1.2 |
+
+:::
+
 :::trivia
-- Small submucosal lesions (schwannoma, leiomyoma) are indistinguishable
-    - Needs HPE confirmation
 - Bull's eye lesions may also be seen with metastasis to stomach (from melanoma and breast cancer)
 - Lymphadenopathy should prompt other diagnosis as it is almost never seen in GIST
 :::
 
 ### Management
-- UGIE + biopsy &rarr; prognosis based on mitotic rate, site (stomach is favourable) and size (< 2 cm is favourable)
-- Good prognosis: upfront resection with assessment for adjuvant treatment<br>Locally advanced: neoadjuvant with TKIs followed by resection<br>Unresectable or metastatic: TKIs and reassessment
-- Follow-up single-phase CECT after 6-12 weeks, or, if available, PET-CT.
+:::trivia
 - Response assessment by Choi criteria.
     - Accounts for tumour liquefaction without obvious decrease in size seen with TKI agents.
-    - Size measurement by sum of longest diameters.
-
-| Response |	Definition |
-| --- | --- |
-| Complete |	Disappearance of all lesions<brNo new lesions |
-| Partial |	A decrease in size of ≥10% or a decrease in tumor density (HU) ≥15% on CT<br>No new lesions<br>No obvious progression of nonmeasurable disease |
-| Stable | Does not meet the criteria for CR, PR, or PD<br>No symptomatic deterioration attributed to tumor progression |
-| Progressive | An increase in tumor size of ≥10% and does not meet criteria of PR by tumor density (HU) on CT<br>New lesions<br>New intratumoral nodules or increase |
+:::
 
 ## Gastric adenocarcinoma
 
@@ -124,3 +97,4 @@ description: Neoplastic conditions of the stomach
 ## Further Reading
 1. [Beyond the GIST: Mesenchymal Tumors of the Stomach in Radiographics (2013)](https://www.doi.org/10.1148/rg.336135507)
 2. [Staging of Gastric Cancer: CT Patterns and Correlation with Pathologic Findings in Radiographics (2025)](https://doi.org/10.1148/rg.240186)
+3. [Gastrointestinal Stromal Tumors: Imaging Findings and a Multidisciplinary Approach to Treatment in Radiographics (2026)](https://doi.org/10.1148/rg.250109)
