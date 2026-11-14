@@ -8,8 +8,12 @@ import { unified } from '@astrojs/markdown-remark';
 import { remarkLearningBlocks } from './src/plugins/learning-blocks.js';
 import remarkDirective from 'remark-directive';
 
+const base = '/rad4notes';
 
 export default defineConfig({
+  site: 'https://limosrad.github.io',
+  base,
+ 
   integrations: [
     starlight({
       title: 'Rad4Notes',
@@ -19,7 +23,7 @@ export default defineConfig({
         {
           tag: 'script',
           attrs: {
-            src: '/external-links.js',
+            src: `${base}external-links.js`,
             defer: true,
           },
         },
