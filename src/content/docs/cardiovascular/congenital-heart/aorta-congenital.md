@@ -6,7 +6,7 @@ description: Aortic arch variations and congenital pathologies
 ## Classification based on radiograph
 
 :::differentials
-![Congenital heart disease classification](/images/flowcharts/congenital-heart-disease-classification.svg)
+![Congenital heart disease classification](/rad4notes/images/flowcharts/congenital-heart-disease-classification.svg)
 :::
 
 ## Cyanotic congenital heart disease

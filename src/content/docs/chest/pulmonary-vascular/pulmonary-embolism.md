@@ -8,7 +8,7 @@ description: Pulmonary embolism - imaging approach, diagnosis, management
 ### ACC/AHA 2026 guidelines
 
 :::trivia
-![Pulmonary embolism diagnosis - ACC AHA 2026](/images/flowcharts/pulmonary-embolism-acc-aha-2026.svg)
+![Pulmonary embolism diagnosis - ACC AHA 2026](/rad4notes/images/flowcharts/pulmonary-embolism-acc-aha-2026.svg)
 
 - YEARS algorithm sets cut-offs for D-dimer depending on clinical signs of DVT, haemoptysis and PE being the first differential diagnosis.
 - A pregnancy-adapted YEARS criteria can be used to identify patients who do not need imaging.

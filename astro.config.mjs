@@ -6,7 +6,6 @@ import starlight from '@astrojs/starlight';
 
 import { unified } from '@astrojs/markdown-remark';
 import { remarkLearningBlocks } from './src/plugins/learning-blocks.js';
-import { remarkBasePath } from './src/plugins/remark-base-path.js';
 import remarkDirective from 'remark-directive';
 
 const base = '/rad4notes';
@@ -40,6 +39,7 @@ export default defineConfig({
               collapsed: true,
               items: [
                 'index',
+                'front-matter/disclaimer',
                 'front-matter/abbreviations',
                 'front-matter/universal-references',
               ],
@@ -540,7 +540,6 @@ export default defineConfig({
     processor: unified({
       remarkPlugins: [
         remarkDirective,
-        [remarkBasePath, { base }],
         remarkLearningBlocks,
       ],
     }),

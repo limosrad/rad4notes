@@ -43,7 +43,7 @@ Hypervascular findings in postpregnancy period
 | Placental subinvolution | + | Rare, but possibly under-recognized | Myometrial | - | Histologic diagnosis | Not well established |
 | Uterine AVM | - | Extremely rare | Myometrial | - | Congenital and extremely rare | Conservative or intervention |
 | Uterine artery pseudoaneurysm | + | Rare | Myometrial and/or endometrial | - | To-and-fro pattern Doppler pattern | Intervention |
-| Arteriovenous fistula | No§ | Unknown‖ | Myometrial | - | Single, direct arteriovenous connection | Intervention |
+| Arteriovenous fistula | No | Unknown | Myometrial | - | Single, direct arteriovenous connection | Intervention |
 
 :::
 

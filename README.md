@@ -1,43 +1,50 @@
-# Astro Starter Kit: Minimal
+# Rad4Notes
 
-```sh
-npm create astro@latest -- --template minimal
+Rad4Notes is a personal radiology notes and learning resource.
+
+The website is built with [Astro](https://astro.build/) and
+[Starlight](https://starlight.astro.build/).
+
+**Website:** https://limosrad.github.io/rad4notes/
+
+## Local development
+
+Requirements: Node.js and npm.
+
+``` bash
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Open the local URL printed by Astro to preview the site.
 
-## 🚀 Project Structure
+## Build
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+``` bash
+npm run build
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+The generated website is placed in the `dist/` directory.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Contributions and corrections
 
-Any static assets, like images, can be placed in the `public/` directory.
+Suggestions, corrections and reports of errors are welcome through
+GitHub issues.
 
-## 🧞 Commands
+## Copyright and reuse
 
-All commands are run from the root of the project, from a terminal:
+-   **Written notes and text:** Original written content in this
+    repository may be copied, adapted and redistributed without
+    attribution. See the [LICENSE](LICENSE) file.
+-   **Original images and diagrams:** These may be reproduced and
+    adapted only with appropriate attribution to Rad4Notes and the
+    original creator, as described in the [LICENSE](LICENSE) file.
+-   **Third-party material:** Any third-party material remains subject
+    to its own copyright and licence terms. The permissions above do not
+    apply to it.
+-   **Website source code:** Unless a separate licence is stated, the
+    source code is not included in the content licences above.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Use of Artificial Intelligence
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Artificial intelligence tools have been used exclusively to assist with website development and deployment. All educational and medical content, including the written notes and original diagrams, has been created by human authors. AI tools have not been used to generate the educational content.

@@ -8,7 +8,7 @@ description: Differential diagnosis of focal liver lesions
 - Cirrhotic liver: use LI-RADS for classification
 - Non-cirrhotic liver: can classify lesions based on some specific characteristics
 
-![Focal liver lesions in non-cirrhotic patients](/images/flowcharts/liver-focal-lesions-non-corrhotic.svg)
+![Focal liver lesions in non-cirrhotic patients](/rad4notes/images/flowcharts/liver-focal-lesions-non-corrhotic.svg)
 
 ### 
 

@@ -21,7 +21,7 @@ The following is a list of pathologies which have classical appearances on a bar
 
 ## Rings and webs
 
-![Oesophageal webs and diverticula](/images/diagrams/oesophageal-webs-diverticula.svg)
+![Oesophageal webs and diverticula](/rad4notes/images/diagrams/oesophageal-webs-diverticula.svg)
 
 :::trivia
 - Oesophageal webs are seen upper oesophagus.
@@ -106,7 +106,7 @@ Presence of reflux &rarr; look for sequelae
 | Presentation | Odynophagia | Asymptomatic |
 :::
 
-![Infectious oesophagitis](/images/diagrams/oesophagitis-infectious.svg)
+![Infectious oesophagitis](/rad4notes/images/diagrams/oesophagitis-infectious.svg)
 
 :::trivia
 - CMV and HIV ulcers cannot be differentiated on double contrast swallow
@@ -149,7 +149,7 @@ Presence of reflux &rarr; look for sequelae
 
 ## Neoplasms
 
-![Oesophageal neoplasms](/images/diagrams/oesophageal-neoplasms-barium.svg)
+![Oesophageal neoplasms](/rad4notes/images/diagrams/oesophageal-neoplasms-barium.svg)
 
 :::trivia
 - Most common oesophageal mass: carcinoma

@@ -27,7 +27,7 @@ description: Diagnosis and management of hepatocellular carcinoma
 
 1. Look for these typical features:
 
-    ![LI-RADS step 1a](/images/flowcharts/li-rads-step-1a.svg)
+    ![LI-RADS step 1a](/rad4notes/images/flowcharts/li-rads-step-1a.svg)
 
 - LR-M features
     - These features may be seen in liver malignancy apart from HCC (e.g., cholangiocarcinoma)
@@ -36,15 +36,15 @@ description: Diagnosis and management of hepatocellular carcinoma
     | --- | --- |
     | Represents peripheral cellular and central fibrous stroma characteristic for cholangiocarcinoma<br>Features: | Infiltrative, or marked diffusion restriction, large central necrosis or other atypical feature |
 
-    ![LI-RADS LR-M](/images/diagrams/li-rads-lr-m.svg)
+    ![LI-RADS LR-M](/rad4notes/images/diagrams/li-rads-lr-m.svg)
 
 2. Look for major features:
 
-    ![LI-RADS major features](/images/diagrams/li-rads-lr-major.svg)
+    ![LI-RADS major features](/rad4notes/images/diagrams/li-rads-lr-major.svg)
 
 3. Based on these major features, assign LR-3, LR-4 or LR-5:
 
-    ![LI-RADS major features](/images/diagrams/li-rads-lr-345.svg)
+    ![LI-RADS major features](/rad4notes/images/diagrams/li-rads-lr-345.svg)
 
 ### Step 2: look for ancillary features
 
@@ -62,7 +62,7 @@ description: Diagnosis and management of hepatocellular carcinoma
 
 - If these are present, up grade (upto LR-4) or down grade LR status.
 
-    ![LI-RADS ancillary feature upgradation](/images/flowcharts/li-rads-ancillary.svg)
+    ![LI-RADS ancillary feature upgradation](/rad4notes/images/flowcharts/li-rads-ancillary.svg)
 
 - Do not apply if contradictory ancillary features are present.
 
@@ -70,7 +70,7 @@ description: Diagnosis and management of hepatocellular carcinoma
 
 - Radiologist's discretion when unsure between two categories (= gut feeling).
 
-    ![LT-RADS tiebraeakers](/images/flowcharts/li-rads-tiebreaker.svg)
+    ![LT-RADS tiebraeakers](/rad4notes/images/flowcharts/li-rads-tiebreaker.svg)
 
 
 ### Management recommendations
@@ -106,7 +106,7 @@ description: Diagnosis and management of hepatocellular carcinoma
 
 - BCLC staging system and treatment (PS = performance status)
 
-![BCLC staging for HCC](/images/flowcharts/bclc-hcc.svg)
+![BCLC staging for HCC](/rad4notes/images/flowcharts/bclc-hcc.svg)
 
 ## LI-RADS for treatment response
 

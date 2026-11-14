@@ -7,7 +7,7 @@ description: List of topics in musculoskeletal radiology
 
 ### Approach to solitary bone lesions
 
-![Solitary bone lesions differentials](/images/flowcharts/bone-tumour-approach.svg)
+![Solitary bone lesions differentials](/rad4notes/images/flowcharts/bone-tumour-approach.svg)
 
 Abbreviations for this page:
 - Narr: narrow zone of transition

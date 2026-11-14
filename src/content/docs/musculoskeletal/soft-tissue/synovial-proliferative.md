@@ -8,7 +8,7 @@ description: List of topics in musculoskeletal radiology
 :::differentials
 Based on MRI signal and calcification
 
-![Synovial proliferative approach](/images/flowcharts/synovial-proliferative.svg)
+![Synovial proliferative approach](/rad4notes/images/flowcharts/synovial-proliferative.svg)
 
 :::
 

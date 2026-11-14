@@ -6,7 +6,7 @@ description: Cerebellopontine angle tumours
 
 ### Neurocysticercosis
 
-![Neurocysticercosis](/images/diagrams/neurocysticercosis.svg)
+![Neurocysticercosis](/rad4notes/images/diagrams/neurocysticercosis.svg)
 
 ## Immunocompromised Hosts
 Enhancing lesion in HIV-AIDS:

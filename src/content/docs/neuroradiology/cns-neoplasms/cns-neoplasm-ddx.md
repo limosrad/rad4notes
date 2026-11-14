@@ -5,7 +5,7 @@ description: General approach to CNS tumours and possible differentials
 
 ## Approach to CNS tumours
 
-![Approach to CNS tumours](/images/flowcharts/cns-tumour-approach.svg)
+![Approach to CNS tumours](/rad4notes/images/flowcharts/cns-tumour-approach.svg)
 
 ### Tumours vs tumour mimics
 

@@ -111,7 +111,7 @@ description: Ischaemic heart disease imaging
 ### PET myocardial perfusion imaging
 
 - Qualitative
-![Qualitiative myocardial perfusion imaging](/images/flowcharts/nuclear-perfusion-imaging.svg)
+![Qualitiative myocardial perfusion imaging](/rad4notes/images/flowcharts/nuclear-perfusion-imaging.svg)
 
 - Quantitative: myocardial fractional reserve = flow at stress/flow at rest
     - MFR >2: High NPV (>97%) for high-risk obstructive CAD
@@ -119,7 +119,7 @@ description: Ischaemic heart disease imaging
     - PET MPI: Better assessment of microvascular CAD (MFR <2)
 
 ### PET myocardial viability imaging
-![Myocardial viability imaging](/images/flowcharts/nuclear-viability-imaging.svg)
+![Myocardial viability imaging](/rad4notes/images/flowcharts/nuclear-viability-imaging.svg)
 
 ## Further reading
 1. [Ischemic Heart Disease: Noninvasive Imaging Techniques and Findings from Radiographics (2021)](https://doi.org/10.1148/rg.2021200125)

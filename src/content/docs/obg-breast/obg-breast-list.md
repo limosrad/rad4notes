@@ -5,19 +5,19 @@ description: List of topics in obstetric, gynaecologic and breast imaging
 
 ## Obstetric Imaging
 
-- [First Trimester](/obg-breast/obstetrics/first-trimester/)
+- [First Trimester](/rad4notes/obg-breast/obstetrics/first-trimester/)
 - Second Trimester
 - Third Trimester
-- [Postpregnancy](/obg-breast/obstetrics/postpartum/)
+- [Postpregnancy](/rad4notes/obg-breast/obstetrics/postpartum/)
 
 ## Ovaries
 
-- [Ovaries - Benign Pathologies](/obg-breast/ovaries/ovaries-benign/)
-- [Ovaries - Malignant Pathologies](/obg-breast/ovaries/ovaries-malignant/)
+- [Ovaries - Benign Pathologies](/rad4notes/obg-breast/ovaries/ovaries-benign/)
+- [Ovaries - Malignant Pathologies](/rad4notes/obg-breast/ovaries/ovaries-malignant/)
 
 ## Uterus, Cervix and Vagina
 
-- [Uterus - Benign Pathologies](/obg-breast/uterus-cervix/uterus-benign/)
-- [Uterus - Malignant Pathologies](/obg-breast/uterus-cervix/uterus-malignant/)
-- [Cervix and Vagina - Benign Pathologies](/obg-breast/uterus-cervix/cervix-benign/)
-- [Cervix and Vagina - Malignant Pathologies](/obg-breast/uterus-cervix/cervix-malignant/)
+- [Uterus - Benign Pathologies](/rad4notes/obg-breast/uterus-cervix/uterus-benign/)
+- [Uterus - Malignant Pathologies](/rad4notes/obg-breast/uterus-cervix/uterus-malignant/)
+- [Cervix and Vagina - Benign Pathologies](/rad4notes/obg-breast/uterus-cervix/cervix-benign/)
+- [Cervix and Vagina - Malignant Pathologies](/rad4notes/obg-breast/uterus-cervix/cervix-malignant/)

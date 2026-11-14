@@ -27,7 +27,7 @@ description: Pyloric stenosis, upper GI obstruction
 
 ## Paediatric upper GI obstruction
 
-![Approach to paediatric upper GI obstruction](/images/flowcharts/paediatric-upper-gi-obstruction.svg)
+![Approach to paediatric upper GI obstruction](/rad4notes/images/flowcharts/paediatric-upper-gi-obstruction.svg)
 
 ## Tracheo-oesophageal fistula
 

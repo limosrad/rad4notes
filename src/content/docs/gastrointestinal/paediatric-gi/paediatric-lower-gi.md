@@ -5,7 +5,7 @@ description: Necrotising enterocolitis, paediatric lower GI obstruction and intu
 
 ## Paediatric lower GI obstruction
 
-![Approach to paediatric lower GI obstruction](/images/flowcharts/paediatric-lower-gi-obstruction.svg)
+![Approach to paediatric lower GI obstruction](/rad4notes/images/flowcharts/paediatric-lower-gi-obstruction.svg)
 
 ## Further reading
 1. 

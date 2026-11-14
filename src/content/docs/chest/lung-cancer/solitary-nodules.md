@@ -132,7 +132,7 @@ They are classified into low- and high-risk.
 
 ### Classifying atypical cysts
 
-![Lung RADS for atypical cysts](/images/flowcharts/lung-rads-atypical-cyst.svg)
+![Lung RADS for atypical cysts](/rad4notes/images/flowcharts/lung-rads-atypical-cyst.svg)
 
 ### Management recommendations
 

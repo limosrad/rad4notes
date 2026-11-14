@@ -5,12 +5,12 @@ description: Pulmonary and chest wall disorders
 
 ### Imaging modalities
 
-- [Normal Chest X-ray](/chest/imaging-modalities/chest-x-ray/)
+- [Normal Chest X-ray](/rad4notes/chest/imaging-modalities/chest-x-ray/)
 - [Abnormal Chest X-ray]
 - [Lung Collapse]
-- [Chest CT](/chest/imaging-modalities/chest-ct/)
+- [Chest CT](/rad4notes/chest/imaging-modalities/chest-ct/)
 - [Chest CT Differentials]
-- [Chest Ultrasound](/chest/imaging-modalities/chest-usg/)
+- [Chest Ultrasound](/rad4notes/chest/imaging-modalities/chest-usg/)
 
 ### Infections
 
@@ -18,17 +18,17 @@ description: Pulmonary and chest wall disorders
 - [Tuberculosis (TB)]
 - [Invasive Fungal Infections]
 - [Miscellaneous Infections]
-- [Infections in Immunocompromised Hosts](/chest/infections/immunocompromised)
+- [Infections in Immunocompromised Hosts](/rad4notes/chest/infections/immunocompromised)
 
 ### Lung cancer
 
-- [Solitary Pulmonary Nodules](/chest/lung-cancer/solitary-nodules)
-- [Lung Cancer - Pathology](/chest/lung-cancer/lung-cancer)
-- [Other Neoplasms of Chest and Pleura](/chest/lung-cancer/other-neoplasms)
+- [Solitary Pulmonary Nodules](/rad4notes/chest/lung-cancer/solitary-nodules)
+- [Lung Cancer - Pathology](/rad4notes/chest/lung-cancer/lung-cancer)
+- [Other Neoplasms of Chest and Pleura](/rad4notes/chest/lung-cancer/other-neoplasms)
 
 ### Mediastinal masses
 
-- [Mediastinal Masses](/chest/mediastinum/mediastinal-masses)
+- [Mediastinal Masses](/rad4notes/chest/mediastinum/mediastinal-masses)
 
 ### Interstitial lung disease
 
@@ -41,17 +41,17 @@ description: Pulmonary and chest wall disorders
 - [Large Airway Disease]
 - [Chronic Obstructive Pulmonary Disease]
 - [Chest and Diaphragm Trauma]
-- [Chest Wall and Pleural Pathology](/chest/miscellaneous/chest-wall-pleura)
+- [Chest Wall and Pleural Pathology](/rad4notes/chest/miscellaneous/chest-wall-pleura)
 - [Lung Transplant]
-- [ICU Chest Conditions](/chest/miscellaneous/icu-radiograph)
+- [ICU Chest Conditions](/rad4notes/chest/miscellaneous/icu-radiograph)
 
 ### Pulmonary vascular disease
 
-- [Pulmonary Embolism](/chest/pulmonary-vascular/pulmonary-embolism)
+- [Pulmonary Embolism](/rad4notes/chest/pulmonary-vascular/pulmonary-embolism)
 - [Pulmonary Hypertension]
 
 ### Paediatric Chest
 
-- [Neonatal Chest](/chest/paediatric-chest/neonatal-chest/)
-- [Paediatric Chest](/chest/paediatric-chest/paediatric-chest/)
+- [Neonatal Chest](/rad4notes/chest/paediatric-chest/neonatal-chest/)
+- [Paediatric Chest](/rad4notes/chest/paediatric-chest/paediatric-chest/)
 
