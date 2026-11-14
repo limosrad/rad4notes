@@ -40,11 +40,11 @@ description: Diagnosis and management of hepatocellular carcinoma
 
 2. Look for major features:
 
-    ![LI-RADS major features](/images/diagrams/li-rads-major.svg)
+    ![LI-RADS major features](/images/diagrams/li-rads-lr-major.svg)
 
 3. Based on these major features, assign LR-3, LR-4 or LR-5:
 
-    ![LI-RADS major features](/images/diagrams/li-rads-345.svg)
+    ![LI-RADS major features](/images/diagrams/li-rads-lr-345.svg)
 
 ### Step 2: look for ancillary features
 
@@ -79,28 +79,28 @@ description: Diagnosis and management of hepatocellular carcinoma
 
 - Recommendations:
 
-| Category | Recommendation |
-| --- | --- |
-| Negative | Return to surveillance in 6 months |
-| Non-categorisable | Alternative CT/MRI in &le; 3 months |
-| 1 | Return to surveillance in 6 months |
-| 2 | Return to surveillance in 6 months <br> Consider repeat CT/MRI in &le; 3 months |
-| 3 | Repeat or alternate CT/MRI in 3-6 months |
-| 4 | MDT &plusmn; biopsy |
-| 5 | HCC confirmed, MDT for management |
-| M | MDT &plusmn; biopsy |
-| TIV | MDT &plusmn; biopsy |
+    | Category | Recommendation |
+    | --- | --- |
+    | Negative | Return to surveillance in 6 months |
+    | Non-categorisable | Alternative CT/MRI in &le; 3 months |
+    | 1 | Return to surveillance in 6 months |
+    | 2 | Return to surveillance in 6 months <br> Consider repeat CT/MRI in &le; 3 months |
+    | 3 | Repeat or alternate CT/MRI in 3-6 months |
+    | 4 | MDT &plusmn; biopsy |
+    | 5 | HCC confirmed, MDT for management |
+    | M | MDT &plusmn; biopsy |
+    | TIV | MDT &plusmn; biopsy |
 
 - LI-RADS malignancy by category
 
-| Category | % HCC | % Malignancy |
-| --- | --- | --- |
-| 1 | 0 | 0 |
-| 2 | 13 | 14 |
-| 3 | 38 | 40 |
-| 4 | 74 | 80 |
-| 5 | 94 | 97 |
-| M | 36 | 93 |
+    | Category | % HCC | % Malignancy |
+    | --- | --- | --- |
+    | 1 | 0 | 0 |
+    | 2 | 13 | 14 |
+    | 3 | 38 | 40 |
+    | 4 | 74 | 80 |
+    | 5 | 94 | 97 |
+    | M | 36 | 93 |
 
 ## Management of HCC
 
