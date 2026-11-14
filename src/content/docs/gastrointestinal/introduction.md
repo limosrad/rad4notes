@@ -3,7 +3,7 @@ title: List of Topics
 description: Gastrointestinal and peritoneal imaging and interventions
 ---
 
-## Techniques in GI Imaging
+## Imaging Techniques
 
 ## Oesophagus
 

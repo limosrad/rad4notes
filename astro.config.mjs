@@ -18,6 +18,12 @@ export default defineConfig({
     starlight({
       title: 'Rad4Notes',
       customCss: ['./src/styles/custom.css'],
+      locales: {
+        root: {
+          label: 'English',
+          lang: 'en',
+        },
+      },
 
       head: [
         {
@@ -37,12 +43,7 @@ export default defineConfig({
 
             { label: 'Front Matter',
               collapsed: true,
-              items: [
-                'index',
-                'front-matter/disclaimer',
-                'front-matter/abbreviations',
-                'front-matter/universal-references',
-              ],
+              items: [{ autogenerate: { directory: 'front-matter' } }],
             },
 
             { label: 'Chest',
@@ -51,51 +52,39 @@ export default defineConfig({
                 'chest/introduction',
                 {
                   label: 'Imaging Modalities',
-                  items: [
-                    'chest/imaging-modalities/chest-usg',
-                    'chest/imaging-modalities/chest-x-ray',
-                    'chest/imaging-modalities/chest-ct',
-                  ]
+                  items: [{ autogenerate: { directory: 'chest/imaging-modalities' } }]
                 },
                 {
                   label: 'Infections',
-                  items: [
-                    'chest/infections/immunocompromised',
-                  ]
+                  items: [{ autogenerate: { directory: 'chest/infections' } }]
                 },
 
                 {
                   label: 'Lung Cancer',
-                  items: [
-                    'chest/lung-cancer/solitary-nodules',
-                    'chest/lung-cancer/lung-cancer',
-                    'chest/lung-cancer/other-neoplasms'
-                  ]
+                  items: [{ autogenerate: { directory: 'chest/lung-cancer' } }]
                 },
                 {
                   label: 'Mediastinum',
                   items: [
-                    'chest/mediastinum/mediastinal-masses',
+                    { autogenerate: { directory: 'chest/mediastinum' } }
                   ]
                 },
                 {
                   label: 'Miscellaneous',
                   items: [
-                    'chest/miscellaneous/chest-wall-pleura',
-                    'chest/miscellaneous/icu-radiograph',
+                    { autogenerate: { directory: 'chest/miscellaneous' } }
                   ]
                 },
                 {
                   label: 'Pulmonary Vascular Disease',
                   items: [
-                    'chest/pulmonary-vascular/pulmonary-embolism',
+                    { autogenerate: { directory: 'chest/pulmonary-vascular' } }
                   ]
                 },
                 {
                   label: 'Paediatric Chest',
                   items: [
-                    'chest/paediatric-chest/neonatal-chest',
-                    'chest/paediatric-chest/paediatric-chest',
+                    { autogenerate: { directory: 'chest/paediatric-chest' } }
                   ]
                 }
               ],
@@ -107,32 +96,25 @@ export default defineConfig({
                 {
                   label: 'Imaging Modalities',
                   items: [
-                    'cardiovascular/imaging-modalities/cardiac-mri',
-                    'cardiovascular/imaging-modalities/cardiac-ct',
-                    'cardiovascular/imaging-modalities/nuclear-cardiology',
+                    { autogenerate: { directory: 'cardiovascular/imaging-modalities' } }
                   ]
                 },
                 {
                   label: 'Congenital Heart Disease',
                   items: [
-                    'cardiovascular/congenital-heart/chest-x-ray-chd',
-                    'cardiovascular/congenital-heart/aorta-congenital',
-                    'cardiovascular/congenital-heart/cardiac-surgery',
+                    { autogenerate: { directory: 'cardiovascular/congenital-heart' } }
                   ]
                 },
                 {
                   label: 'Acquired Heart Disease',
                   items: [
-                    'cardiovascular/acquired-heart/ischaemic-heart-disease',
-                    'cardiovascular/acquired-heart/cardiac-masses',
+                    { autogenerate: { directory: 'cardiovascular/acquired-heart' } }
                   ]
                 },
                 {
                   label: 'Aorta and Peripheral Vascular Disease',
                   items: [
-                    'cardiovascular/aorta-peripheral-vascular/acute-aorta',
-                    'cardiovascular/aorta-peripheral-vascular/aortic-aneurysm',
-                    'cardiovascular/aorta-peripheral-vascular/vasculitis',
+                    { autogenerate: { directory: 'cardiovascular/aorta-peripheral-vascular' } }
                   ]
                 },                                
               ],  
@@ -142,7 +124,7 @@ export default defineConfig({
               items: [
                 'gastrointestinal/introduction',
                 {
-                  label: 'Imaging Modalities',
+                  label: 'Imaging Techniques',
                   items: [
                     //'gastrointestinal/imaging-techniques/abdominal-x-ray',
                     //'gastrointestinal/imaging-techniques/abdominal-ct',
@@ -151,37 +133,31 @@ export default defineConfig({
                 {
                   label: 'Oesophagus',
                   items: [
-                    'gastrointestinal/oesophagus/barium-oesophagogram',
-                    'gastrointestinal/oesophagus/oesophageal-carcinoma',
+                    { autogenerate: { directory: 'gastrointestinal/oesophagus' } }
                   ]
                 },
                 {
                   label: 'Stomach and Duodenum',
                   items: [
-                    'gastrointestinal/stomach-duodenum/stomach-benign',
-                    'gastrointestinal/stomach-duodenum/stomach-neoplasms',
-                    'gastrointestinal/stomach-duodenum/paediatric-duodenum',
+                    { autogenerate: { directory: 'gastrointestinal/stomach-duodenum' } }
                   ]
                 },
                 {
                   label: 'Small Bowel',
                   items: [
-                    'gastrointestinal/small-bowel/small-bowel-followthrough',
-                    'gastrointestinal/small-bowel/inflammatory-bowel-disease',
+                    { autogenerate: { directory: 'gastrointestinal/small-bowel' } }
                   ]
                 },
                 {
                   label: 'Colorectal and Appendix',
                   items: [
-                    'gastrointestinal/colorectal/colorectal-benign',
-                    'gastrointestinal/colorectal/colorectal-malignant',
+                    { autogenerate: { directory: 'gastrointestinal/colorectal' } }
                   ]
                 },
                 {
                   label: 'Paediatric GI',
                   items: [
-                    'gastrointestinal/paediatric-gi/paediatric-upper-gi',
-                    'gastrointestinal/paediatric-gi/paediatric-lower-gi',
+                    { autogenerate: { directory: 'gastrointestinal/paediatric-gi' } }
                   ]
                 },
               ],
@@ -193,33 +169,25 @@ export default defineConfig({
                 {
                   label: 'Liver',
                   items: [
-                    'hepatopancreatobiliary/liver/liver-doppler',
-                    'hepatopancreatobiliary/liver/diffuse-liver',
-                    'hepatopancreatobiliary/liver/focal-liver-general',
-                    'hepatopancreatobiliary/liver/focal-liver-hcc',
-                    'hepatopancreatobiliary/liver/liver-transplant',
+                    { autogenerate: { directory: 'hepatopancreatobiliary/liver' } }
                   ]
                 },
                 {
                   label: 'Biliary Tree',
                   items: [
-                    'hepatopancreatobiliary/biliary/cholangiopathies',
-                    'hepatopancreatobiliary/biliary/gall-bladder',
+                    { autogenerate: { directory: 'hepatopancreatobiliary/biliary' } }
                   ]
                 },       
                 {
                   label: 'Pancreas',
                   items: [
-                    //'hepatopancreatobiliary/pancreas/pancreatitis',
-                    'hepatopancreatobiliary/pancreas/cystic-pancreatic-neoplasms',
-                    'hepatopancreatobiliary/pancreas/solid-pancreatic-neoplasms',
+                    { autogenerate: { directory: 'hepatopancreatobiliary/pancreas' } }
                   ]
                 },
                 {
                   label: 'Spleen',
                   items: [
-                    'hepatopancreatobiliary/spleen/focal-spleen',
-                    'hepatopancreatobiliary/spleen/general-spleen',
+                    { autogenerate: { directory: 'hepatopancreatobiliary/spleen' } }
                   ]
                 }
               ],
@@ -231,39 +199,31 @@ export default defineConfig({
                 {
                   label: 'Adrenal gland',
                   items: [
-                    'genitourinary/adrenal/adrenal-general',
-                    'genitourinary/adrenal/adrenal-neoplasms',
-                    'genitourinary/adrenal/neuroblastoma',
+                    { autogenerate: { directory: 'genitourinary/adrenal' } }
                   ]
                 },
                 {
                   label: 'Kidneys',
                   items: [
-                    'genitourinary/renal/renal-benign',
-                    'genitourinary/renal/renal-neoplasms',
-                    'genitourinary/renal/renal-transplant',
+                    { autogenerate: { directory: 'genitourinary/renal' } }
                   ]
                 },
                 {
                   label: 'Retroperitoneum, Ureters, Urinary Bladder, Urethra and Penis',
                   items: [
-                    'genitourinary/ureter-bladder/retroperitoneum',
-                    'genitourinary/ureter-bladder/bladder-malignant',
-                    'genitourinary/ureter-bladder/urethra',
-                    'genitourinary/ureter-bladder/penis',
+                    { autogenerate: { directory: 'genitourinary/ureter-bladder' } }
                   ]
                 },
                 {
                   label: 'Prostate and Seminal Vesicles',
                   items: [
-                    'genitourinary/prostate-sv/prostate-cancer',
+                    { autogenerate: { directory: 'genitourinary/prostate-sv' } }
                   ]
                 },
                 {
                   label: 'Testis',
                   items: [
-                    'genitourinary/testis/testis-benign',
-                    'genitourinary/testis/testis-malignancy',
+                    { autogenerate: { directory: 'genitourinary/testis' } }
                   ]
                 }                
               ],
@@ -277,31 +237,25 @@ export default defineConfig({
                 {
                   label: 'Obstetric Imaging',
                   items: [
-                    'obg-breast/obstetrics/first-trimester',
-                    'obg-breast/obstetrics/postpartum',
+                    { autogenerate: { directory: 'obg-breast/obstetrics' } }
                   ]
                 },
                 {
                   label: 'Ovaries',
                   items: [
-                    'obg-breast/ovaries/ovaries-benign',
-                    'obg-breast/ovaries/ovaries-malignant',
+                    { autogenerate: { directory: 'obg-breast/ovaries' } }
                   ]
                 },
                 {
                   label: 'Uterus, Cervix and Vagina',
                   items: [
-                    'obg-breast/uterus-cervix/uterus-benign',
-                    'obg-breast/uterus-cervix/uterus-malignant',
-                    'obg-breast/uterus-cervix/cervix-benign',
-                    'obg-breast/uterus-cervix/cervix-malignant',
+                    { autogenerate: { directory: 'obg-breast/uterus-cervix' } }
                   ]
                 },
                 {
                   label: 'Breast',
                   items: [
-                    'obg-breast/breast/imaging-modalities',
-                    'obg-breast/breast/breast-cancer',
+                    { autogenerate: { directory: 'obg-breast/breast' } }
                   ]
                 },                
               ],
@@ -314,46 +268,31 @@ export default defineConfig({
                 {
                   label: 'CNS Neoplasms',
                   items: [
-                    'neuroradiology/cns-neoplasms/cns-neoplasm-ddx',
-                    'neuroradiology/cns-neoplasms/adult-supratentorial',
-                    'neuroradiology/cns-neoplasms/paediatric-supratentorial',
-                    'neuroradiology/cns-neoplasms/paediatric-infratentorial',
-                    'neuroradiology/cns-neoplasms/cerebellopontine-angle',
-                    'neuroradiology/cns-neoplasms/sellar-pineal',
-                    'neuroradiology/cns-neoplasms/syndromic-cns-neoplasms',
+                    { autogenerate: { directory: 'neuroradiology/cns-neoplasms' } }
                   ],
                 },
                 {
                   label: 'Infection, Inflammation and Degeneration',
                   items: [
-                    'neuroradiology/infection-inflammation-degeneration/cns-infections',
-                    'neuroradiology/infection-inflammation-degeneration/dementia',
-                    'neuroradiology/infection-inflammation-degeneration/multiple-sclerosis',
-                    'neuroradiology/infection-inflammation-degeneration/toxic-metabolic-encephalopathies',
+                    { autogenerate: { directory: 'neuroradiology/infection-inflammation-degeneration' } }
                   ],
                 },
                 {
                   label: 'Neurovascular',
                   items: [
-                    'neuroradiology/neurovascular/cns-haemorrhage',
-                    'neuroradiology/neurovascular/neuro-trauma',
-                    'neuroradiology/neurovascular/stroke',
+                    { autogenerate: { directory: 'neuroradiology/neurovascular' } }
                   ],
                 },
                 {
                   label: 'Spine',
                   items: [
-                    'neuroradiology/spine/craniovertebral-junction',
-                    'neuroradiology/spine/spine-bone-benign',
-                    'neuroradiology/spine/spine-bone-tumours',
-                    'neuroradiology/spine/spine-cns-neoplasms',
-                    'neuroradiology/spine/spine-trauma',
+                    { autogenerate: { directory: 'neuroradiology/spine' } }
                   ],
                 },
                 {
                   label: 'Paediatric Neuroradiology',
                   items: [
-                    'neuroradiology/paediatric-cns/perinatal-brain-injury',
+                    { autogenerate: { directory: 'neuroradiology/paediatric-cns' } }
                   ]
                 }
               ],
@@ -366,32 +305,20 @@ export default defineConfig({
                 {
                   label: 'Orbits',
                   items: [
-                    'head-neck/orbits/intraocular',
-                    'head-neck/orbits/optic-nerve',
-                    'head-neck/orbits/orbital-masses-intraconal',
-                    'head-neck/orbits/orbital-masses-extraconal',
+                    { autogenerate: { directory: 'head-neck/orbits' } }
                   ],
                 },                
                 {
                   label: 'Ear, Nose and Throat',
                   items: [
-                    'head-neck/ear-nose-throat/middle-ear',
-                    'head-neck/ear-nose-throat/inner-ear',
-                    'head-neck/ear-nose-throat/nose-pns',
-                    'head-neck/ear-nose-throat/suprahyoid-spaces',
-                    'head-neck/ear-nose-throat/infrahyoid-spaces',
-                    'head-neck/ear-nose-throat/thyroid-parathyroid',
-                    'head-neck/ear-nose-throat/salivary-gland-neoplasms',
+                    { autogenerate: { directory: 'head-neck/ear-nose-throat' } }
                   ],
                 },
 
                 {
                   label: 'Dental',
                   items: [
-                    'head-neck/dental/facial-trauma',
-                    'head-neck/dental/odontogenic-masses',
-                    'head-neck/dental/bone-lesions-jaw',
-                    'head-neck/dental/oral-cavity-cancer',
+                    { autogenerate: { directory: 'head-neck/dental' } }
                   ],
                 },                
               ],
@@ -405,44 +332,26 @@ export default defineConfig({
                 {
                   label: 'Bone – Benign and Non-neoplastic',
                   items: [
-                    'musculoskeletal/bone-benign/arthritis',
-                    'musculoskeletal/bone-benign/infection',
-                    'musculoskeletal/bone-benign/marrow',
-                    'musculoskeletal/bone-benign/metabolic',
-                    'musculoskeletal/bone-benign/skeletal-dysplasia',
+                    { autogenerate: { directory: 'musculoskeletal/bone-benign' } },
                   ],
                 },
                 {
                   label: 'Bone Tumours',
                   items: [
-                    'musculoskeletal/bone-tumours/bone-tumour-differentials',
-                    'musculoskeletal/bone-tumours/bone-tumour-benign',
-                    'musculoskeletal/bone-tumours/bone-tumour-chondroid',
-                    'musculoskeletal/bone-tumours/bone-tumour-osteoid',
-                    'musculoskeletal/bone-tumours/bone-tumour-malignant',
+                    { autogenerate: { directory: 'musculoskeletal/bone-tumours' } }
                     
                   ],
                 },
                 {
                   label: 'Soft Tissue',
                   items: [
-                    'musculoskeletal/soft-tissue/soft-tissue-benign',
-                    'musculoskeletal/soft-tissue/soft-tissue-neoplasms',
-                    'musculoskeletal/soft-tissue/soft-tissue-vascular',
-                    'musculoskeletal/soft-tissue/synovial-proliferative',
+                    { autogenerate: { directory: 'musculoskeletal/soft-tissue' } }
                   ],
                 },
                 {
                   label: 'Trauma',
                   items: [
-                    'musculoskeletal/trauma/trauma-approach',
-                    'musculoskeletal/trauma/shoulder',
-                    'musculoskeletal/trauma/elbow',
-                    'musculoskeletal/trauma/wrist',
-                    'musculoskeletal/trauma/pelvis-hip',
-                    'musculoskeletal/trauma/knee',
-                    'musculoskeletal/trauma/ankle-foot',
-                    'musculoskeletal/trauma/paediatric-trauma',
+                    { autogenerate: { directory: 'musculoskeletal/trauma' } }
                   ],
                 },
               ],
@@ -455,33 +364,26 @@ export default defineConfig({
                 {
                   label: 'X-ray Physics',
                   items: [
-                    //'physics/x-ray-physics/radiation-physics-introduction',
-                    //'physics/x-ray-physics/x-ray-production',
-                    //'physics/x-ray-physics/x-ray-interaction',
+                    { autogenerate: { directory: 'physics/x-ray-physics' } }
                   ]
                 },
                 {
                   label: 'CT Physics',
                   items: [
-                    //'physics/ct-physics/ct-scanning',
-                    //'physics/ct-physics/ct-contrast',
+                    { autogenerate: { directory: 'physics/ct-physics' } }
                     //'physics/ct-physics/ct-dose',
                   ]
                 },
                 {
                   label: 'MRI Physics',
                   items: [
-                    //'physics/mri-physics/mri-principles',
-                    //'physics/mri-physics/mri-sequences',
-                    //'physics/mri-physics/mri-contrast',
+                    { autogenerate: { directory: 'physics/mri-physics' } }
                   ]
                 },
                 {
                   label: 'Ultrasound Physics',
                   items: [
-                    //'physics/ultrasound-physics/ultrasound-principles',
-                    //'physics/ultrasound-physics/ultrasound-sequences',
-                    //'physics/ultrasound-physics/ultrasound-contrast',
+                    { autogenerate: { directory: 'physics/ultrasound-physics' } }
                   ]
                 },
               ]                                                  
@@ -494,33 +396,25 @@ export default defineConfig({
                 {
                   label: 'Contrast in Radiology',
                   items: [
-                    //'physics/contrast-in-radiology/radiation-physics-introduction',
-                    //'physics/contrast-in-radiology/x-ray-production',
-                    //'physics/contrast-in-radiology/x-ray-interaction',
+                    { autogenerate: { directory: 'physics/contrast-in-radiology' } }
                   ]
                 },
                 {
                   label: 'Statistics in Radiology',
                   items: [
-                    //'physics/statistics-in-radiology/ct-scanning',
-                    //'physics/statistics-in-radiology/ct-contrast',
-                    //'physics/statistics-in-radiology/ct-dose',
+                    { autogenerate: { directory: 'physics/statistics-in-radiology' } }
                   ]
                 },
                 {
                   label: 'Multisystem Radiology',
                   items: [
-                    //'physics/multisystem-radiology/mri-principles',
-                    //'physics/multisystem-radiology/mri-sequences',
-                    //'physics/multisystem-radiology/mri-contrast',
-                  ]
+                    { autogenerate: { directory: 'physics/multisystem-radiology' } }
+                ]
                 },
                 {
                   label: 'General Interventional Radiology',
                   items: [
-                    //'physics/general-interventional-radiology/ultrasound-principles',
-                    //'physics/general-interventional-radiology/ultrasound-sequences',
-                    //'physics/general-interventional-radiology/ultrasound-contrast',
+                    { autogenerate: { directory: 'physics/general-interventional-radiology' } }
                   ]
                 },
               ]                                                  

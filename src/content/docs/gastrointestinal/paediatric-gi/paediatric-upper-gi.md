@@ -5,6 +5,8 @@ description: Pyloric stenosis, upper GI obstruction
 
 ## Disorders of the anterior abdominal wall
 
+:::differentials
+
 |  | Gastroschisis | Omphalocoele |
 | --- | --- | --- |
 | Position of defect | Right paramedian | Midline |
@@ -15,6 +17,8 @@ description: Pyloric stenosis, upper GI obstruction
 | Bowel | NEC (20%), short bowel, intestinal atresias | No |
 | Associated abnormalities | No | Trisomy 13/18, Beckwith-Wiedemann (EMG syndrome) |
 | Prognosis | Depends on intestinal complications | Depends on associated malformations |
+
+:::
 
 - Prune belly syndrome (Eagle Barett syndrome)
     - Small kidneys

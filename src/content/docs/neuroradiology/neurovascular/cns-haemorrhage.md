@@ -28,7 +28,7 @@ Aneurysm site vs bleed:
 :::differentials
 
 | Feature | AVM | dAVF | 
-| --- | --- |
+| --- | --- | --- |
 | Aetiology | Congenital | Post-trauma or dural sinus thrombosis |
 | Peak age | 20-40 years | 40-60 years |
 | Location | Intraparenchymal | Skull base; dural sinus wall |
@@ -36,6 +36,7 @@ Aneurysm site vs bleed:
 | Intraparenchymal nidus | ++ | - |
 | Flow-related aneurysm | 15% | rare |
 | Haemorrhage risk | &uarr; (4% per year) | Variable (&uarr; if cortical vein involved)
+:::
 
 :::trivia
 

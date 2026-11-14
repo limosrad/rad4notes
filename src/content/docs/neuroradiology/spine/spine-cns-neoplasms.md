@@ -18,7 +18,7 @@ Primaty intramedullary spinal neoplasms:
 | T1 | = | = | &darr; to = (flow voids if large) |
 | T2 | &uarr; | &uarr;<br> “Haemosiderin cap” sign: extreme &darr; at cranial or caudal margin | &uarr; (+ flow voids) |
 | T1 C+ | + | ++ | +++ (small)<br> Heterogenous (large) |
-
+:::
 
 ## Further reading
 1. 
