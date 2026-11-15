@@ -1,264 +1,318 @@
-
 ---
 import DefaultThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro';
 ---
 
 <div class="rad-header-controls">
-
   <button
     type="button"
-    class="rad-collapse-all"
+    class="rad-header-button rad-collapse-all"
     id="rad-collapse-all"
     aria-label="Collapse all contents sections"
     title="Collapse all contents sections"
   >
-    ▲
+    <span aria-hidden="true">▲</span>
   </button>
 
   <button
     type="button"
-    class="rad-sidebar-toggle"
+    class="rad-header-button rad-sidebar-toggle"
     id="rad-toggle-left"
     aria-label="Hide contents sidebar"
     aria-pressed="true"
     title="Toggle contents sidebar"
   >
-    ☰
+    <span aria-hidden="true">☰</span>
   </button>
 
   <button
     type="button"
-    class="rad-sidebar-toggle"
+    class="rad-header-button rad-sidebar-toggle rad-right-sidebar-toggle"
     id="rad-toggle-right"
     aria-label="Hide page navigation"
     aria-pressed="true"
     title="Toggle page navigation"
   >
-    ☷
+    <span aria-hidden="true">☷</span>
   </button>
 
-  <select id="rad-learning-mode" aria-label="Learning mode">
-    <option value="reference">Open</option>
-    <option value="trivia">Trivia</option>
-    <option value="differentials">Differentials</option>
-    <option value="mcq">MCQ</option>
-    <option value="custom">Custom Revision</option>
-  </select>
+  <div class="rad-learning-controls">
+    <select id="rad-learning-mode" aria-label="Learning mode">
+      <option value="reference">Complete Reference</option>
+      <option value="trivia">Trivia</option>
+      <option value="differentials">Differentials</option>
+      <option value="mcq">MCQ</option>
+      <option value="custom">Custom Revision</option>
+    </select>
 
-  <fieldset id="rad-learning-categories" hidden>
-    <legend>Include categories</legend>
+    <fieldset id="rad-learning-categories" hidden>
+      <legend>Include categories</legend>
+      <label><input type="checkbox" value="trivia" checked /> Trivia</label>
+      <label><input type="checkbox" value="differentials" checked /> Differentials</label>
+      <label><input type="checkbox" value="mcq" /> MCQ</label>
+    </fieldset>
 
-    <label>
-      <input type="checkbox" value="trivia" checked />
-      Trivia
-    </label>
-
-    <label>
-      <input type="checkbox" value="differentials" checked />
-      Differentials
-    </label>
-
-    <label>
-      <input type="checkbox" value="mcq" />
-      MCQ
-    </label>
-  </fieldset>
-
-  <DefaultThemeSelect />
+    <DefaultThemeSelect />
+  </div>
 </div>
 
 <script>
-  const STORAGE_KEY = 'rad4notes-learning-mode';
+  const MODE_KEY = 'rad4notes-learning-mode';
   const CATEGORIES_KEY = 'rad4notes-learning-categories';
+  const SIDEBAR_KEY = 'rad4notes-sidebar-preferences';
 
-  const VALID_MODES = [
-    'reference',
-    'trivia',
-    'differentials',
-    'mcq',
-    'custom',
-  ];
+  const VALID_MODES = ['reference', 'trivia', 'differentials', 'mcq', 'custom'];
+  const VALID_CATEGORIES = ['trivia', 'differentials', 'mcq'];
+  const DEFAULT_CATEGORIES = ['trivia', 'differentials'];
 
-  const VALID_CATEGORIES = [
-    'trivia',
-    'differentials',
-    'mcq',
-  ];
-
-  function getSavedCategories() {
+  function readCategories() {
     try {
-      const saved = JSON.parse(
-        localStorage.getItem(CATEGORIES_KEY) || '["trivia","differentials"]'
-      );
-
+      const saved = JSON.parse(localStorage.getItem(CATEGORIES_KEY) || 'null');
       return Array.isArray(saved)
-        ? saved.filter(category => VALID_CATEGORIES.includes(category))
-        : ['trivia', 'differentials'];
+        ? saved.filter((item) => VALID_CATEGORIES.includes(item))
+        : [...DEFAULT_CATEGORIES];
     } catch {
-      return ['trivia', 'differentials'];
+      return [...DEFAULT_CATEGORIES];
     }
   }
 
+  function readSidebarPreferences() {
+    const defaults = { left: true, right: true };
+    try {
+      const saved = JSON.parse(localStorage.getItem(SIDEBAR_KEY) || 'null');
+      if (!saved || typeof saved !== 'object') return defaults;
+      return {
+        left: saved.left !== false,
+        right: saved.right !== false,
+      };
+    } catch {
+      return defaults;
+    }
+  }
+
+  function applySidebarPreferences(preferences) {
+    const root = document.documentElement;
+
+    // These preferences affect the custom desktop/tablet layout only.
+    root.dataset.radLeftSidebarHidden = String(!preferences.left);
+    root.dataset.radRightSidebarHidden = String(!preferences.right);
+
+    const leftButton = document.querySelector('#rad-toggle-left');
+    const rightButton = document.querySelector('#rad-toggle-right');
+
+    if (leftButton) {
+      leftButton.setAttribute('aria-pressed', String(preferences.left));
+      leftButton.setAttribute(
+        'aria-label',
+        preferences.left ? 'Hide contents sidebar' : 'Show contents sidebar',
+      );
+      leftButton.title = preferences.left ? 'Hide contents sidebar' : 'Show contents sidebar';
+    }
+
+    if (rightButton) {
+      rightButton.setAttribute('aria-pressed', String(preferences.right));
+      rightButton.setAttribute(
+        'aria-label',
+        preferences.right ? 'Hide page navigation' : 'Show page navigation',
+      );
+      rightButton.title = preferences.right ? 'Hide page navigation' : 'Show page navigation';
+    }
+
+    try {
+      localStorage.setItem(SIDEBAR_KEY, JSON.stringify(preferences));
+    } catch {
+      // The controls still work for the current page if storage is unavailable.
+    }
+  }
+
+  function moveHeaderControls() {
+    const titleWrapper = document.querySelector('.title-wrapper');
+    if (!titleWrapper) return;
+
+    const collapseButton = document.querySelector('#rad-collapse-all');
+    const leftButton = document.querySelector('#rad-toggle-left');
+
+    // Keep the collapse and left-sidebar controls beside the site title.
+    // The right-TOC control stays in this component's header-tools position,
+    // immediately after Search and before the learning controls.
+    if (collapseButton && collapseButton.parentElement !== titleWrapper) {
+      titleWrapper.append(collapseButton);
+    }
+    if (leftButton && leftButton.parentElement !== titleWrapper) {
+      titleWrapper.append(leftButton);
+    }
+  }
+
+  function getContentsRoot(sidebar) {
+    return Array.from(sidebar.querySelectorAll('details')).find((group) => {
+      const summary = Array.from(group.children).find(
+        (child) => child.tagName === 'SUMMARY',
+      );
+      return summary?.textContent.trim().toLowerCase() === 'contents';
+    });
+  }
+
+  function prepareSidebarNavigation() {
+    const sidebar = document.querySelector('.sidebar-content');
+    if (!sidebar) return;
+    const contentsRoot = getContentsRoot(sidebar);
+    if (contentsRoot) {
+      contentsRoot.dataset.radContentsRoot = 'true';
+      contentsRoot.open = true;
+    }
+  }
+
+  function collapseAllSidebarSections() {
+    // Starlight may render separate desktop and mobile sidebar trees.
+    // Collapse every copy so the visible drawer always reflects the action.
+    document.querySelectorAll('.sidebar-content').forEach((sidebar) => {
+      const contentsRoot = getContentsRoot(sidebar);
+      if (contentsRoot) {
+        contentsRoot.dataset.radContentsRoot = 'true';
+        contentsRoot.open = true;
+      }
+
+      sidebar.querySelectorAll('details').forEach((group) => {
+        if (group === contentsRoot) return;
+        group.open = false;
+        group.removeAttribute('open');
+      });
+    });
+  }
 
   let mcqCounter = 0;
 
   function enhanceMcqs() {
-    const blocks = document.querySelectorAll(
-      '.rad-learning-block--mcq:not([data-mcq-enhanced])'
-    );
-
-  blocks.forEach(block => {
-    const correctAnswer = Number(
-      block.getAttribute('data-correct-answer')
-    );
-
-    const question = block.querySelector(':scope > p');
-    const optionsList = block.querySelector(':scope > ol');
-
-    const explanation = Array.from(block.children).find(
-      element =>
-        element.tagName === 'P' &&
-        element.textContent.trim().startsWith('Explanation:')
-    );
-
-    if (
-      !question ||
-      !optionsList ||
-      !Number.isInteger(correctAnswer) ||
-      correctAnswer < 1 ||
-      correctAnswer > optionsList.children.length
-    ) {
-      return;
-    }
-
-    block.dataset.mcqEnhanced = 'true';
-
-    const form = document.createElement('div');
-    form.className = 'rad-mcq-form';
-
-    const fieldset = document.createElement('fieldset');
-    fieldset.className = 'rad-mcq-options';
-
-    const legend = document.createElement('legend');
-    legend.textContent = 'Select one answer';
-    fieldset.append(legend);
-
-    const optionLabels = [];
-    const groupName = `rad-mcq-${++mcqCounter}`;
-
-    Array.from(optionsList.children).forEach((item, index) => {
-      const label = document.createElement('label');
-      label.className = 'rad-mcq-option';
-
-      const radio = document.createElement('input');
-      radio.type = 'radio';
-      radio.name = groupName;
-      radio.value = String(index + 1);
-
-      const text = document.createElement('span');
-      text.textContent = item.textContent.trim();
-
-      label.append(radio, text);
-      fieldset.append(label);
-
-      optionLabels.push(label);
-    });
-
-    const submit = document.createElement('button');
-    submit.type = 'button';
-    submit.className = 'rad-mcq-submit';
-    submit.textContent = 'Submit Answer';
-
-    const feedback = document.createElement('div');
-    feedback.className = 'rad-mcq-feedback';
-    feedback.setAttribute('aria-live', 'polite');
-
-    form.append(fieldset, submit, feedback);
-
-    optionsList.replaceWith(form);
-
-    if (explanation) {
-      explanation.hidden = true;
-      explanation.classList.add('rad-mcq-explanation');
-    }
-
-    submit.addEventListener('click', () => {
-      const selected = fieldset.querySelector(
-        'input[type="radio"]:checked'
-      );
-
-      if (!selected) {
-        feedback.textContent = 'Please select an answer first.';
-        feedback.dataset.result = 'unanswered';
-        return;
-      }
-
-      const selectedAnswer = Number(selected.value);
-      const isCorrect = selectedAnswer === correctAnswer;
-
-      feedback.replaceChildren();
-
-      const result = document.createElement('strong');
-      result.textContent = isCorrect
-        ? 'Correct!'
-        : 'Incorrect. The correct answer is:';
-
-      feedback.append(result);
-
-      if (!isCorrect) {
-        const correctText = document.createElement('p');
-        correctText.textContent =
-          optionLabels[correctAnswer - 1].textContent.trim();
-        feedback.append(correctText);
-      }
-
-      feedback.dataset.result = isCorrect ? 'correct' : 'incorrect';
-
-      optionLabels.forEach((label, index) => {
-        label.classList.toggle(
-          'is-correct',
-          index + 1 === correctAnswer
+    document
+      .querySelectorAll('.rad-learning-block--mcq:not([data-mcq-enhanced])')
+      .forEach((block) => {
+        const correctAnswer = Number(block.getAttribute('data-correct-answer'));
+        const question = block.querySelector(':scope > p');
+        const optionsList = block.querySelector(':scope > ol');
+        const explanation = Array.from(block.children).find(
+          (element) =>
+            element.tagName === 'P' &&
+            element.textContent.trim().startsWith('Explanation:'),
         );
 
-        label.classList.toggle(
-          'is-incorrect',
-          index + 1 === selectedAnswer && !isCorrect
-        );
+        if (
+          !question ||
+          !optionsList ||
+          !Number.isInteger(correctAnswer) ||
+          correctAnswer < 1 ||
+          correctAnswer > optionsList.children.length
+        ) {
+          return;
+        }
+
+        block.dataset.mcqEnhanced = 'true';
+
+        const form = document.createElement('div');
+        form.className = 'rad-mcq-form';
+
+        const fieldset = document.createElement('fieldset');
+        fieldset.className = 'rad-mcq-options';
+
+        const legend = document.createElement('legend');
+        legend.textContent = 'Select one answer';
+        fieldset.append(legend);
+
+        const optionLabels = [];
+        const groupName = `rad-mcq-${++mcqCounter}`;
+
+        Array.from(optionsList.children).forEach((item, index) => {
+          const label = document.createElement('label');
+          label.className = 'rad-mcq-option';
+
+          const radio = document.createElement('input');
+          radio.type = 'radio';
+          radio.name = groupName;
+          radio.value = String(index + 1);
+
+          const text = document.createElement('span');
+          text.textContent = item.textContent.trim();
+
+          label.append(radio, text);
+          fieldset.append(label);
+          optionLabels.push(label);
+        });
+
+        const submit = document.createElement('button');
+        submit.type = 'button';
+        submit.className = 'rad-mcq-submit';
+        submit.textContent = 'Submit Answer';
+
+        const feedback = document.createElement('div');
+        feedback.className = 'rad-mcq-feedback';
+        feedback.setAttribute('aria-live', 'polite');
+
+        form.append(fieldset, submit, feedback);
+        optionsList.replaceWith(form);
+
+        if (explanation) {
+          explanation.hidden = true;
+          explanation.classList.add('rad-mcq-explanation');
+        }
+
+        submit.addEventListener('click', () => {
+          const selected = fieldset.querySelector('input[type="radio"]:checked');
+
+          if (!selected) {
+            feedback.textContent = 'Please select an answer first.';
+            feedback.dataset.result = 'unanswered';
+            return;
+          }
+
+          const selectedAnswer = Number(selected.value);
+          const isCorrect = selectedAnswer === correctAnswer;
+          feedback.replaceChildren();
+
+          const result = document.createElement('strong');
+          result.textContent = isCorrect
+            ? 'Correct!'
+            : 'Incorrect. The correct answer is:';
+          feedback.append(result);
+
+          if (!isCorrect) {
+            const correctText = document.createElement('p');
+            correctText.textContent = optionLabels[correctAnswer - 1].textContent.trim();
+            feedback.append(correctText);
+          }
+
+          feedback.dataset.result = isCorrect ? 'correct' : 'incorrect';
+
+          optionLabels.forEach((label, index) => {
+            label.classList.toggle('is-correct', index + 1 === correctAnswer);
+            label.classList.toggle(
+              'is-incorrect',
+              index + 1 === selectedAnswer && !isCorrect,
+            );
+          });
+
+          fieldset.disabled = true;
+          submit.disabled = true;
+          submit.textContent = 'Answer Submitted';
+          if (explanation) explanation.hidden = false;
+        });
       });
-
-      fieldset.disabled = true;
-      submit.disabled = true;
-      submit.textContent = 'Answer Submitted';
-
-      if (explanation) {
-        explanation.hidden = false;
-      }
-    });
-  });
-}
-
-  
+  }
 
   function updateLearningContent(mode, categories) {
     const content = document.querySelector('.sl-markdown-content');
-
     if (!content) return;
 
     content.querySelector('.rad-learning-empty')?.remove();
-
     if (mode === 'reference') return;
 
     const selected = mode === 'custom' ? categories : [mode];
-
     const matchingBlocks = Array.from(
-      content.querySelectorAll('.rad-learning-block')
-    ).filter(block =>
-      selected.some(category =>
-        block.classList.contains(`rad-learning-block--${category}`)
-      )
+      content.querySelectorAll('.rad-learning-block'),
+    ).filter((block) =>
+      selected.some((category) =>
+        block.classList.contains(`rad-learning-block--${category}`),
+      ),
     );
 
-    if (matchingBlocks.length > 0) return;
+    if (matchingBlocks.length) return;
 
     const empty = document.createElement('div');
     empty.className = 'rad-learning-empty';
@@ -271,309 +325,155 @@ import DefaultThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro'
       message.textContent =
         'There are currently no entries in the selected categories for this topic.';
     } else {
-      const messages = {
+      const labels = {
         trivia: 'Testable Trivia',
         differentials: 'Differentials',
         mcq: 'MCQs',
       };
-
-      heading.textContent = `No ${messages[mode]} available`;
-      message.textContent =
-        `There are currently no ${messages[mode]} entries for this topic.`;
+      heading.textContent = `No ${labels[mode]} available`;
+      message.textContent = `There are currently no ${labels[mode]} entries for this topic.`;
     }
 
     empty.append(heading, message);
     content.append(empty);
   }
 
-  function applyLearningMode(mode, categories) {
-    document.documentElement.dataset.learningMode = mode;
-    document.documentElement.dataset.learningTypes =
-      categories.join(' ');
+  function setLearningMode(mode) {
+    if (!VALID_MODES.includes(mode)) return;
 
+    const categories = readCategories();
+    try {
+      localStorage.setItem(MODE_KEY, mode);
+    } catch {}
+
+    document.querySelectorAll('#rad-learning-mode').forEach((selector) => {
+      selector.value = mode;
+    });
+    document.querySelectorAll('#rad-learning-categories').forEach((panel) => {
+      panel.hidden = mode !== 'custom';
+    });
+
+    document.documentElement.dataset.learningMode = mode;
+    document.documentElement.dataset.learningTypes = categories.join(' ');
     updateLearningContent(mode, categories);
   }
 
+  function setLearningCategories(sourceCheckbox) {
+    const currentPanel = sourceCheckbox.closest('#rad-learning-categories');
+    if (!currentPanel) return;
+
+    const current = Array.from(
+      currentPanel.querySelectorAll('input[type="checkbox"]'),
+    )
+      .filter((checkbox) => checkbox.checked)
+      .map((checkbox) => checkbox.value)
+      .filter((category) => VALID_CATEGORIES.includes(category));
+
+    try {
+      localStorage.setItem(CATEGORIES_KEY, JSON.stringify(current));
+      localStorage.setItem(MODE_KEY, 'custom');
+    } catch {}
+
+    // Synchronize all copies, including controls rendered later in the mobile drawer.
+    document.querySelectorAll('#rad-learning-categories').forEach((panel) => {
+      panel.hidden = false;
+      panel.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+        checkbox.checked = current.includes(checkbox.value);
+      });
+    });
+    document.querySelectorAll('#rad-learning-mode').forEach((selector) => {
+      selector.value = 'custom';
+    });
+
+    document.documentElement.dataset.learningMode = 'custom';
+    document.documentElement.dataset.learningTypes = current.join(' ');
+    updateLearningContent('custom', current);
+  }
+
   function initializeLearningMode() {
-    const selector = document.querySelector('#rad-learning-mode');
-    const categoryPanel = document.querySelector(
-      '#rad-learning-categories'
-    );
+    const categories = readCategories();
+    const savedMode = localStorage.getItem(MODE_KEY);
+    const mode = VALID_MODES.includes(savedMode) ? savedMode : 'reference';
 
-    if (!selector || !categoryPanel) return;
-
-    const checkboxes = Array.from(
-      categoryPanel.querySelectorAll('input[type="checkbox"]')
-    );
-
-    const savedMode = localStorage.getItem(STORAGE_KEY);
-
-    const mode = VALID_MODES.includes(savedMode)
-      ? savedMode
-      : 'reference';
-
-    let categories = getSavedCategories();
-
-    selector.value = mode;
-
-    checkboxes.forEach(checkbox => {
-      checkbox.checked = categories.includes(checkbox.value);
+    // Set up every copy currently in the DOM. Interaction itself is delegated
+    // from document, so controls inserted later by Starlight also work.
+    document.querySelectorAll('#rad-learning-mode').forEach((selector) => {
+      selector.value = mode;
+    });
+    document.querySelectorAll('#rad-learning-categories').forEach((panel) => {
+      panel.hidden = mode !== 'custom';
+      panel.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+        checkbox.checked = categories.includes(checkbox.value);
+      });
     });
 
-    categoryPanel.hidden = mode !== 'custom';
-
-    applyLearningMode(mode, categories);
+    document.documentElement.dataset.learningMode = mode;
+    document.documentElement.dataset.learningTypes = categories.join(' ');
+    updateLearningContent(mode, categories);
     enhanceMcqs();
-
-    if (selector.dataset.initialized === 'true') return;
-
-    selector.dataset.initialized = 'true';
-
-    selector.addEventListener('change', () => {
-      const selectedMode = selector.value;
-
-      localStorage.setItem(STORAGE_KEY, selectedMode);
-
-      categoryPanel.hidden = selectedMode !== 'custom';
-
-      applyLearningMode(selectedMode, categories);
-    });
-
-    checkboxes.forEach(checkbox => {
-      checkbox.addEventListener('change', () => {
-        categories = checkboxes
-          .filter(item => item.checked)
-          .map(item => item.value);
-
-        localStorage.setItem(
-          CATEGORIES_KEY,
-          JSON.stringify(categories)
-        );
-
-        applyLearningMode('custom', categories);
-      });
-    });
   }
 
-// ========================================
-// Rad4Notes — Collapsible Sidebars
-// ========================================
-
-const SIDEBAR_STORAGE_KEY = 'rad4notes-sidebar-preferences';
-
-function initializeSidebarToggles() {
-  const leftButton = document.querySelector('#rad-toggle-left');
-  const rightButton = document.querySelector('#rad-toggle-right');
-
-  if (!leftButton || !rightButton) return;
-
-  let preferences = {
-    left: true,
-    right: true
-  };
-
-  try {
-    const saved = JSON.parse(
-      localStorage.getItem(SIDEBAR_STORAGE_KEY)
-    );
-
-    if (saved && typeof saved === 'object') {
-      preferences.left = saved.left !== false;
-      preferences.right = saved.right !== false;
-    }
-  } catch {
-    // Use default: both sidebars visible.
-  }
-
-  function applySidebarPreferences() {
-    const root = document.documentElement;
-
-    root.dataset.radLeftSidebarHidden =
-      String(!preferences.left);
-
-    root.dataset.radRightSidebarHidden =
-      String(!preferences.right);
-
-    leftButton.setAttribute(
-      'aria-pressed',
-      String(preferences.left)
-    );
-
-    rightButton.setAttribute(
-      'aria-pressed',
-      String(preferences.right)
-    );
-
-    leftButton.setAttribute(
-      'aria-label',
-      preferences.left
-        ? 'Hide contents sidebar'
-        : 'Show contents sidebar'
-    );
-
-    rightButton.setAttribute(
-      'aria-label',
-      preferences.right
-        ? 'Hide page navigation'
-        : 'Show page navigation'
-    );
-
-    localStorage.setItem(
-      SIDEBAR_STORAGE_KEY,
-      JSON.stringify(preferences)
-    );
-  }
-
-  if (leftButton.dataset.initialized !== 'true') {
-    leftButton.dataset.initialized = 'true';
-
-    leftButton.addEventListener('click', () => {
-      preferences.left = !preferences.left;
-      applySidebarPreferences();
-    });
-  }
-
-  if (rightButton.dataset.initialized !== 'true') {
-    rightButton.dataset.initialized = 'true';
-
-    rightButton.addEventListener('click', () => {
-      preferences.right = !preferences.right;
-      applySidebarPreferences();
-    });
-  }
-  
-
-  applySidebarPreferences();
-  }
-
-
-  
-function initializeCollapseAll() {
-  const titleWrapper = document.querySelector('.title-wrapper');
-  const collapseButton = document.querySelector('#rad-collapse-all');
-  const sidebarButton = document.querySelector('#rad-toggle-left');
-
-  if (!titleWrapper || !collapseButton || !sidebarButton) return;
-
-  // Keep both buttons together in the left header.
-  titleWrapper.append(collapseButton, sidebarButton);
-
-  if (collapseButton.dataset.initialized !== 'true') {
-    collapseButton.dataset.initialized = 'true';
-
-    collapseButton.addEventListener('click', () => {
-      document.querySelectorAll('.sidebar-content details').forEach(group => {
-        if (group.parentElement.closest('details')) {
-          group.open = false;
-        }
-      });
-    });
-  }
-}
-
-
-
-
-
-  initializeLearningMode();
-  initializeSidebarToggles();
-  initializeCollapseAll();
-
-  document.addEventListener('astro:page-load', () => {
+  function initializeRad4NotesHeader() {
+    moveHeaderControls();
+    prepareSidebarNavigation();
+    initializeCollapseButton();
     initializeLearningMode();
-    initializeSidebarToggles();
-    initializeCollapseAll();
-  });
+    applySidebarPreferences(readSidebarPreferences());
+  }
 
-    
+  // Capture the action before Starlight's mobile-drawer click handler sees it.
+  // This works for every responsive copy of the component.
+  if (!document.documentElement.dataset.radHeaderEventsBound) {
+    document.documentElement.dataset.radHeaderEventsBound = 'true';
+
+    // Delegated change handling is essential here: Starlight can create or
+    // clone the mobile header controls after the initial page script runs.
+    document.addEventListener('change', (event) => {
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+
+      const modeSelector = target.closest('#rad-learning-mode');
+      if (modeSelector) {
+        setLearningMode(modeSelector.value);
+        return;
+      }
+
+      const categoryCheckbox = target.closest(
+        '#rad-learning-categories input[type="checkbox"]',
+      );
+      if (categoryCheckbox) {
+        setLearningCategories(categoryCheckbox);
+      }
+    }, true);
+
+    document.addEventListener('click', (event) => {
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+
+      const collapseButton = target.closest('#rad-collapse-all');
+      if (collapseButton) {
+        event.preventDefault();
+        event.stopPropagation();
+        event.stopImmediatePropagation();
+        collapseAllSidebarSections();
+        return;
+      }
+
+      if (target.closest('#rad-toggle-left')) {
+        const preferences = readSidebarPreferences();
+        preferences.left = !preferences.left;
+        applySidebarPreferences(preferences);
+        return;
+      }
+
+      if (target.closest('#rad-toggle-right')) {
+        const preferences = readSidebarPreferences();
+        preferences.right = !preferences.right;
+        applySidebarPreferences(preferences);
+      }
+    }, true);
+  }
+
+  initializeRad4NotesHeader();
+  document.addEventListener('astro:page-load', initializeRad4NotesHeader);
 </script>
-
-<style>
-  .rad-header-controls {
-    display: flex;
-    align-items: center;
-    gap: 0.65rem;
-    flex-wrap: wrap;
-  }
-
-  #rad-learning-mode {
-    max-width: 12rem;
-    padding: 0.45rem 0.6rem;
-    border: 1px solid var(--sl-color-gray-5);
-    border-radius: 0.4rem;
-    background: var(--sl-color-bg);
-    color: var(--sl-color-text);
-    font: inherit;
-    font-size: 0.85rem;
-    cursor: pointer;
-  }
-
-  #rad-learning-categories {
-    display: flex;
-    align-items: center;
-    gap: 0.7rem;
-    border: 0;
-    padding: 0;
-    margin: 0;
-    font-size: 0.8rem;
-  }
-
-  #rad-learning-categories[hidden] {
-    display: none;
-  }
-
-  #rad-learning-categories legend {
-    display: none;
-  }
-
-  #rad-learning-categories label {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    white-space: nowrap;
-    cursor: pointer;
-  }
-
-  #rad-learning-categories input {
-    accent-color: var(--sl-color-accent);
-  }
-
-  @media (max-width: 50rem) {
-    #rad-learning-mode {
-      max-width: 9rem;
-      font-size: 0.75rem;
-    }
-
-    #rad-learning-categories {
-      gap: 0.4rem;
-      font-size: 0.7rem;
-    }
-  }
-
-  .title-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    overflow: visible;
-  }
-
-  .rad-collapse-all {
-    flex-shrink: 0;
-    padding: 0.4rem 0.7rem;
-    border: 1px solid var(--sl-color-gray-5);
-    border-radius: 0.4rem;
-    background: var(--sl-color-bg);
-    color: var(--sl-color-text);
-    font: inherit;
-    font-size: 0.8rem;
-    white-space: nowrap;
-    cursor: pointer;
-  }
-
-  .rad-collapse-all:hover {
-    background: var(--sl-color-accent-low);
-    color: var(--sl-color-text-accent);
-  }
-  
-</style>
-

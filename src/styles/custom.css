@@ -1,135 +1,78 @@
-/*
- * Rad4Notes — Custom Stylesheet
- * ----------------------------------------
- * Contents
- *  1.  Global layout and design tokens
- *  2.  Tables
- *  3.  Testable points (Starlight tips)
- *  4.  Learning blocks
- *  5.  Learning modes
- *  6.  Custom revision mode
- *  7.  Blockquotes
- *  8.  Images
- *  9.  Sidebar navigation styling
- * 10.  Code blocks
- * 11.  Horizontal separators
- * 12.  Responsive adjustments
- * 13.  Homepage
- * 14.  Interactive MCQs
- * 15.  Collapsible sidebars and layout
- * 16.  SVG image width override
- *
- * Maintenance notes
- * - Keep related styles together under their section headings.
- * - The final sections contain intentional layout overrides.
- * - Sidebar layout selectors target Starlight's generated markup.
- * - Test desktop and mobile layouts, and both colour themes,
- *   after changing layout-related rules.
- */
-
-/* ========================================
-   1. Global layout and design tokens
-   ======================================== */
-
-/* ----------------------------------------
-   Core CSS variables
-   ---------------------------------------- */
+/* =========================================================
+   Rad4Notes — global design system
+   ========================================================= */
 
 :root {
   --sl-content-width: 50rem;
   --sl-sidebar-width: 18rem;
   --sl-text-base: 1rem;
   --sl-line-height: 1.75;
-
   scroll-behavior: smooth;
 }
 
-/* ----------------------------------------
-   Light theme
-   ---------------------------------------- */
-
+/* Theme tokens */
 :root[data-theme='light'] {
   --sl-color-accent-low: #e5edfb;
   --sl-color-accent: #315fa8;
   --sl-color-accent-high: #193b70;
-
   --sl-color-bg: #f8fafd;
-  --sl-color-bg-nav: #ffffff;
+  --sl-color-bg-nav: #fff;
   --sl-color-bg-sidebar: #f0f3f8;
-
   --sl-color-text: #263449;
   --sl-color-text-accent: #234f91;
 }
-
-/* ----------------------------------------
-   Dark theme
-   ---------------------------------------- */
 
 :root[data-theme='dark'] {
   --sl-color-accent-low: #263c5c;
   --sl-color-accent: #9bbcff;
   --sl-color-accent-high: #d6e4ff;
-
   --sl-color-bg: #1c222d;
   --sl-color-bg-nav: #202631;
   --sl-color-bg-sidebar: #202631;
-
   --sl-color-text: #e0e6ef;
   --sl-color-text-accent: #b5ceff;
 }
 
-/* ----------------------------------------
-   Main reading area
-   ---------------------------------------- */
-
+/* Main reading area and typography */
 .sl-markdown-content {
+  max-width: 100%;
+  min-width: 0;
   font-size: 1rem;
   line-height: 1.8;
-  max-width: 100%;
 }
 
-.sl-markdown-content p {
-  margin-block: 1rem;
-}
-
-/* ----------------------------------------
-   Typography and headings
-   ---------------------------------------- */
+.sl-markdown-content p { margin-block: 1rem; }
 
 .sl-markdown-content h1 {
+  margin-bottom: 1.5rem;
   font-size: 2.1rem;
   font-weight: 700;
   letter-spacing: -0.035em;
   line-height: 1.25;
-  margin-bottom: 1.5rem;
 }
 
 .sl-markdown-content h2 {
-  font-size: 1.5rem;
-  font-weight: 650;
-  letter-spacing: -0.02em;
   margin-top: 2.8rem;
   margin-bottom: 1rem;
   padding-bottom: 0.4rem;
   border-bottom: 1px solid var(--sl-color-gray-5);
+  font-size: 1.5rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
 }
 
 .sl-markdown-content h3 {
-  font-size: 1.18rem;
-  font-weight: 650;
   margin-top: 2rem;
   margin-bottom: 0.75rem;
+  font-size: 1.18rem;
+  font-weight: 650;
 }
 
 .sl-markdown-content h4 {
+  margin-top: 1.5rem;
   font-size: 1.05rem;
   font-weight: 600;
-  margin-top: 1.5rem;
 }
-
-/* ----------------------------------------
-   Links
-   ---------------------------------------- */
 
 .sl-markdown-content a {
   color: var(--sl-color-text-accent);
@@ -143,26 +86,10 @@
   text-decoration-color: var(--sl-color-text-accent);
 }
 
-/* ----------------------------------------
-   Lists
-   ---------------------------------------- */
+.sl-markdown-content li { margin-block: 0.35rem; }
+.sl-markdown-content li::marker { color: var(--sl-color-accent); }
 
-.sl-markdown-content li {
-  margin-block: 0.35rem;
-}
-
-.sl-markdown-content li::marker {
-  color: var(--sl-color-accent);
-}
-
-/* ----------------------------------------
-   Tables
-   ---------------------------------------- */
-
-/* ========================================
-   2. Tables
-   ======================================== */
-
+/* Tables */
 .sl-markdown-content table {
   display: block;
   width: 100%;
@@ -189,52 +116,32 @@
 }
 
 .sl-markdown-content tbody tr:nth-child(even) {
-  background: color-mix(
-    in srgb,
-    var(--sl-color-bg-sidebar) 65%,
-    transparent
-  );
+  background: color-mix(in srgb, var(--sl-color-bg-sidebar) 65%, transparent);
 }
 
-.sl-markdown-content tbody tr:hover {
-  background: var(--sl-color-accent-low);
-}
+.sl-markdown-content tbody tr:hover { background: var(--sl-color-accent-low); }
 
-/* ========================================
-   3. Testable points (Starlight tips)
-   ======================================== */
-
+/* Starlight tip asides */
 .starlight-aside--tip {
-  border-inline-start: 4px solid #478bd0;
-  background: var(--sl-color-accent-low);
-  border-radius: 0 0.6rem 0.6rem 0;
-  padding: 1rem 1.25rem;
   margin-block: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-inline-start: 4px solid #478bd0;
+  border-radius: 0 0.6rem 0.6rem 0;
+  background: var(--sl-color-accent-low);
 }
 
 .starlight-aside--tip .starlight-aside__title {
   color: var(--sl-color-text-accent);
+  font-size: 0.85rem;
   font-weight: 750;
   letter-spacing: 0.045em;
-  font-size: 0.85rem;
 }
 
-.starlight-aside--tip .starlight-aside__content {
-  line-height: 1.75;
-}
+.starlight-aside--tip .starlight-aside__content { line-height: 1.75; }
+.starlight-aside--tip ul { margin-block: 0.5rem; }
+.starlight-aside--tip li { margin-block: 0.4rem; }
 
-.starlight-aside--tip ul {
-  margin-block: 0.5rem;
-}
-
-.starlight-aside--tip li {
-  margin-block: 0.4rem;
-}
-
-/* ========================================
-   4. Learning blocks
-   ======================================== */
-
+/* Learning blocks */
 .rad-learning-block {
   margin: 1.5rem 0 2rem;
   padding: 1.1rem 1.35rem;
@@ -244,85 +151,68 @@
   line-height: 1.75;
 }
 
-/* Testable Trivia — Blue */
-
 .rad-learning-block--trivia {
   border-inline-start-color: #478bd0;
-  background: color-mix(
-    in srgb,
-    #478bd0 8%,
-    var(--sl-color-bg)
-  );
+  background: color-mix(in srgb, #478bd0 8%, var(--sl-color-bg));
 }
-
-/* Differentials — Purple */
 
 .rad-learning-block--differentials {
   border-inline-start-color: #9474ce;
-  background: color-mix(
-    in srgb,
-    #9474ce 8%,
-    var(--sl-color-bg)
-  );
+  background: color-mix(in srgb, #9474ce 8%, var(--sl-color-bg));
 }
-
-/* MCQ — Teal */
 
 .rad-learning-block--mcq {
   border-inline-start-color: #299d91;
-  background: color-mix(
-    in srgb,
-    #299d91 8%,
-    var(--sl-color-bg)
-  );
+  background: color-mix(in srgb, #299d91 8%, var(--sl-color-bg));
 }
 
-/* Content spacing */
+.rad-learning-block > :first-child { margin-top: 0; }
+.rad-learning-block > :last-child { margin-bottom: 0; }
+.rad-learning-block li { margin-block: 0.35rem; }
+.rad-learning-block strong { font-weight: 700; }
 
-.rad-learning-block > :first-child {
-  margin-top: 0;
+.rad-learning-block--trivia::before { content: 'TESTABLE TRIVIA'; }
+.rad-learning-block--differentials::before { content: 'DIFFERENTIALS'; }
+.rad-learning-block--mcq::before { content: 'MCQ'; }
+
+.rad-learning-block::before {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--sl-color-text-accent);
+  font-size: 0.75rem;
+  font-weight: 750;
+  letter-spacing: 0.1em;
 }
 
-.rad-learning-block > :last-child {
-  margin-bottom: 0;
-}
-
-.rad-learning-block li {
-  margin-block: 0.35rem;
-}
-
-.rad-learning-block strong {
-  font-weight: 700;
-}
-
-/* ========================================
-   5. Learning modes
-   ======================================== */
-
-html[data-learning-mode="trivia"]
-.sl-markdown-content > :not(.rad-learning-block--trivia):not(.rad-learning-empty) {
-  display: none !important;
-}
-
-html[data-learning-mode="differentials"]
-.sl-markdown-content > :not(.rad-learning-block--differentials):not(.rad-learning-empty) {
-  display: none !important;
-}
-
-html[data-learning-mode="mcq"]
+/* Learning modes */
+html[data-learning-mode='trivia']
+.sl-markdown-content > :not(.rad-learning-block--trivia):not(.rad-learning-empty),
+html[data-learning-mode='differentials']
+.sl-markdown-content > :not(.rad-learning-block--differentials):not(.rad-learning-empty),
+html[data-learning-mode='mcq']
 .sl-markdown-content > :not(.rad-learning-block--mcq):not(.rad-learning-empty) {
   display: none !important;
 }
 
-/* Hide the right-hand table of contents in focused modes */
-
-html[data-learning-mode="trivia"] .right-sidebar,
-html[data-learning-mode="differentials"] .right-sidebar,
-html[data-learning-mode="mcq"] .right-sidebar {
+html[data-learning-mode='trivia'] .right-sidebar,
+html[data-learning-mode='differentials'] .right-sidebar,
+html[data-learning-mode='mcq'] .right-sidebar,
+html[data-learning-mode='custom'] .right-sidebar {
   display: none !important;
 }
 
-/* Empty-state message */
+html[data-learning-mode='custom'] .sl-markdown-content > :not(.rad-learning-empty) {
+  display: none !important;
+}
+
+html[data-learning-mode='custom'][data-learning-types~='trivia']
+.sl-markdown-content > .rad-learning-block--trivia,
+html[data-learning-mode='custom'][data-learning-types~='differentials']
+.sl-markdown-content > .rad-learning-block--differentials,
+html[data-learning-mode='custom'][data-learning-types~='mcq']
+.sl-markdown-content > .rad-learning-block--mcq {
+  display: block !important;
+}
 
 .rad-learning-empty {
   margin: 2rem 0;
@@ -336,83 +226,19 @@ html[data-learning-mode="mcq"] .right-sidebar {
 
 .rad-learning-empty strong {
   display: block;
-  color: var(--sl-color-text);
   margin-bottom: 0.4rem;
+  color: var(--sl-color-text);
   font-size: 1rem;
 }
 
-/* Automatically label learning blocks */
-
-.rad-learning-block--trivia::before {
-  content: "TESTABLE TRIVIA";
-}
-
-.rad-learning-block--differentials::before {
-  content: "DIFFERENTIALS";
-}
-
-.rad-learning-block--mcq::before {
-  content: "MCQ";
-}
-
-.rad-learning-block::before {
-  display: block;
-  margin-bottom: 0.8rem;
-  font-size: 0.75rem;
-  font-weight: 750;
-  letter-spacing: 0.1em;
-  color: var(--sl-color-text-accent);
-}
-
-/* ========================================
-   6. Custom revision mode
-   ======================================== */
-
-/* Hide all regular article content */
-
-html[data-learning-mode="custom"]
-.sl-markdown-content > :not(.rad-learning-empty) {
-  display: none !important;
-}
-
-/* Show selected learning categories */
-
-html[data-learning-mode="custom"][data-learning-types~="trivia"]
-.sl-markdown-content > .rad-learning-block--trivia {
-  display: block !important;
-}
-
-html[data-learning-mode="custom"][data-learning-types~="differentials"]
-.sl-markdown-content > .rad-learning-block--differentials {
-  display: block !important;
-}
-
-html[data-learning-mode="custom"][data-learning-types~="mcq"]
-.sl-markdown-content > .rad-learning-block--mcq {
-  display: block !important;
-}
-
-/* Hide normal article table of contents */
-
-html[data-learning-mode="custom"] .right-sidebar {
-  display: none !important;
-}
-
-/* ----------------------------------------
-   Blockquotes
-   ---------------------------------------- */
-
+/* General content elements */
 .sl-markdown-content blockquote {
-  border-inline-start: 3px solid var(--sl-color-accent);
-  background: var(--sl-color-accent-low);
-  padding: 0.75rem 1rem;
-  border-radius: 0 0.4rem 0.4rem 0;
   margin-block: 1.5rem;
+  padding: 0.75rem 1rem;
+  border-inline-start: 3px solid var(--sl-color-accent);
+  border-radius: 0 0.4rem 0.4rem 0;
+  background: var(--sl-color-accent-low);
 }
-
-/* ----------------------------------------
-   Images
-   ---------------------------------------- */
 
 .sl-markdown-content img {
   max-width: 100%;
@@ -420,24 +246,14 @@ html[data-learning-mode="custom"] .right-sidebar {
   border-radius: 0.5rem;
 }
 
-/* ----------------------------------------
-   Sidebar navigation styling
-   ---------------------------------------- */
-
-.sidebar-content {
-  font-size: 0.9rem;
-}
+.sidebar-content { font-size: 0.9rem; }
 
 .sidebar-content a {
   border-radius: 0.4rem;
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.sidebar-content a:hover {
-  background: var(--sl-color-accent-low);
-}
+.sidebar-content a:hover { background: var(--sl-color-accent-low); }
 
 .sidebar-content a[aria-current='page'] {
   background: var(--sl-color-accent-low);
@@ -445,76 +261,134 @@ html[data-learning-mode="custom"] .right-sidebar {
   font-weight: 650;
 }
 
-/* ----------------------------------------
-   Code blocks
-   ---------------------------------------- */
-
-.sl-markdown-content pre {
-  border-radius: 0.6rem;
-  font-size: 0.9rem;
+/* The outer Starlight "Contents" wrapper is structural, not a useful nav level. */
+.sidebar-content details[data-rad-contents-root] > summary {
+  display: none !important;
+}
+.sidebar-content details[data-rad-contents-root] {
+  padding: 0 !important;
 }
 
-.sl-markdown-content :not(pre) > code {
-  border-radius: 0.25rem;
-  padding: 0.15rem 0.35rem;
+.sl-markdown-content pre { border-radius: 0.6rem; font-size: 0.9rem; }
+.sl-markdown-content :not(pre) > code { padding: 0.15rem 0.35rem; border-radius: 0.25rem; }
+.sl-markdown-content hr { margin-block: 2rem; border-color: var(--sl-color-gray-5); }
+
+/* Header controls */
+.rad-header-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
 }
 
-/* ----------------------------------------
-   Horizontal separators
-   ---------------------------------------- */
-
-.sl-markdown-content hr {
-  border-color: var(--sl-color-gray-5);
-  margin-block: 2rem;
+.rad-learning-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
 }
 
-/* ----------------------------------------
-   Responsive adjustments
-   ---------------------------------------- */
-
-@media (max-width: 50rem) {
-  .sl-markdown-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .sl-markdown-content h2 {
-    font-size: 1.35rem;
-  }
-
-  .sl-markdown-content table {
-    font-size: 0.85rem;
-  }
-
-  .sl-markdown-content th,
-  .sl-markdown-content td {
-    padding: 0.5rem;
-  }
+#rad-learning-mode {
+  max-width: 12rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.4rem;
+  background: var(--sl-color-bg);
+  color: var(--sl-color-text);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
 }
 
-/* ========================================
-   13. Homepage
-   ======================================== */
+#rad-learning-categories {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0.8rem;
+}
 
-/* Introduction */
-/* Not needed now */
+#rad-learning-categories[hidden] { display: none; }
+#rad-learning-categories legend { display: none; }
 
+#rad-learning-categories label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
 
-/* ========================================
-   14. Interactive MCQs
-   ======================================== */
+#rad-learning-categories input { accent-color: var(--sl-color-accent); }
 
+.rad-header-button {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 2.75rem;
+  width: 2.75rem;
+  min-width: 2.75rem;
+  max-width: 2.75rem;
+  height: 2.75rem;
+  min-height: 2.75rem;
+  max-height: 2.75rem;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.65rem;
+  background: var(--sl-color-bg);
+  color: var(--sl-color-text);
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.rad-collapse-all { font-size: 1.05rem; }
+.rad-sidebar-toggle { font-size: 1.35rem; }
+
+.rad-header-button:hover {
+  border-color: var(--sl-color-accent);
+  background: var(--sl-color-accent-low);
+  color: var(--sl-color-text-accent);
+}
+
+.rad-header-button:active { transform: scale(0.95); }
+
+.rad-header-button:focus-visible {
+  outline: 2px solid var(--sl-color-accent);
+  outline-offset: 3px;
+}
+
+/* Site title and controls sit in one row without fixed spacer margins. */
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  overflow: visible;
+}
+
+.title-wrapper > a { margin-right: 0.5rem !important; }
+
+/* Interactive MCQs */
 .rad-mcq-options {
   display: grid;
   gap: 0.75rem;
-  border: 0;
-  padding: 0;
   margin: 1.25rem 0;
+  padding: 0;
+  border: 0;
 }
 
 .rad-mcq-options legend {
-  font-size: 0.85rem;
-  color: var(--sl-color-gray-2);
   margin-bottom: 0.65rem;
+  color: var(--sl-color-gray-2);
+  font-size: 0.85rem;
 }
 
 .rad-mcq-option {
@@ -533,10 +407,7 @@ html[data-learning-mode="custom"] .right-sidebar {
   background: var(--sl-color-accent-low);
 }
 
-.rad-mcq-option input {
-  flex-shrink: 0;
-  accent-color: var(--sl-color-accent);
-}
+.rad-mcq-option input { flex-shrink: 0; accent-color: var(--sl-color-accent); }
 
 .rad-mcq-option.is-correct {
   border-color: #299d65;
@@ -554,16 +425,13 @@ html[data-learning-mode="custom"] .right-sidebar {
   border: 0;
   border-radius: 0.45rem;
   background: var(--sl-color-accent);
-  color: white;
+  color: #fff;
   font: inherit;
   font-weight: 650;
   cursor: pointer;
 }
 
-.rad-mcq-submit:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
+.rad-mcq-submit:disabled { opacity: 0.6; cursor: not-allowed; }
 
 .rad-mcq-feedback {
   margin-top: 1rem;
@@ -571,16 +439,14 @@ html[data-learning-mode="custom"] .right-sidebar {
   border-radius: 0.45rem;
 }
 
-.rad-mcq-feedback:empty {
-  display: none;
-}
+.rad-mcq-feedback:empty { display: none; }
 
-.rad-mcq-feedback[data-result="correct"] {
+.rad-mcq-feedback[data-result='correct'] {
   background: color-mix(in srgb, #299d65 12%, var(--sl-color-bg));
   color: var(--sl-color-text);
 }
 
-.rad-mcq-feedback[data-result="incorrect"] {
+.rad-mcq-feedback[data-result='incorrect'] {
   background: color-mix(in srgb, #d65b5b 12%, var(--sl-color-bg));
   color: var(--sl-color-text);
 }
@@ -591,417 +457,255 @@ html[data-learning-mode="custom"] .right-sidebar {
   border-top: 1px solid var(--sl-color-gray-5);
 }
 
-.rad-mcq-explanation[hidden] {
-  display: none !important;
+.rad-mcq-explanation[hidden] { display: none !important; }
+
+/* Homepage cards */
+.home-intro { padding: 0.25rem 0 1.25rem; }
+
+.home-eyebrow {
+  margin: 0 0 1rem;
+  color: var(--sl-color-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
 }
 
-/* ========================================
-   15. Collapsible sidebars and layout
-   ======================================== */
+.home-lead {
+  max-width: 46rem;
+  margin: 0;
+  color: var(--sl-color-gray-2);
+  font-size: 1.12rem;
+  line-height: 1.75;
+}
 
-/* 15.1 Header toggle buttons */
-/* Shared button appearance */
+.home-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 1rem;
+  margin: 1.5rem 0 3rem;
+}
 
-.rad-collapse-all,
-.rad-sidebar-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 2.75rem;
-  height: 2.75rem;
-  padding: 0;
-
+.home-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  min-width: 0;
+  min-height: 215px;
+  padding: 1.4rem;
   border: 1px solid var(--sl-color-gray-5);
-  border-radius: 0.65rem;
-
-  background: var(--sl-color-bg);
-  color: var(--sl-color-text);
-
-  cursor: pointer;
-  flex-shrink: 0;
-
-  transition:
-    background-color 0.2s ease,
-    border-color 0.2s ease,
-    color 0.2s ease,
-    transform 0.15s ease;
+  border-radius: 0.7rem;
+  background: var(--sl-color-bg-sidebar);
+  text-decoration: none !important;
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Collapse all — upward triangle */
-
-.rad-collapse-all {
-  font-size: 1.05rem;
-  line-height: 1;
-}
-
-/* Sidebar toggle — hamburger */
-
-.rad-sidebar-toggle {
-  font-size: 1.35rem;
-  line-height: 1;
-}
-
-/* Hover */
-
-.rad-collapse-all:hover,
-.rad-sidebar-toggle:hover {
-  background: var(--sl-color-accent-low);
+.home-card:hover {
   border-color: var(--sl-color-accent);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 16px rgb(0 0 0 / 6%);
+}
+
+.home-card-number {
+  color: var(--sl-color-accent);
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 0.11em;
+}
+
+.home-card-title {
+  color: var(--sl-color-text);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.home-card-description {
+  color: var(--sl-color-gray-2);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.home-card-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
   color: var(--sl-color-text-accent);
+  font-size: 0.88rem;
+  font-weight: 650;
 }
 
-/* Press */
+.home-card-link span { transition: transform 0.2s ease; }
+.home-card:hover .home-card-link span { transform: translateX(4px); }
 
-.rad-collapse-all:active,
-.rad-sidebar-toggle:active {
-  transform: scale(0.94);
-}
+/* =========================================================
+   Responsive layout and sidebar controls
+   ========================================================= */
 
-/* Keyboard accessibility */
+/*
+ * Starlight's native mobile drawer owns the sidebar below 50rem.
+ * Keep the native menu button; hide only Rad4Notes' custom sidebar
+ * toggles. The Collapse All control remains available.
+ */
 
-.rad-collapse-all:focus-visible,
-.rad-sidebar-toggle:focus-visible {
-  outline: 2px solid var(--sl-color-accent);
-  outline-offset: 3px;
-}
-
-
-
-/* Hide custom sidebar controls on mobile */
-
-@media (max-width: 49.999rem) {
-  .rad-sidebar-toggle {
-    display: none;
-  }
-}
-
-/* 15.2 Desktop layout behaviour */
-
-@media (min-width: 72rem) {
-
-  /* Left sidebar: hide it and release its layout space */
-
-  html[data-rad-left-sidebar-hidden="true"] .sidebar-pane {
+/* Tablet and desktop: custom left sidebar visibility toggle. */
+@media (min-width: 50rem) {
+  html[data-rad-left-sidebar-hidden='true'] .sidebar-pane {
     display: none !important;
   }
 
-  html[data-rad-left-sidebar-hidden="true"] .main-frame {
+  html[data-rad-left-sidebar-hidden='true'] .main-frame {
     padding-inline-start: 0 !important;
   }
 
-  /* Right sidebar: hide it when requested */
-
-  html[data-rad-right-sidebar-hidden="true"]
-  .right-sidebar-container {
-    display: none !important;
-  }
-
-  /* Reading pane: expand when either sidebar is hidden */
-
   html:is(
-    [data-rad-left-sidebar-hidden="true"],
-    [data-rad-right-sidebar-hidden="true"]
+    [data-rad-left-sidebar-hidden='true'],
+    [data-rad-right-sidebar-hidden='true']
   ) .main-frame .main-pane {
-
     width: 100% !important;
     min-width: 0 !important;
     max-width: none !important;
-
     flex: 1 1 0% !important;
-
     --sl-content-margin-inline: auto;
   }
 
-  /* Remove Starlight's normal content-width restriction */
-
   html:is(
-    [data-rad-left-sidebar-hidden="true"],
-    [data-rad-right-sidebar-hidden="true"]
+    [data-rad-left-sidebar-hidden='true'],
+    [data-rad-right-sidebar-hidden='true']
   ) .main-pane .sl-container {
-
     width: 100% !important;
     max-width: none !important;
   }
 
-  /* Prevent the expanded reading content from overflowing */
-
   html:is(
-    [data-rad-left-sidebar-hidden="true"],
-    [data-rad-right-sidebar-hidden="true"]
+    [data-rad-left-sidebar-hidden='true'],
+    [data-rad-right-sidebar-hidden='true']
   ) .sl-markdown-content {
     max-width: 100%;
     min-width: 0;
   }
+}
 
-  /* Keep the right sidebar at its original width when only the left is hidden. */
-  html[data-rad-left-sidebar-hidden="true"]:not([data-rad-right-sidebar-hidden="true"])
+/* Starlight does not normally show the right TOC at tablet widths. */
+@media (min-width: 50rem) and (max-width: 71.999rem) {
+  #rad-toggle-right { display: none !important; }
+
+  html[data-rad-left-sidebar-hidden='true'] .main-frame {
+    padding-inline-start: 0 !important;
+  }
+}
+
+/* Wide desktop: allow the custom right-hand TOC toggle as well. */
+@media (min-width: 72rem) {
+  html[data-rad-right-sidebar-hidden='true'] .right-sidebar-container {
+    display: none !important;
+  }
+
+  html[data-rad-left-sidebar-hidden='true']:not([data-rad-right-sidebar-hidden='true'])
   .right-sidebar-container {
-  
-      width: var(--sl-sidebar-width) !important;
-      min-width: var(--sl-sidebar-width) !important;
-      max-width: var(--sl-sidebar-width) !important;
-
+    width: var(--sl-sidebar-width) !important;
+    min-width: var(--sl-sidebar-width) !important;
+    max-width: var(--sl-sidebar-width) !important;
     flex: 0 0 auto !important;
     flex-shrink: 0 !important;
   }
 }
 
-/* ----------------------------------------
-   15.3 Responsive sidebar toggle buttons
-   ---------------------------------------- */
-
-/* Intermediate screens:
-   Show left toggle, hide right toggle.
-   Starlight does not display the desktop TOC here. */
-
-@media (min-width: 50rem) and (max-width: 71.999rem) {
-
-  #rad-toggle-left {
-    display: inline-flex;
-  }
-
-  #rad-toggle-right {
-    display: none;
-  }
-}
-
-/* Mobile screens:
-   Use Starlight's native navigation. */
-
+/* Mobile: native Starlight drawer remains untouched. */
 @media (max-width: 49.999rem) {
+  .rad-sidebar-toggle { display: none !important; }
 
-  .rad-sidebar-toggle {
-    display: none;
+  /* The first Collapse All copy is moved beside the site title for desktop.
+     Keep that copy hidden on mobile; use the copy in the mobile controls row. */
+  .title-wrapper #rad-collapse-all { display: none !important; }
+
+  #rad-collapse-all {
+    width: 2.4rem;
+    min-width: 2.4rem;
+    max-width: 2.4rem;
+    height: 2.4rem;
+    min-height: 2.4rem;
+    max-height: 2.4rem;
+  }
+
+  .title-wrapper {
+    gap: 0.4rem;
+    flex-wrap: nowrap;
+  }
+
+  .title-wrapper > a { margin-right: 0.15rem !important; }
+
+  /* Give Custom Revision's category checkboxes their own visible row. */
+  .rad-header-controls {
+    width: 100%;
+    min-width: 0;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .rad-learning-controls {
+    width: 100%;
+    min-width: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 0.45rem;
+  }
+
+  #rad-learning-mode {
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+
+  #rad-learning-categories:not([hidden]) {
+    display: flex !important;
+    flex: 1 0 100%;
+    width: 100%;
+    min-width: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem 0.75rem;
+    padding: 0.25rem 0 0.4rem;
+    white-space: normal;
+  }
+
+  #rad-learning-categories label {
+    white-space: nowrap;
+    font-size: 0.78rem;
   }
 }
 
-/* ========================================
-   16. SVG image width override
-   ======================================== */
-
-/* Limit SVG diagrams so they do not grow with the expanded reading pane. */
-@media (min-width: 72rem) {
-
-  .sl-markdown-content img[src$=".svg" i] {
-    max-width: min(
-      100%,
-      calc(100vw - 2 * var(--sl-sidebar-width))
-    );
-    height: auto;
-  }
-
-}
-
-
-/* ========================================
-   Rad4Notes — Minimal Homepage Navigation
-   ======================================== */
-
-.home-icon-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0 3rem;
-}
-
-.home-icon-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-
-  min-width: 0;
-  min-height: 125px;
-  padding: 1.25rem 0.75rem;
-
-  border: 1px solid var(--sl-color-gray-5);
-  border-radius: 0.7rem;
-
-  background: var(--sl-color-bg-sidebar);
-  color: var(--sl-color-text);
-
-  text-align: center;
-  text-decoration: none !important;
-  font-size: 0.95rem;
-  font-weight: 650;
-
-  transition:
-    border-color 0.2s ease,
-    background-color 0.2s ease,
-    transform 0.2s ease;
-}
-
-/* Icon */
-
-.home-icon {
-  display: block;
-  width: 38px;
-  height: 38px;
-  flex-shrink: 0;
-
-  background-color: var(--sl-color-text-accent);
-
-  -webkit-mask-image: var(--icon);
-  mask-image: var(--icon);
-
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-
-  -webkit-mask-position: center;
-  mask-position: center;
-
-  -webkit-mask-size: contain;
-  mask-size: contain;
-}
-
-/* Hover */
-
-.home-icon-card:hover {
-  border-color: var(--sl-color-accent);
-  background: var(--sl-color-accent-low);
-  color: var(--sl-color-text-accent);
-  transform: translateY(-2px);
-}
-
-/* Keyboard accessibility */
-
-.home-icon-card:focus-visible {
-  outline: 2px solid var(--sl-color-accent);
-  outline-offset: 3px;
-}
-
-/* Tablet */
-
+/* General responsive refinements */
 @media (max-width: 60rem) {
-  .home-icon-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+  .home-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
-/* Mobile */
+@media (max-width: 50rem) {
+  .sl-markdown-content h1 { font-size: 1.8rem; }
+  .sl-markdown-content h2 { font-size: 1.35rem; }
+  .sl-markdown-content table { font-size: 0.85rem; }
+  .sl-markdown-content th,
+  .sl-markdown-content td { padding: 0.5rem; }
+  #rad-learning-mode { max-width: 9rem; font-size: 0.75rem; }
+  #rad-learning-categories { gap: 0.4rem; font-size: 0.7rem; }
+  .home-lead { font-size: 1rem; }
+}
 
 @media (max-width: 40rem) {
-  .home-icon-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.75rem;
+  .home-card-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
   }
 
-  .home-icon-card {
-    min-height: 110px;
-    padding: 1rem 0.5rem;
-    font-size: 0.85rem;
+  .home-card { min-height: 175px; }
+}
+
+/* Keep SVG diagrams readable in an expanded desktop reading pane. */
+@media (min-width: 72rem) {
+  .sl-markdown-content img[src$='.svg' i] {
+    max-width: min(100%, calc(100vw - 2 * var(--sl-sidebar-width)));
+    height: auto;
   }
-
-  .home-icon {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-
-/* Rad4Notes — Header Collapse All Button */
-
-.rad-menu-controls {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-
-/* ========================================
-   Rad4Notes — Unified Left Header Controls
-   ======================================== */
-
-.title-wrapper {
-  display: flex;
-  align-items: center;
-  column-gap: 0.75rem;
-  overflow: visible;
-}
-
-/* Space between Rad4Notes and Collapse All */
-.title-wrapper > a {
-  margin-right: 1.25rem !important;
-}
-
-/* More space between site title and Collapse All */
-#rad-collapse-all {
-  margin-left: 15rem !important;
-}
-
-/* Less space between Collapse All and hamburger */
-#rad-toggle-left {
-  margin-left: 0.25rem !important;
-}
-
-/* Identical dimensions and appearance */
-
-#rad-collapse-all,
-#rad-toggle-left {
-  position: static !important;
-
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-
-  box-sizing: border-box !important;
-  flex: 0 0 2.75rem !important;
-
-  width: 2.75rem !important;
-  min-width: 2.75rem !important;
-  max-width: 2.75rem !important;
-
-  height: 2.75rem !important;
-  min-height: 2.75rem !important;
-  max-height: 2.75rem !important;
-
-  margin: 0 !important;
-  padding: 0 !important;
-
-  border: 1px solid var(--sl-color-gray-5) !important;
-  border-radius: 0.65rem !important;
-
-  background: var(--sl-color-bg) !important;
-  color: var(--sl-color-text) !important;
-
-  line-height: 1 !important;
-  vertical-align: middle;
-  cursor: pointer;
-  flex-shrink: 0;
-}
-
-/* Individual symbol sizing */
-
-#rad-collapse-all {
-  font-size: 1.05rem !important;
-}
-
-#rad-toggle-left {
-  font-size: 1.35rem !important;
-}
-
-/* Hover */
-
-#rad-collapse-all:hover,
-#rad-toggle-left:hover {
-  background: var(--sl-color-accent-low) !important;
-  border-color: var(--sl-color-accent) !important;
-  color: var(--sl-color-text-accent) !important;
-}
-
-/* Press */
-
-#rad-collapse-all:active,
-#rad-toggle-left:active {
-  transform: scale(0.95);
-}
-
-/* Keyboard focus */
-
-#rad-collapse-all:focus-visible,
-#rad-toggle-left:focus-visible {
-  outline: 2px solid var(--sl-color-accent);
-  outline-offset: 3px;
 }
