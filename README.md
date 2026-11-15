@@ -47,4 +47,4 @@ GitHub issues.
 
 ## Use of Artificial Intelligence
 
-Artificial intelligence tools have been used exclusively to assist with website development and deployment. All educational and medical content, including the written notes and original diagrams, has been created by human authors. AI tools have not been used to generate the educational content.
+Artificial intelligence tools have been used extensively yet exclusively to assist with website development and deployment. All written notes and original diagrams, however, are entirely human made, without the use of AI.
