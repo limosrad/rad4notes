@@ -1,6 +1,8 @@
 ---
 title: Cerebellopontine Angle Tumours
 description: Cerebellopontine angle tumours
+sidebar:
+    order: 5
 ---
 
 Epidermoid vs dermoid vs arachnoid:

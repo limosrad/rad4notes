@@ -1,6 +1,8 @@
 ---
 title: Sellar, Suprasellar and Pineal Region Neoplasms
 description: Sellar, suprasellar and pineal region neoplasms
+sidebar:
+    order: 6
 ---
 
 Pineal neoplasms:

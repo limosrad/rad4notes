@@ -1,6 +1,8 @@
 ---
 title: Approach to CNS Tumours
 description: General approach to CNS tumours and possible differentials
+sidebar:
+    order: 1
 ---
 
 ## Approach to CNS tumours

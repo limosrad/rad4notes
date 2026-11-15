@@ -171,9 +171,9 @@
 .rad-learning-block li { margin-block: 0.35rem; }
 .rad-learning-block strong { font-weight: 700; }
 
-.rad-learning-block--trivia::before { content: 'TESTABLE TRIVIA'; }
-.rad-learning-block--differentials::before { content: 'DIFFERENTIALS'; }
-.rad-learning-block--mcq::before { content: 'MCQ'; }
+.rad-learning-block--trivia::before { content: '✦ TESTABLE TRIVIA'; }
+.rad-learning-block--differentials::before { content: '⊕ DIFFERENTIALS'; }
+.rad-learning-block--mcq::before { content: '◉ MCQ'; }
 
 .rad-learning-block::before {
   display: block;

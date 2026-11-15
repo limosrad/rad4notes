@@ -21,4 +21,4 @@ description: Osteoid osteoma, osteoblastoma, and osteosarcoma
 
 ## Further reading
 
-1. 
+1. [Osteoid osteoma: the great mimicker in Insights into Imaging (2018)](https://doi.org/10.1186/s13244-021-00978-8)
