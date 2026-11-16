@@ -47,5 +47,24 @@ description: Benign conditions of the stomach
 | Possible small bowel dilatation (if ileocecal valve incompetent) | Apex of loop above D10 (below diaphragm)Inferior convergence at S1-3 (Frimann Dahl sign)Named signs: liver overlap, left flank and pelvic overlap, coffee bean, bird of prey |
 :::
 
+## Perianal fistula imaging
+
+### Park classification
+
+- Intersphincteric: 45% 
+- Transsphincteric: 30%
+- Suprasphincteric: 20% 
+- Extrasphincteric: 5%
+
+### St James University Hospital grading
+
+| Grade | Park class | Additional features |
+| --- | --- | --- |
+| 1 | Intersphincteric | Simple, linear |
+| 2 | Intersphincteric | Abscess or secondary tract |
+| 3 | Transsphincteric | |
+| 4 | Transsphincteric | Abscess or secondary tract |
+| 5 | Supralevator<br>Translevator | |
+
 ## Further Reading
 1. [Abdominal complications following neutropenia and haematopoietic stem cell transplantation: CT ﬁndings in Clinical Radiology (2013)](http://dx.doi.org/10.1016/j.crad.2012.10.020)

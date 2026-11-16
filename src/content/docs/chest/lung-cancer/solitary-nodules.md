@@ -87,6 +87,26 @@ Part solid nodules:
 
 They are classified into low- and high-risk.
 
+### Solid nodules
+
+| Size | Number | Risk | Follow up |
+| --- | --- | --- | --- |
+| < 6 mm | Single | &darr;<br>&uarr; | No routine follow up<br>Optional at 12 months |
+| < 6 mm | Multiple | &darr;<br>&uarr; | No routine follow up<br>Optional at 12 months |
+| 6-8 mm | Single | &darr;<br>&uarr; | CT at 6-12 months<br>Consider CT at 18-24 months |
+| 6-8 mm | Multiple | &darr;<br>&uarr; | CT at 6-12 months<br>CT at 18-24 months |
+| > 8 mm | Single | All | Consider CT at 3 months, PET/CT or biopsy |
+| > 8 mm | Multiple | &darr;<br>&uarr; | CT at 3-6 months, consider CT at 18-24 months<br>CT at 3-6 months, then at 18-24 months |
+
+### Subsolid nodules
+
+| Type | Size | Follow up |
+| --- | --- | --- |
+| Ground glass | < 6 mm<br>&ge; 6 mm | No follow up<br>CT at 6-12 mo, then q2y till 5 y |
+| Part solid | < 6 mm<br>&ge; 6 mm | No follow up<br>CT at 6-12 mo, then annually till 5 y if solid < 6 mm |
+| Multiple | < 6 mm<br>&ge; 6 mm | CT at 3-6 months, then at 2 and 4 years<br>CT at 3-6 mo, manage based on most suspicious |
+
+
 ## Lung-RADS v2022
 
 ### Inclusion criteria
@@ -162,6 +182,7 @@ Follow up low dose CT of a 62-year-old male patient reveals a multilocular cyst 
 
 ## Further Reading
 
-1. [Lung-RADS: Pushing the Limits in Radiographics (2017)](https://doi.org/10.1148/rg.2017170051)
-2. [RadioGraphics Update: Lung-RADS 2022 in Radiographics (2023)](https://doi.org/10.1148/rg.230037)
+1. [Guidelines for Management of Incidental Pulmonary nodules Detected on CT images: From the Fleischner Society 2017](https://doi.org/10.1148/radiol.2017161659)
+2. [Lung-RADS: Pushing the Limits in Radiographics (2017)](https://doi.org/10.1148/rg.2017170051)
+3. [RadioGraphics Update: Lung-RADS 2022 in Radiographics (2023)](https://doi.org/10.1148/rg.230037)
 
