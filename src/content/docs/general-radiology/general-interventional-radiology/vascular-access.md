@@ -41,3 +41,7 @@ description: Vascular access and vascular closure devices
 - Others
     - Immediate: bleeding, haematoma, delayed bleeding
     - Delayed: infection, scar, pseudoaneurysm, arterial stenosis
+
+## Futher reading
+
+1. 
