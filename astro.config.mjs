@@ -3,6 +3,8 @@
 import { defineConfig } from 'astro/config';
 
 import starlight from '@astrojs/starlight';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 import { unified } from '@astrojs/markdown-remark';
 import { remarkLearningBlocks } from './src/plugins/learning-blocks.js';
@@ -433,8 +435,12 @@ export default defineConfig({
   markdown: {
     processor: unified({
       remarkPlugins: [
+        remarkMath,
         remarkDirective,
         remarkLearningBlocks,
+      ],
+      rehypePlugins: [
+        rehypeKatex,
       ],
     }),
   },
