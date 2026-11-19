@@ -24,7 +24,7 @@ description: Important trials in interventional radiology
 | --- | --- | --- |
 | EMMY trial<br>2016 | Uterine artery embolisation vs hysterectomy | UAE showed lower periprocedural complications and avoided hysterectomy in 2/3rd patients over a 10-year follow-up |
 | FEMME trial<br>2021 | Uterine fibroid embolisation vs myomectomy | UFE showed lower improvement in quality of life compared to myomectomy |
-| PRECISION V<br>2011 | Conventional TACE vs DEB-TACE | Lower adverse effects in DEB-TACE compared to conventional TACE |
+| PRECISION V<br>2011 | Conventional TACE vs DEB-TACE | At 6 months, lower adverse effects in DEB-TACE compared to conventional TACE, higher response did not reach statistical significance |
 
 
 ## Venous intervention
