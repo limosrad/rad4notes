@@ -1,6 +1,8 @@
 ---
 title: Factors Affecting X-ray Image Quality
 description: Introduction to x-ray tube, x-ray production and factors affecting x-ray beam quality
+sidebar:
+    order: 4
 ---
 
 Balance of:
@@ -58,7 +60,7 @@ Factors affecting contrast resolution
 ### Factors affecting image noise
 
 - Noise in a pixel $\propto \sqrt{N}$, where $N$ is the number of photons reaching the detector
-- Signal to noise ratio is $\frac{signal}{noise}$
+- Signal to noise ratio is $\frac{\text{signal}}{\text{noise}}$
     $$
     \text{SNR} \propto \frac{N}{\sqrt{N}} = \sqrt{N}
     $$

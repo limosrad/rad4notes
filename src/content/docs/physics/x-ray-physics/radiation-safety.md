@@ -1,6 +1,8 @@
 ---
 title: Radiation Safety
 description: Principles of radiation safety, dose limits
+sidebar:
+    order: 8
 ---
 
 ## Effects of radiation on tissues

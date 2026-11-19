@@ -1,6 +1,8 @@
 ---
 title: Interactions of X-rays with Matter
 description: Photoelectric, Compton effects
+sidebar:
+    order: 2
 ---
 
 Possible interactions of x-rays with matter:
@@ -31,7 +33,7 @@ Possible interactions of x-rays with matter:
 - When mean beam energy crosses this energy (called k-edge), there is sudden increase in photon attenuation due to photoelectric effect
 - For iodine, k-edge is at 33.2 kV
     - Hence mean x-ray energy of diagnostic imaging with contrast is just above this energy level.
-        - The mean energy is approximately \frac{kVp}{3}$
+        - The mean energy is approximately $\frac{1}{3}$ of the kV peak
 
 
 ## Compton effect
