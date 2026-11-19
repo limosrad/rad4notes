@@ -1,5 +1,5 @@
 ---
-title: Interventions in POrtal Hypertension
+title: Interventions in Portal Hypertension
 description: TIPSS, BRTO and others
 ---
 

@@ -359,6 +359,37 @@ export default defineConfig({
               ],
             },
             {
+              label: 'Interventional Radiology',
+              collapsed: true,
+              items: [
+                'interventional-radiology/ir-list-of-topics',
+                {
+                  label: 'Neurointervention',
+                  items: [
+                    { autogenerate: { directory: 'interventional-radiology/neurointervention' } }
+                  ],
+                },                
+                {
+                  label: 'Arterial Interventions',
+                  items: [
+                    { autogenerate: { directory: 'interventional-radiology/arterial-interventions' } }
+                  ],
+                },
+                {
+                  label: 'Venous Interventions',
+                  items: [
+                    { autogenerate: { directory: 'interventional-radiology/venous-interventions' } }
+                  ],
+                },
+                {
+                  label: 'Non-vascular Interventions',
+                  items: [
+                    { autogenerate: { directory: 'interventional-radiology/non-vascular-interventions' } }
+                  ],
+                },                
+              ],
+            },          
+            {
               label: 'Physics',
               collapsed: true,
               items: [
