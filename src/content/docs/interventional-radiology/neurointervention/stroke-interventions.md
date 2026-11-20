@@ -3,7 +3,9 @@ title: Neurovascular Interventions
 description: Interventions in stroke, aneurysms and AV malformations
 ---
 
-## Stroke interventions
+## Pre procedure
+
+## Procedure
 
 ### Perfusion after stroke intervention
 
@@ -18,6 +20,8 @@ Thrombolysis in cerebral ischaemia (TICI)
 | 2c | Near-complete perfusion; visible thrombus absent; delayed contrast runoff present |
 | 3 | Full perfusion with visible distal branches |
 
+## Post procedure
+
 ### Haemorrhage after intervention
 
 ECASS scoring of haemorrhagic transformation
@@ -31,20 +35,7 @@ ECASS scoring of haemorrhagic transformation
 | PH1 | HI large (≤ 30% of infarcted area; mild mass effect) |
 | PH2 | Hematoma (≥ 30% of infarcted area; significant mass effect) |
 
-## Aneurysm interventions
 
-### Modified Raymond–Roy classification = modified Montreal scale
-
-Grading of residual aneurysm filling
-
-| Grade | DSA finding |
-| --- | --- |
-| 1 | No filling |
-| 2 | Filling of neck only |
-| 3a | Filling within the coil interstices |
-| 3b | Filling outside coil interstices, along wall |
-
-- Higher grade has also been shown to provide recanalisation risk
 
 ## Further reading
 

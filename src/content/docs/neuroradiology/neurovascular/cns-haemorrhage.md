@@ -3,14 +3,30 @@ title: Intracranial Haemorrhage
 description: Non-traumatic intracranial haemorrhage
 ---
 
-Aneurysm site vs bleed:
+## Subarachnoid haemorrhage
 
-| Terminal ICA | Suprasellar cistern |
+### Sentinel haematoma on NCCT
+
+| Probable aneurysm origin | Site of SAH |
 | --- | --- |
-| ACOM | Septum pellucidum (frontal lobe) |
-| MCA | Sylvian fissure (temporal lobe) |
-| Top of basilar artery | Interpeduncular fossa, brainstem, thalamus |
-| PICA | 4th ventricle |
+| ACOM | Anterior interhemispheric fissure<br>Septum pellucidum and frontal horn extension |
+| Distal ACA | Anterior interhemispheric fissure<br>Along genu or body of corpus callosum |
+| MCA bifurcation | Sylvian fissure |
+| ICA-PCOM junction | Parasellar / lateral to suprasellar cistern |
+| ICA-choroidal artery origin | Suprasellar cistern with temporal horn extension |
+| Top of basilar artery | Prepontine cistern, interpeduncular fossa, brainstem, thalamus |
+| PICA | Cerebello-medullary cistern (proximal)<br>4th ventricle (distal) |
+
+### Modified Fischer grading of SAH
+
+| Grade | SAH thickness | Intraventricular haemorrhage | Risk of vasospasm |
+| --- | --- | --- | --- |
+| I | Thin | - | 24 |
+| II | Thin | + | 33 |
+| III | Thick | - | 33 |
+| IV | Thick | + | 40 |
+
+- Rule of thumb for thick SAH is > 1 mm
 
 
 ## Vascular malformations of the brain

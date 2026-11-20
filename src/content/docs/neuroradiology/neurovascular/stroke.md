@@ -3,6 +3,13 @@ title: Stroke
 description: Stroke imaging
 ---
 
+
+## Imaging stategy in stroke
+
+
+
+
+## MRI in stroke
 Types of cerebral oedema:
 
 |  | Vasogenic oedema | Cytotoxic oedema |
@@ -11,6 +18,7 @@ Types of cerebral oedema:
 | Mechanism | Disruption of the blood–brain barrier ▸ increased capillary endothelial permeability leads to fluid extravasation | Failure of membrane ATP-dependent sodium pumps ▸ accumulation of intracellular sodium and water |
 | Imaging | Characteristic finger-like pattern with cortical sparing | Involvement of both cortex and white matter |
 | DWI | No restriction | Restriction |
+
 
 Dating ischaemic stroke:
 
