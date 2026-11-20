@@ -7,8 +7,8 @@ description: Important trials in interventional radiology
 
 | Trial name | Groups compared | Result |
 | --- | --- | --- |
-| DAWN<br>2018 | Large vessel occlusion (6-24 hours) with and without mechanical thrombectomy (MT) | MT showed improved 90-day outcome compared to medical management alone |
-| DEFUSE3<br>2018 | Large vessel occlusion (6-16 hours) with mismatch on imaging, with and without mechanical thrombectomy (MT) | MT showed improved 90-day outcome compared to medical management alone |
+| DAWN<br>2018 | Large vessel occlusion (6-24 hours) with clinical mismatch with and without mechanical thrombectomy (MT) | MT showed improved 90-day outcome compared to medical management alone |
+| DEFUSE3<br>2018 | Large vessel occlusion (6-16 hours) with CT perfusion mismatch, with and without mechanical thrombectomy (MT) | MT showed improved 90-day outcome compared to medical management alone |
 | ESCAPE<br>2015 | Large vessel occlusion (< 12 hours) with good collaterals on imaging, with and without mechanical thrombectomy (MT) | MT showed improved 90-day outcome compared to medical management alone |
 | MR-CLEAN<br>2015 | Large vessel occlusion (< 6 hours) with good collaterals on imaging, with and without mechanical thrombectomy (MT) | MT showed improved 90-day outcome compared to medical management alone |
 | ANGEL-ASPECT<br>2023 | Large core infarcts (ASPECT 3-5, 70-100 mL, < 24 hours) with and without MT | MT showed improved 90-day outcome compared to medical management alone |

@@ -43,5 +43,14 @@ description: RCC and transitional cell carcinoma
 | --- | --- |
 | T1 – ≤7 cm [1a: ≤ 4 cm, 1b: 4-7 cm]<br>T2 – ≥7 cm [2a: 7-10 cm, 2b: > 10 cm]<br>T3 – renal vein, perirenal fat or pelvicalyceal system [T3a],<br> infradiaphragmatic IVC [T3b],<br> supradiaphragmatic IVC [T3c]<br>T4 – adrenal or beyond Gerota’s fascia | N1: any node <br>M1: any distant metastasis |
 
+### Modified Mayo surgical thrombus level
+
+| Level | Tumour thrombus extent |
+| --- | --- |
+| I | Renal vein |
+| II | Infradiaphragmatic IVC |
+| III | Supradiaphragmatic IVC |
+| IV | RIght atrium |
+
 ## Further reading
 1. 
