@@ -17,6 +17,13 @@ description: TACE and TARE
     - Arterioportal shunting
 -  cTACE has likely lower rate of bile duct injury but ↑ postembolization syndrome
 
+### Procedure details
+
+- cTACE: ethiodized oil-chemotherapy agent ratio of 2:1
+    - embolic agent: gelfoam
+- DEB-TACE: DC/LC beads or HepaSpheres
+    - negatively charged polymers that also act as embolising agent
+    - chemotherapy agent (+) is loaded selectively via ionic interaction
 
 ## TARE = SIRT
 

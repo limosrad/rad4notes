@@ -13,6 +13,8 @@ description: Important trials in interventional radiology
 | MR-CLEAN<br>2015 | Large vessel occlusion (< 6 hours) with good collaterals on imaging, with and without mechanical thrombectomy (MT) | MT showed improved 90-day outcome compared to medical management alone |
 | ANGEL-ASPECT<br>2023 | Large core infarcts (ASPECT 3-5, 70-100 mL, < 24 hours) with and without MT | MT showed improved 90-day outcome compared to medical management alone |
 | SELECT2<br>2023 | Large core infarcts (ASPECT 3-5, 70-100 mL, < 24 hours) with and without MT | MT showed improved 90-day outcome compared to medical management alone |
+| ATTENTION | Posterior circulation stroke |  |
+| BAOCHE |  |  |
 | ISAT<br>2002 | Ruptured intracranial aneurysm with coiling vs clipping | Coiling &darr; morbidity/mortaility at 1 year and beyond, with small &uarr; risk of rebleeding with coiling |
 | ARUBA<br>2014 | Unruptured brain AVMs with medical alone vs medical + surgical, stereotactic or IR management | Medical management alone produced fewer deaths or strokes over mean follow-up of nearly 3 years |
 | NASCET<br>1991 | Recent non-disabling stroke with 70-99% carotid artery stenosis managed with medical vs endartectomy | Endartectomy produced fewer strokes and deaths compared to medicam management alone |
