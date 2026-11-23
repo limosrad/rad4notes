@@ -32,8 +32,37 @@ description: An approach to and a description of some common leukodystrophies
 | Hypomyelination | = or &uarr; | &uarr; |
 | Dysmyelination | &darr; | &uarr; &uarr; |
 
+![Hypo vs dysmyelination](/rad4notes/images/diagrams/hypo-vs-dysmyelination.svg)
 
 ## Hypomyelination
+
+### Typical findings
+
+
+
+## Dysmyelination
+
+### Approach
+
+1. Pattern of white matter involvement
+
+![Dysmyelination patterns](/rad4notes/images/diagrams/dysmyelination-wm-patterns.svg)
+
+2. Other features
+
+| Extra feature | Differentials | 
+| --- | --- |
+| Added deep grey matter involvement | Primary mitochondrial disorders<br>GM1/GM2 gangliosidoses<br>PKAN (globus pallidus)<br>Glutaric aciduria type 1 |
+| Contrast enhancement | X-ALD<br>Alexander |
+| Diffusion restriction | MSUD<br>X-ALD<br>Leigh<br>NKH |
+| Subdural collections | Glutaric aciduria type 1<br>Menke's |
+| Macrocephaly | Canavan<br>Alexander<br>Vanishing WM<br>Van der Knapp<br>Glutaric aciduria type 1 |
+| Calcification | Aicardi Goutieres<br>Cockayne (hypomyelination)<br>TORCH infections |
+| Hyperdense thalami | Krabbe<br>GM1/GM2 gangliosidoses<br>NCL<br>Hypoxic injury |
+| MR spectroscopy | Mitochondrial disorders: lactate peak at 1.3 ppm<br>NKH: glycine peak at 3.56 ppm<br>Canavan disease: elevated NAA level and NAA:Cho ratio<br>MSUD: BCAA peak at 0.9 ppm<br>Creatine deficiency disease: absent or markedly reduced creatine peak at 3.0 ppm |
+
+
+## Typical findings
 
 
 
