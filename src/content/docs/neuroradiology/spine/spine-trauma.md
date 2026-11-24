@@ -195,5 +195,5 @@ Effendi et al, modified by Levine and Edwards
 
 ## Further reading
 
-1. [Multidetector CT of Blunt Cervical Spine Trauma in Adults](https://doi.org/10.1148/rg.347130094)
-2. [Traumatic Thoracolumbar Spine Injuries: What the Spine Surgeon Wants to Know](https://doi.org/10.1148/rg.337135018)
+1. [Multidetector CT of Blunt Cervical Spine Trauma in Adults in Radiographics (2013)](https://doi.org/10.1148/rg.347130094)
+2. [Traumatic Thoracolumbar Spine Injuries: What the Spine Surgeon Wants to Know in Radiographics (2014)](https://doi.org/10.1148/rg.337135018)

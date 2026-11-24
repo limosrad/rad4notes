@@ -3,14 +3,13 @@ title: Acute Aortic Syndromes
 description: Diagnosis and interventions in acute aortic syndromes
 ---
 
-## Introduction
-
 - Svensson classification of acute aortic syndromes:
     1. aortic dissection (AD)
     2. intramural haematoma (IMH)
     3. limited intimal tear (LIT)
     4. penetrating atheromatous ulcer (PAU)
     5. traumatic aortic injury
+
 
 ## Aetiologies
 - Types 1-4 occur due to underlying causes affecting aortic intima:

@@ -1,5 +1,5 @@
 ---
-title: Benign Renal Dosiorders
+title: Benign Renal Disease
 description: Renal calculi, infections and other causes of injury
 ---
 
@@ -17,10 +17,13 @@ description: Renal calculi, infections and other causes of injury
 :::differentials
 | Cortical rim sign | Reverse rim sign |
 | --- | --- |
-| Nephrographic phase delayed | Nephrographic phase on time |
-| Poor renal enhancement | Prolonged renal enhancement |
-| ↓GFR due to obstructed collecting system or extrinsic compression | Hypotension / shockAcute tubular necrosis |
-| Usually unilateral | Bilateral |
+| Enhancing rim of kidney present | Non-enhancing rim of kidney |
+| Due to spared subcapsular branches, which originate early from renal artery | Due to renal cortical necrosis |
+| Renal vascular compromise<br>Acute tubular necrosis | Shock<br>Intravscular haemolysis<br>Transplant rejection |
+
+- Different from soft tissue rim sign:
+    - Seen with ureteric calculi surrounded by an oedematous ureteric wall
+    - Differentiates calculus from phlebolith on NCCT
 :::
 
 :::trivia
@@ -72,7 +75,11 @@ AAST grading of renal trauma
 | IV | MFK without bleeding | complete/near-complete ureteropelvic junction disruption | extensive pararenal haematomas, complete infarct without bleed, active renal bleed |
 | V | MFK with bleed |  | Complete infarct with bleed, MRA/MRV injury |
 
-- Management: grades 1, 2 → conservative;<br> grade 3 → minimally invasive if required;<br> grade 4 →minimally invasive/surgery;<br>grade 5 → surgery.
+- Management:
+    - grades 1, 2 → conservative;
+    - grade 3 → follow up &plusmn;minimally invasive if required
+    - grade 4 → minimally invasive/surgery
+    - grade 5 → surgery.
 :::
 
 ## Further Reading
