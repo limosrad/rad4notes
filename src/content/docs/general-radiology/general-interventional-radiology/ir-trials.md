@@ -24,6 +24,7 @@ description: Important trials in interventional radiology
 
 | Trial name | Groups compared | Result |
 | --- | --- | --- |
+| REST trial<br>2007/2011 | Uterine artery embolisation vs surgery | UAE showed lower initial recovery with higher re-intervention rates; no difference in outcomes at 5 years |
 | EMMY trial<br>2016 | Uterine artery embolisation vs hysterectomy | UAE showed lower periprocedural complications and avoided hysterectomy in 2/3rd patients over a 10-year follow-up |
 | FEMME trial<br>2021 | Uterine fibroid embolisation vs myomectomy | UFE showed lower improvement in quality of life compared to myomectomy |
 | PRECISION V<br>2011 | Conventional TACE vs DEB-TACE | At 6 months, lower adverse effects in DEB-TACE compared to conventional TACE, higher response did not reach statistical significance |
@@ -42,6 +43,9 @@ description: Important trials in interventional radiology
 
 | Trial name | Groups compared | Result |
 | --- | --- | --- |
+| SOLSTICE<br>2020 | Single arm phase 2; cryoablation in pulmonary metastasis (&le; 6, &lt; 3.5 cm) | Percutaneous cryoablation is a safe and effective treatment for pulmonary metastases. |
+| COLLISION<br>2024 | Colorectal carcinoma liver metastasis; resection vs ablation | Ablation is non-inferior to resection for < 10, &le; 3 cm metastases |
+
 
 ## Further reading
 
