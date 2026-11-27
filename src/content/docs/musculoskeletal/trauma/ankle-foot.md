@@ -3,27 +3,17 @@ title: Ankle and Foot
 description: List of topics in musculoskeletal radiology
 ---
 
-## Trauma
+## Important fractures and soft tissue injuries
 
-- [Intraocular Masses](/head-neck/orbits/intraocular/)
-- [Optic Nerve](/head-neck/orbits/optic-nerve/)
-- [Optic Masses - Intraconal](/head-neck/orbits/orbital-masses-intraconal/)
-- [Orbital Masses - Extraconal and Conal](/head-neck/orbits/orbital-masses-extraconal/)
-
-## Paediatric Trauma
-
-- [External and Middle Ear](/head-neck/ear-nose-throat/middle-ear/)
-- [Inner Ear](/head-neck/ear-nose-throat/inner-ear/)
-- [Nose and Paranasal Sinuses](/head-neck/ear-nose-throat/nose-pns/)
-- [Suprahyoid Neck Spaces](/head-neck/ear-nose-throat/suprahyoid-spaces/)
-- [Infrahyoid Neck Spaces](/head-neck/ear-nose-throat/infrahyoid-spaces/)
-- [Salivary Gland Neoplasms](/head-neck/ear-nose-throat/salivary-gland-neoplasms/)
-
-## Soft Tissue Imaging
-
-- [Facial Trauma](/head-neck/dental/facial-trauma/)
-- [Odontogenic Masses](/head-neck/dental/odontogenic-masses/)
-- [Bone Lesions of Maxilla and Mandible](/head-neck/dental/bone-lesions-jaw/)
-- [Carcinomas of the Oral Cavity](/head-neck/dental/oral-cavity-cancer/)
-
-## Bone Tumours
+| Name | Description |
+| --- | --- |
+| Pilon fracture | Axial loading → tibial plafond # |
+| Tillaux | Salter Harris 3 (medial epiphysis of tibia) |
+| Triplane | Salter Harris 4<br>Epiphysis: vertical #<br>Physis: horizonal #<br>Metaphysis: oblique fx |
+| Cotton | Trimalleolar # |
+| Maisonneuve | Distal tibiofibular syndesmosis injury &rarr<br>widened medial ankle mortise<br>± medial malleolus #<br>+ proximal fibular fracture |
+| Casanova | Bilateral calcaneal # |
+| Jones | Transverse # base of 5th metatarsal |
+| Dancer | Avulsion # of the 5th metatarsal base |
+| Lisfranc | Tear of Lisfranc ligament (medial cuneiform → 2nd metatarsal base)<br>Dissociation fo metatarsal from tarsals |
+| March | Fatigue # of 2nd metatarsal |

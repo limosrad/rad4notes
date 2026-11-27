@@ -3,27 +3,21 @@ title: Wrist
 description: List of topics in musculoskeletal radiology
 ---
 
-## Trauma
+## Important fractures and soft tissue injuries
 
-- [Intraocular Masses](/head-neck/orbits/intraocular/)
-- [Optic Nerve](/head-neck/orbits/optic-nerve/)
-- [Optic Masses - Intraconal](/head-neck/orbits/orbital-masses-intraconal/)
-- [Orbital Masses - Extraconal and Conal](/head-neck/orbits/orbital-masses-extraconal/)
-
-## Paediatric Trauma
-
-- [External and Middle Ear](/head-neck/ear-nose-throat/middle-ear/)
-- [Inner Ear](/head-neck/ear-nose-throat/inner-ear/)
-- [Nose and Paranasal Sinuses](/head-neck/ear-nose-throat/nose-pns/)
-- [Suprahyoid Neck Spaces](/head-neck/ear-nose-throat/suprahyoid-spaces/)
-- [Infrahyoid Neck Spaces](/head-neck/ear-nose-throat/infrahyoid-spaces/)
-- [Salivary Gland Neoplasms](/head-neck/ear-nose-throat/salivary-gland-neoplasms/)
-
-## Soft Tissue Imaging
-
-- [Facial Trauma](/head-neck/dental/facial-trauma/)
-- [Odontogenic Masses](/head-neck/dental/odontogenic-masses/)
-- [Bone Lesions of Maxilla and Mandible](/head-neck/dental/bone-lesions-jaw/)
-- [Carcinomas of the Oral Cavity](/head-neck/dental/oral-cavity-cancer/)
-
-## Bone Tumours
+| Name | Description |
+| --- | --- |
+| Colle | Distal radius # with dorsal angulation |
+| Smith | Distal radius # with volar angulation |
+| Barton | Intra-articular distal radius # with dorsal angulation |
+| Hutchinson/Chauffeur | Intra-articular radial styloid # |
+| Vaughan-Jackson | Sequential extensor tendon rupture in rheumatoid arthritis |
+| De Quervain | APL and EPB compartment tenosynovitis |
+| Intersection syndrome | ECRB and ECRL compartment tenosynovitis |
+| Drummer’s wrist | EPL compartment |
+| Bennett | Simple # of 1st MC base; APL pull |
+| Rolando | Comminuted # of 1st MC base |
+| Boxer | Transverse # of 5th MC neck |
+| Skier / Gamekeeper | Avulsion # at the base of the proximal first phalanx associated with ulnar collateral ligament disruption |
+| Stener lesion | Torn UCL tendon traps adductor tendon |
+| Trigger finger | Stenosing tenosynovitis of A1 pulley |
