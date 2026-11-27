@@ -71,7 +71,7 @@ description: Types of studies and sample size calculation
 
 ### Numbers needed to treat
 
-- The number of people who, if given an sxposure (e.g., a drug), would benefit one additional person
+- The number of people who, if given an exposure (e.g., a drug), would benefit one additional person
 
     $$
     \text{NNT} = \frac{1}{\text{ARR}} = \frac{1}{I_N - I_E}

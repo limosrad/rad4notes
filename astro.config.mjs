@@ -404,7 +404,6 @@ export default defineConfig({
                   label: 'CT Physics',
                   items: [
                     { autogenerate: { directory: 'physics/ct-physics' } }
-                    //'physics/ct-physics/ct-dose',
                   ]
                 },
                 {
@@ -429,25 +428,25 @@ export default defineConfig({
                 {
                   label: 'Contrast in Radiology',
                   items: [
-                    { autogenerate: { directory: 'physics/contrast-in-radiology' } }
+                    { autogenerate: { directory: 'general-radiology/contrast-in-radiology' } }
                   ]
                 },
                 {
                   label: 'Statistics in Radiology',
                   items: [
-                    { autogenerate: { directory: 'physics/statistics-in-radiology' } }
+                    { autogenerate: { directory: 'general-radiology/statistics-in-radiology' } }
                   ]
                 },
                 {
                   label: 'Multisystem Radiology',
                   items: [
-                    { autogenerate: { directory: 'physics/multisystem-radiology' } }
-                ]
+                    { autogenerate: { directory: 'general-radiology/multisystem-radiology' } }
+                  ]
                 },
                 {
                   label: 'General Interventional Radiology',
                   items: [
-                    { autogenerate: { directory: 'physics/general-interventional-radiology' } }
+                    { autogenerate: { directory: 'general-radiology/general-interventional-radiology' } }
                   ]
                 },
               ]                                                  
