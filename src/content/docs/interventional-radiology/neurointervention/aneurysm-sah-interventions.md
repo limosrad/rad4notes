@@ -9,6 +9,11 @@ description: Interventions in cerebral aneurysms and subarachnoid haemorrhage
 
 ## Preprocedure evaluation
 
+### PHASES score
+
+- PHASES stands for: Population, Hypertension, Age, Size, Earlier subarachnoid hemorrhage, and Site
+- Gives risk of rupture of aneurysm
+
 ### List of endovascular interventions
 
 | Intervention | Pros | Cons |

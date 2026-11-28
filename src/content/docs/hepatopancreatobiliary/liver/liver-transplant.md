@@ -30,13 +30,13 @@ description: Donor and recipient imaging in liver transplantation
 - Michel's classification
 
     1. Standard
-    2. Replaced LHA from LGA
-    3. Replaced RHA from SMA
+    2. Replaced LHA
+    3. Replaced RHA
         - most common variant
         - hepatic artery posterior and lateral to portal vein
         - hepatic artery posterior to biliary duct in hepatoduodenal ligament
-    4. Replaced RHA from SMA and LHA from LGA
-    5. Accessory LHA from LGA
+    4. Replaced RHA and LHA
+    5. Accessory LHA
         - second most common variant
     6. Accessory RHA
     7. Accessory LHA and RHA
